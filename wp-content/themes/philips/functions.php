@@ -1,117 +1,123 @@
 <?php
 
+/*=========================================
+
+Изменено командой Web Style Production 24 (https://wsp24.ru/);
+
+===========================================*/
+
 function remove_plugins() {
- 
+
         //  Сначала удаляем различные ненужные вставки:
-        remove_action('wp_head', 'feed_links_extra', 3);
-        remove_action('wp_head', 'feed_links', 2);
-        remove_action('wp_head', 'rsd_link');
-        remove_action('wp_head', 'wlwmanifest_link');
-        remove_action('wp_head', 'wp_generator');
-        remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
-        remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
- 
+    remove_action('wp_head', 'feed_links_extra', 3);
+    remove_action('wp_head', 'feed_links', 2);
+    remove_action('wp_head', 'rsd_link');
+    remove_action('wp_head', 'wlwmanifest_link');
+    remove_action('wp_head', 'wp_generator');
+    remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+    remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+
         // Затем опишем какие плагины и на каких страницах мы (не) хотим использовать.
- 
+
         // Что убрать с главной страницы?
-        if (is_home()) {
-            remove_plugin_fancybox();
-            remove_plugin_syntaxhighlightercompress();
-            
-        }
- 
+    if (is_home()) {
+        remove_plugin_fancybox();
+        remove_plugin_syntaxhighlightercompress();
+
+    }
+
         // Что убрать из категорий?
-        if (is_category()) {
-            remove_plugin_syntaxhighlightercompress();
-            remove_plugin_contactform7();
-            remove_plugin_twittertools();
- 
+    if (is_category()) {
+        remove_plugin_syntaxhighlightercompress();
+        remove_plugin_contactform7();
+        remove_plugin_twittertools();
+
             // Некоторые специфические категории и настройки
-            if (!is_category(array('web','polygrafiya'))) {
-                remove_plugin_fancybox();
-                remove_plugin_wpportfolio();
-                remove_plugin_filegallery();
-            } else {
-                wp_deregister_script('stw-pagepix');
-            }
-        }
- 
-        // Что убрать с постов?
-        if (is_single()) {
+        if (!is_category(array('web','polygrafiya'))) {
             remove_plugin_fancybox();
-            remove_plugin_wpportfolio();
-            remove_plugin_contactform7();
-            remove_plugin_twittertools();
- 
-            // Некоторые специфические настройки для постов
-            if (!is_single(array(266, 356))) {
-                remove_plugin_syntaxhighlightercompress();
-            }
-        }
- 
-        // Что убрать со страниц?
-        if (is_page()) {
-            remove_plugin_fancybox();
-            remove_plugin_syntaxhighlightercompress();
             remove_plugin_wpportfolio();
             remove_plugin_filegallery();
-            remove_plugin_twittertools();
-            if (!is_page('about')) {
-                remove_plugin_contactform7();
-            }
+        } else {
+            wp_deregister_script('stw-pagepix');
         }
- 
     }
- 
+
+        // Что убрать с постов?
+    if (is_single()) {
+        remove_plugin_fancybox();
+        remove_plugin_wpportfolio();
+        remove_plugin_contactform7();
+        remove_plugin_twittertools();
+
+            // Некоторые специфические настройки для постов
+        if (!is_single(array(266, 356))) {
+            remove_plugin_syntaxhighlightercompress();
+        }
+    }
+
+        // Что убрать со страниц?
+    if (is_page()) {
+        remove_plugin_fancybox();
+        remove_plugin_syntaxhighlightercompress();
+        remove_plugin_wpportfolio();
+        remove_plugin_filegallery();
+        remove_plugin_twittertools();
+        if (!is_page('about')) {
+            remove_plugin_contactform7();
+        }
+    }
+
+}
+
     // Remove Fancybox Plugin
-    function remove_plugin_fancybox() {
-        remove_action('wp_head', 'mfbfw_init');
-        remove_action('wp_enqueue_scripts', 'mfbfw_styles');
-        wp_deregister_script('fancybox');
-        wp_deregister_script('jqueryeasing');
-        wp_deregister_script('jquerymousewheel');
-    }
- 
+function remove_plugin_fancybox() {
+    remove_action('wp_head', 'mfbfw_init');
+    remove_action('wp_enqueue_scripts', 'mfbfw_styles');
+    wp_deregister_script('fancybox');
+    wp_deregister_script('jqueryeasing');
+    wp_deregister_script('jquerymousewheel');
+}
+
     // Remove SyntaxHighlighter Compress
-    function remove_plugin_syntaxhighlightercompress() {
-        remove_action('wp_head', 'wp_shc_head');
-        remove_action('wp_footer', 'wp_shc_footer');
-    }
- 
+function remove_plugin_syntaxhighlightercompress() {
+    remove_action('wp_head', 'wp_shc_head');
+    remove_action('wp_footer', 'wp_shc_footer');
+}
+
     // Remove WP Portfolio
-    function remove_plugin_wpportfolio() {
-        remove_action('wp_head', 'WPPortfolio_styles_frontend_renderCSS');
-        wp_deregister_script('stw-pagepix');
-    }
- 
+function remove_plugin_wpportfolio() {
+    remove_action('wp_head', 'WPPortfolio_styles_frontend_renderCSS');
+    wp_deregister_script('stw-pagepix');
+}
+
     // Remove File Gallery
-    function remove_plugin_filegallery() {
-        wp_dequeue_style('file_gallery_nikitak');
-        wp_dequeue_style('file_gallery_default');
-        wp_dequeue_style('file_gallery_columns');
-    }
- 
+function remove_plugin_filegallery() {
+    wp_dequeue_style('file_gallery_nikitak');
+    wp_dequeue_style('file_gallery_default');
+    wp_dequeue_style('file_gallery_columns');
+}
+
     // Remove Twitter Tools
-    function remove_plugin_twittertools() {
-        remove_action('wp_head', 'aktt_head');
-    }
- 
+function remove_plugin_twittertools() {
+    remove_action('wp_head', 'aktt_head');
+}
+
     // Remove Contact Form 7
-    function remove_plugin_contactform7() {
-        remove_action( 'wp_enqueue_scripts', 'wpcf7_enqueue_scripts' );
-        wp_dequeue_style('contact-form-7');
-        wp_dequeue_style('contact-form-7-rtl');
-    }
- 
+function remove_plugin_contactform7() {
+    remove_action( 'wp_enqueue_scripts', 'wpcf7_enqueue_scripts' );
+    wp_dequeue_style('contact-form-7');
+    wp_dequeue_style('contact-form-7-rtl');
+}
+
     // Следующая строчка означает, что наша функция будет вызвана
     // непосредственно перед тем как начнет генерироваться страница.
-    add_action('template_redirect', 'remove_plugins');
+add_action('template_redirect', 'remove_plugins');
 
 
 
 
 
- 
+
 
 
 
@@ -133,7 +139,7 @@ function testi()
     'not_found_in_trash' => 'В корзине отзывов не найдено',
     'parent_item_colon' => '',
     'menu_name' => 'Отзывы'
-  );
+);
 
   $args = array(
     'labels' => $labels,
@@ -148,8 +154,8 @@ function testi()
     'hierarchical' => false,
     'menu_position' => 5,
     'supports' => array('title','editor','thumbnail', 'comments', 'custom-fields', 'excerpt'),
-	'taxonomies' => array('testis') 
-  );
+    'taxonomies' => array('testis') 
+);
   register_post_type('testi',$args);  
 }
 
@@ -182,7 +188,7 @@ function house_pro()
     'not_found_in_trash' => 'В корзине домов не найдено',
     'parent_item_colon' => '',
     'menu_name' => 'Дома продажа'
-  );
+);
 
   $args = array(
     'labels' => $labels,
@@ -197,8 +203,8 @@ function house_pro()
     'hierarchical' => false,
     'menu_position' => 5,
     'supports' => array('title','editor','thumbnail', 'comments', 'custom-fields', 'excerpt'),
-	'taxonomies' => array('houses_pro') 
-  );
+    'taxonomies' => array('houses_pro') 
+);
   register_post_type('house_pro',$args);  
 }
 // Создаем новую таксономию для аксессуаров
@@ -216,7 +222,7 @@ function create_house_pro_taxonomies(){
     'add_new_item' => __( 'Добавить новую категорию' ),
     'new_item_name' => __( 'Название новой категории домов' ),
     'menu_name' => __( 'Категории домов' ),
-  );
+);
 
   register_taxonomy('houses_pro', array('house_pro'), array(
     'hierarchical' => true,
@@ -224,7 +230,7 @@ function create_house_pro_taxonomies(){
     'show_ui' => true,
     'query_var' => true,
     'rewrite' => array( 'slug' => 'houses_pro' ),
-  ));
+));
 
 }
 
@@ -257,7 +263,7 @@ function uchastok_pro()
     'not_found_in_trash' => 'В корзине участков не найдено',
     'parent_item_colon' => '',
     'menu_name' => 'Участки продажа'
-  );
+);
 
   $args = array(
     'labels' => $labels,
@@ -272,8 +278,8 @@ function uchastok_pro()
     'hierarchical' => false,
     'menu_position' => 5,
     'supports' => array('title','editor','thumbnail', 'comments', 'custom-fields', 'excerpt'),
-	'taxonomies' => array('uchastki_pro') 
-  );
+    'taxonomies' => array('uchastki_pro') 
+);
   register_post_type('uchastok_pro',$args);  
 }
 // Создаем новую таксономию для аксессуаров
@@ -291,7 +297,7 @@ function create_uchastok_pro_taxonomies(){
     'add_new_item' => __( 'Добавить новую категорию' ),
     'new_item_name' => __( 'Название новой категории участков' ),
     'menu_name' => __( 'Категории участков' ),
-  );
+);
 
   register_taxonomy('uchastki_pro', array('uchastok_pro'), array(
     'hierarchical' => true,
@@ -299,7 +305,7 @@ function create_uchastok_pro_taxonomies(){
     'show_ui' => true,
     'query_var' => true,
     'rewrite' => array( 'slug' => 'uchastki_pro' ),
-  ));
+));
 
 }
 
@@ -337,7 +343,7 @@ function item()
     'not_found_in_trash' => 'В корзине проектов не найдено',
     'parent_item_colon' => '',
     'menu_name' => 'Галерея проектов'
-  );
+);
 
   $args = array(
     'labels' => $labels,
@@ -352,8 +358,8 @@ function item()
     'hierarchical' => false,
     'menu_position' => 5,
     'supports' => array('title','editor','thumbnail', 'comments', 'custom-fields', 'excerpt'),
-	'taxonomies' => array('gallery') 
-  );
+    'taxonomies' => array('gallery') 
+);
   register_post_type('item',$args);  
 }
 
@@ -373,7 +379,7 @@ function create_item_taxonomies(){
     'add_new_item' => __( 'Добавить новую категорию' ),
     'new_item_name' => __( 'Название новой категории проектов' ),
     'menu_name' => __( 'Категории проектов' ),
-  );
+);
 
   register_taxonomy('gallery', array('item'), array(
     'hierarchical' => true,
@@ -381,7 +387,7 @@ function create_item_taxonomies(){
     'show_ui' => true,
     'query_var' => true,
     'rewrite' => array( 'slug' => 'gallery' ),
-  ));
+));
 
 }
 
@@ -410,7 +416,7 @@ function house()
     'not_found_in_trash' => 'В корзине проектов не найдено',
     'parent_item_colon' => '',
     'menu_name' => 'Проекты строительство'
-  );
+);
 
   $args = array(
     'labels' => $labels,
@@ -425,8 +431,8 @@ function house()
     'hierarchical' => false,
     'menu_position' => 5,
     'supports' => array('title','editor','thumbnail', 'comments', 'custom-fields', 'excerpt'),
-	'taxonomies' => array('houses') 
-  );
+    'taxonomies' => array('houses') 
+);
   register_post_type('house',$args);  
 }
 
@@ -470,13 +476,8 @@ function philips_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
+	// Управление заголовком из Wordpress.
+    add_theme_support( 'title-tag' );
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
@@ -548,9 +549,9 @@ function philips_scripts() {
 	wp_enqueue_style( 'philips-fontawesome', get_template_directory_uri() . '/css/font-awesome.css' );
 	wp_enqueue_style( 'philips-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'philips-responsive', get_template_directory_uri() . '/css/responsive.css' );
-  
+
 	wp_enqueue_script( 'philips-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), '20120206', true );
-  
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -585,9 +586,46 @@ require get_template_directory() . '/inc/philips_navwalker.php';
 
 
 if( ! function_exists('philips_load_fonts')):
-function philips_load_fonts(){
-	
+    function philips_load_fonts(){
 
-}
-add_action('wp_enqueue_scripts', 'philips_load_fonts');
+
+    }
+    add_action('wp_enqueue_scripts', 'philips_load_fonts');
 endif;
+
+
+
+/*=========================================
+
+Кастомные изменения от команды Web Style Production 24 (https://wsp24.ru/);
+
+===========================================*/
+
+// Изменяем сепаратор во вкладках сайта
+add_filter( 'document_title_separator', function(){ return ' | '; } );
+
+// Поддержка логтипа в теме
+add_theme_support( 'custom-logo' );
+
+// Включаем админ бар WordPress
+add_filter('show_admin_bar', '__return_true');
+
+function custom_logo() {
+    $gtml = '';
+
+    $bloginfo = '<a href="/" rel="home">';
+    $bloginfo .= '<div class="logo col-md-1"><h1 class="site-title">';
+    $bloginfo .= get_bloginfo( 'name' );
+    $bloginfo .= '</h1></div></a>';
+
+    $html = has_custom_logo()  ? get_custom_logo() : $bloginfo;
+
+    $html = sprintf('<div class="col-md-1 logo">%1$s</div>', $html );
+
+    echo $html;
+
+
+
+
+    //echo '<a href="'. esc_url( home_url( '/' ) ) . '" rel="home"><div class="logo col-md-1"><h1 class="site-title">' . get_bloginfo( 'name' ) . '</h1></div></a>';
+}

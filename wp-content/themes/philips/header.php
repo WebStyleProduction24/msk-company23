@@ -42,9 +42,7 @@
 	<div class="header-area page">
 		<div class="container">
 			
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="logo col-md-1">
-					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-					</div></a>
+				<?php custom_logo(); ?>
         <div class="mainmenu col-md-7">
 		<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
