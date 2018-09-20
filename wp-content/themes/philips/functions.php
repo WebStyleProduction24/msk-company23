@@ -610,7 +610,9 @@ add_theme_support( 'custom-logo' );
 // Включаем админ бар WordPress
 add_filter('show_admin_bar', '__return_true');
 
-function custom_logo() {
+
+//Отображение логотипа или описания сайта на второстепенных страницах сайта
+function wsp24_logo() {
     $gtml = '';
 
     $bloginfo = '<a href="/" rel="home">';
@@ -619,13 +621,26 @@ function custom_logo() {
     $bloginfo .= '</h1></div></a>';
 
     $html = has_custom_logo()  ? get_custom_logo() : $bloginfo;
-
     $html = sprintf('<div class="col-md-1 logo">%1$s</div>', $html );
 
     echo $html;
+}
 
+// Отображения адреса
+function wsp24_adress() {
+    echo "<a href='https://yandex.ru/maps/-/CBU-rLSjpD' target='_blank'>г.&nbsp;Сочи, ул.&nbsp;Пластунская, д.&nbsp;50/2, оф.&nbsp;64-66</a>";
+}
 
+// Отображение телефона
+function wsp24_phone_1() {
+    echo "<a href='+79284571297'>+7&nbsp;(928)&nbsp;457-12-97</a>";
+}
+function wsp24_phone_2() {
+    echo "<a href='+79889660527'>+7&nbsp;(988)&nbsp;966-05-27</a>";   
+}
 
+// Отображение E-mail
 
-    //echo '<a href="'. esc_url( home_url( '/' ) ) . '" rel="home"><div class="logo col-md-1"><h1 class="site-title">' . get_bloginfo( 'name' ) . '</h1></div></a>';
+function wsp24_email() {
+    echo "<a href='mailto:raschistkasochi@mail.ru'>raschistkasochi@mail.ru</a>";   
 }
