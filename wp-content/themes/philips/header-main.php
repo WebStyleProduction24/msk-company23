@@ -10,8 +10,8 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="icon" href="/wp-content/uploads/2017/01/logo-1-2-e1484215432492.png" type="image/x-icon" />
 <link rel="shortcut icon" href="/wp-content/uploads/2017/01/logo-1-2-e1484215432492.png" type="image/x-icon" />
-<script src="/wp-content/themes/philips/jquery.min.js"></script>
-<script src="/wp-content/themes/philips/owl.carousel.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/owl.carousel.js"></script>
 <style>
 .content-area article {
     position: fixed;
@@ -34,8 +34,8 @@
 $(function(){
     $('.panel').tabSlideOut({                       //Класс панели
         tabHandle: '.handle',                       //Класс кнопки
-        pathToTabImage: '/wp-content/uploads/2016/12/ug.png',            //Путь к изображению кнопки
-        imageHeight: '171px',                       //Высота кнопки
+        pathToTabImage: '<?php echo get_template_directory_uri(); ?>/images/curl.png',            //Путь к изображению кнопки
+        imageHeight: '200px',                       //Высота кнопки
         imageWidth: '291px',                         //Ширина кнопки
         tabLocation: 'right',                       //Расположение панели top - выдвигается сверху, right - выдвигается справа, bottom - выдвигается снизу, left - выдвигается слева
         speed: 300,                                 //Скорость анимации
@@ -70,6 +70,8 @@ $(function(){
             'height': settings.imageHeight,
             'textIndent' : '-99999px',
             'background' : 'url('+settings.pathToTabImage+') no-repeat',
+            'background-position-x' : 'right',
+            'background-size' : 'contain',
             'outline' : 'none',
             'position' : 'absolute'
         });
