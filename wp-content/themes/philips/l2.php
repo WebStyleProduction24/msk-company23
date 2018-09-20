@@ -35,7 +35,7 @@ Template Name: Отделка
 	<div class="header-area page">
 		<div class="container">
 			
-				<?php custom_logo(); ?>
+				<?php wsp24_logo(); ?>
         <div class="mainmenu col-md-7">
 		<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
