@@ -1,0 +1,19 @@
+.content-area article {
+    position: fixed;
+    width: 83%;
+    top: 0;
+    height: 100%;
+}  
+
+div#owl-carousel1 {
+    position: fixed;
+    height: 50%;
+    top: 50%; 
+    width: calc(83.33333333% - 50px);
+}
+div#owl-carousel {
+    position: fixed;
+    height: 50%;   
+    width: calc(83.33333333% - 50px);
+
+}
