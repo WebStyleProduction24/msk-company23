@@ -124,7 +124,7 @@ $(function(){
             } else if (settings.tabLocation == 'bottom') {
                 obj.animate({bottom:'-3px'},  settings.speed).addClass('open');
             }
-            settings.tabHandle.animate({opacity: 0}, settings.speed); // При открытии панели изображение исчезает 
+            settings.tabHandle.animate({opacity: 0}, settings.speed);  // При открытии панели изображение исчезает 
         };
 
         var clickScreenToClose = function() {
@@ -132,12 +132,13 @@ $(function(){
                 event.stopPropagation();
             });
 
+            $('#close').click(function(event){
+                slideIn();
+            })
+
             $(document).click(function(){
                 slideIn();
             });
-            $('.panel h3::before').click(function(){
-                slideIn();
-            })
         };
 
         var clickAction = function(){
@@ -180,9 +181,9 @@ $(function(){
             hoverAction();
         }
         $(document).ready(function() {
-    $('.block').on('click', '.extremum-click', function() {
-        $(this).toggleClass('red').siblings('.extremum-slide').slideToggle(0);
-    });
-});
+            $('.block').on('click', '.extremum-click', function() {
+                $(this).toggleClass('red').siblings('.extremum-slide').slideToggle(0);
+            });
+        });
     };
 })(jQuery);  
