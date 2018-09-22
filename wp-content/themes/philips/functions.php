@@ -642,5 +642,5 @@ function wsp24_phone_2() {
 // Отображение E-mail
 
 function wsp24_email() {
-    echo "<a href='mailto:raschistkasochi@mail.ru'>raschistkasochi@mail.ru</a>";   
+    echo "<a href='mailto:info@msk-company23.ru'>info@msk-company23.ru</a>";   
 }

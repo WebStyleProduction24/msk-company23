@@ -26,8 +26,10 @@ get_header('main');
 
                     <div class="panel">
                         <a class="handle" href="#">Смотреть</a>
-                        <h3>О компании</h3>
-                        <?php the_content(); ?>
+                        <div class="content">
+                            <h3 id="close">О компании</h3>
+                            <?php the_content(); ?>
+                        </div>
                     </div>  
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -139,6 +141,9 @@ get_header('main');
         <p><span>Адрес: </span><?php wsp24_adress(); ?></p>
         <p><span>Тел: </span><?php wsp24_phone_1(); ?><br><span></span><?php wsp24_phone_2(); ?></p>
         <p><span>Почта: </span><?php wsp24_email(); ?></p></div>
+        <div id="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A19bee56aa55bb6e557a83ca6ab1e79a8e064a98928a3fc40236d312bd46bb9db&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+        </div>
         <a class="fancybox zvo" href="#contact_form_pop">Заказать звонок</a>
         <div class="foot">
             <div class="soc">
