@@ -2658,31 +2658,6 @@ table th[class*="span"],
 .collapse.in {
   height: auto;
 }
-.close {
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 22px;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-}
-.close:hover,
-.close:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-}
-button.close {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-}
 .btn {
   display: inline-block;
   *display: inline;
@@ -3221,12 +3196,6 @@ input[type="submit"].btn.btn-mini {
 }
 .alert h4 {
   margin: 0;
-}
-.alert .close {
-  position: relative;
-  top: -2px;
-  right: -21px;
-  line-height: 22px;
 }
 .alert-success {
   background-color: #dff0d8;
@@ -4310,9 +4279,6 @@ input[type="submit"].btn.btn-mini {
 .modal-header {
   padding: 9px 15px;
   border-bottom: 1px solid #eee;
-}
-.modal-header .close {
-  margin-top: 2px;
 }
 .modal-header h3 {
   margin: 0;
@@ -5666,10 +5632,6 @@ a.badge:focus {
     top: 10px;
     left: 10px;
     right: 10px;
-  }
-  .modal-header .close {
-    padding: 10px;
-    margin: -10px;
   }
   .carousel-caption {
     position: static;
