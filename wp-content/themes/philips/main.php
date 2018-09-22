@@ -26,22 +26,22 @@ get_header('main');
 
                     <div class="panel">
                         <a class="handle" href="#">Смотреть</a>
-                        <h3><span >О компании</span></h3><br>
+                        <h3>О компании</h3>
                         <?php the_content(); ?>
                     </div>  
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="mask"></div>
                         <header class="entry-header col-md-6 main"><img class="fgf" src="<?php echo get_template_directory_uri(); ?>/images/msk.png"/>
-                         <h1 class="entry-title">Многофункциональная строительная компания</h1>
-                         <h3 class="w19">Реализовывайте свои мечты с нами</h3>
-                     </header><!-- .entry-header -->
-                     <div class="entry-content">
+                           <h1 class="entry-title">Многофункциональная строительная компания</h1>
+                           <h3 class="w19">Реализовывайте свои мечты с нами</h3>
+                       </header><!-- .entry-header -->
+                       <div class="entry-content">
 
 
 
 
-                         <div class="owl-carousel owl-theme" id="owl-carousel">
+                           <div class="owl-carousel owl-theme" id="owl-carousel">
                             <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/karkas_1.jpg" alt="Owl Image"></div>
                             <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/karkas_2.jpg" alt="Owl Image"></div>
                             <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/karkas_3.jpg" alt="Owl Image"></div>
@@ -76,28 +76,28 @@ get_header('main');
     <div class="mainmenu">
 
 
-     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-       <span class="sr-only"><?php echo __('Toggle navigation', 'philips');?></span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-   </button>
-</div>	
+       <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+             <span class="sr-only"><?php echo __('Toggle navigation', 'philips');?></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </button>
+     </div>	
 
-<?php
-wp_nav_menu( array(
-   'menu'              => 'Menu1',
-   'theme_location'    => 'primary',
-   'depth'             => 2,
-   'container'         => 'div',
-   'container_class'   => 'collapse navbar-collapse',
-   'container_id'      => 'bs-example-navbar-collapse-1',
-   'menu_class'        => 'nav navbar-nav navbar-right',
-   'fallback_cb'       => 'philips_custom_navwalker::fallback',
-)
-);
-?>			
+     <?php
+     wp_nav_menu( array(
+         'menu'              => 'Menu1',
+         'theme_location'    => 'primary',
+         'depth'             => 2,
+         'container'         => 'div',
+         'container_class'   => 'collapse navbar-collapse',
+         'container_id'      => 'bs-example-navbar-collapse-1',
+         'menu_class'        => 'nav navbar-nav navbar-right',
+         'fallback_cb'       => 'philips_custom_navwalker::fallback',
+     )
+ );
+ ?>			
 </div>    
 
 
@@ -154,40 +154,6 @@ wp_nav_menu( array(
     </div>
 
     <!-- End header-area -->
-
-
-
-
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter41759689 = new Ya.Metrika({
-                        id:41759689,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true,
-                        trackHash:true
-                    });
-                } catch(e) { }
-            });
-
-            var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <!-- /Yandex.Metrika counter -->
 
     <?php wp_footer(); ?>
 
