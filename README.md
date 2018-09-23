@@ -3,7 +3,7 @@
 <h4>v.0.1.4 Final Home (23/09/2018 20:58)</h4>
 <ol>
   <li>Обновлен плагин Easy FancyBox;</li>
-  <li>Добавлен плагин DL Yanswx Metrika;</li>
+  <li>Добавлен плагин DL Yandex Metrika;</li>
   <li>Обновлены переводы;</li>
   <li>Мобильная и планшетная версии готовы</li>
 </ol>
