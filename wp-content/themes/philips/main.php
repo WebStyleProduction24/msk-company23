@@ -44,17 +44,18 @@ get_header('main');
 
 
                            <div class="owl-carousel owl-theme" id="owl-carousel">
-                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/karkas_1.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/karkas_2.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/karkas_3.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/karkas_4.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-1.png" alt="MSK+"></div>
+                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-2.png" alt="MSK+"></div>
+                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-3.png" alt="MSK+"></div>
+                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-4.png" alt="MSK+"></div>
 
                         </div>
                         <div class="owl-carousel owl-theme" id="owl-carousel1">
-                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/blago_4.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/blago_3.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/blago_2.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/blago_1.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-5.png" alt="MSK+"></div>
+                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-6.png" alt="MSK+"></div>
+                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-7.png" alt="MSK+"></div>
+                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-8.png" alt="MSK+"></div>
+                            <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-9.png" alt="MSK+"></div>
 
                         </div>
                         <script src="<?php echo get_template_directory_uri(); ?>/js/carousel.js"></script>
