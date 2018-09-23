@@ -1,9 +1,11 @@
 $(function(){
+    var cssWidth = $('.handle').css('width');       //Получаем ширину кнопки из свойств css
+    var cssHeight = $('.handle').css('height');     //Получаем высоту кнопки из свойств css
     $('.panel').tabSlideOut({                       //Класс панели
         tabHandle: '.handle',                       //Класс кнопки
         pathToTabImage: '/wp-content/themes/philips/images/curl.png',            //Путь к изображению кнопки
-        imageHeight: '200px',                       //Высота кнопки
-        imageWidth: '291px',                         //Ширина кнопки
+        imageHeight: cssHeight,                       //Высота кнопки
+        imageWidth: cssWidth,                         //Ширина кнопки
         tabLocation: 'right',                       //Расположение панели top - выдвигается сверху, right - выдвигается справа, bottom - выдвигается снизу, left - выдвигается слева
         speed: 300,                                 //Скорость анимации
         action: 'click',                            //Метод показа click - выдвигается по клику на кнопку, hover - выдвигается при наведении курсора
