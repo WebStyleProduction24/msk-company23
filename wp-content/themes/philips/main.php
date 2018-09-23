@@ -25,7 +25,7 @@ get_header('main');
                 <?php while ( have_posts() ) : the_post(); ?>
 
                     <div class="panel">
-                        <a class="handle" href="#">Смотреть</a>
+                        <a class="handle" href="#"></a>
                         <div class="content">
                             <h3 id="close">О компании</h3>
                             <?php the_content(); ?>
@@ -140,27 +140,30 @@ get_header('main');
     <div class="contact">
         <p><span>Адрес: </span><?php wsp24_adress(); ?></p>
         <p><span>Тел: </span><?php wsp24_phone_1(); ?><br><span></span><?php wsp24_phone_2(); ?></p>
-        <p><span>Почта: </span><?php wsp24_email(); ?></p></div>
-        <div id="map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A19bee56aa55bb6e557a83ca6ab1e79a8e064a98928a3fc40236d312bd46bb9db&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
-        </div>
-        <a class="fancybox zvo" href="#contact_form_pop">Заказать звонок</a>
-        <div class="foot">
-            <div class="soc">
-                <a target="_blank" href="https://vk.com/"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                <a target="_blank" href="https://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a target="_blank" href="https://ok.ru/"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-                <a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-            <div class="copyright">
-                <p>COPYRIGHT © <?php echo date("Y"); ?> <?php bloginfo('name'); ?><br><?php bloginfo('description'); ?><br>ВСЕ ПРАВА ЗАЩИЩЕНЫ <a href="/"><?php bloginfo('name'); ?> ™</a></p>
-            </div>
-        </div>
+        <p><span>Почта: </span><?php wsp24_email(); ?></p>
+        <a class="fancybox zvo tablet" href="#contact_form_pop">Заказать звонок</a>
     </div>
+    <div id="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A19bee56aa55bb6e557a83ca6ab1e79a8e064a98928a3fc40236d312bd46bb9db&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+    </div>
+    <a class="fancybox zvo desktop" href="#contact_form_pop">Заказать звонок</a>
+    <div class="foot">
+        <div class="soc">
+            <a target="_blank" href="https://vk.com/"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://ok.ru/"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="copyright">
+            <p>COPYRIGHT © <?php echo date("Y"); ?> <?php bloginfo('name'); ?><br><?php bloginfo('description'); ?><br>ВСЕ ПРАВА ЗАЩИЩЕНЫ <a href="/"><?php bloginfo('name'); ?> ™</a></p>
+        </div>
+        <div class="copyright"><p>Разработка сайта<br><a href="https://wsp24.ru/" target="blank">Студия Web Style Production 24</a></p></div>
+    </div>
+</div>
 
-    <!-- End header-area -->
+<!-- End header-area -->
 
-    <?php wp_footer(); ?>
+<?php wp_footer(); ?>
 
 </body>
 </html>
