@@ -633,10 +633,10 @@ function wsp24_adress() {
 
 // Отображение телефона
 function wsp24_phone_1() {
-    echo "<a href='+79284571297'>+7&nbsp;(928)&nbsp;457-12-97</a>";
+    echo "<a href='tel:+79284571297'>+7&nbsp;(928)&nbsp;457-12-97</a>";
 }
 function wsp24_phone_2() {
-    echo "<a href='+79889660527'>+7&nbsp;(988)&nbsp;966-05-27</a>";   
+    echo "<a href='tel:+79889660527'>+7&nbsp;(988)&nbsp;966-05-27</a>";   
 }
 
 // Отображение E-mail
