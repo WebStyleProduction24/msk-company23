@@ -6231,12 +6231,9 @@ img.fgf {
 }
 .phone.col-md-3 a {
 	font-weight: bold;
-	font-family: 'akrobatregular';
-	padding: 10px 7px;
-	color: #b07d66;
-	FONT-SIZE: 36PX;
-	display: block;
-	float: right;
+	padding: 0px 7px;
+	color: #e42e4c;
+	font-size: 20px;
 	letter-spacing: -0.5px;
 }
 .phone.col-md-3 {
@@ -6285,7 +6282,7 @@ section header.entry-header.col-md-6.main {
 	margin: 0 16.666%;
 	text-align: center;
 	padding: 5px;
-	border: solid 2px #000;
+	border: solid 2px #e42e4c;
 	margin-top: 130px;
 	position: relative;
 	z-index: 999;
@@ -6293,7 +6290,7 @@ section header.entry-header.col-md-6.main {
 .inner-za {
 	position: relative;
 	display: inline-block;
-	background: rgba(140, 176, 194, 0.9);
+	background: rgba(28, 168, 197, 0.9);
 	width: 100%;
 	height: 100%;
 	padding: 5px;
@@ -6307,7 +6304,7 @@ section header.entry-header.col-md-6.main {
 	height: calc(100% - 17px);
 }
 .inner-za div.wpcf7 {
-	background: #222;
+	background: #00719d;
 	display: inline-block;
 	width: calc(100% - 14px);
 	margin: 7px;
@@ -10878,6 +10875,9 @@ body.page-template.page-template-l2 section#first {
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 
 ===========================================*/
+.phone.col-md-3 p {
+	margin-bottom: 0;
+}
 
 .header-area.page .container {
 	display: table;
