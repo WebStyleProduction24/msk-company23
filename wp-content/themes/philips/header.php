@@ -109,7 +109,7 @@
 	<p><?php wsp24_phone_1(); ?></p>
 	<p><?php wsp24_phone_2(); ?></p>
 </div>        
-<div class="call col-md-1"><a href="#contact_form_pop" class="fancybox"><img src="/wp-content/uploads/2016/12/callback.png"/></a></div>          
+<div class="call col-md-1"><a href="#contact_form_pop" class="fancybox"><img class="fgf" src="<?php echo get_template_directory_uri(); ?>/images/callback.png"/></a></div>          
 
 </div>
 </div><!-- End header-area -->
