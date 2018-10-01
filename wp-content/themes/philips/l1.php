@@ -10,7 +10,7 @@ get_header(); ?>
 <section id="first">
 
 	<header class="entry-header col-md-6 main"><img class="fgf" src="<?php echo get_template_directory_uri(); ?>/images/msk.png"/>
-   <h1 class="entry-title">Строительство домов<br>под ключ</h1><h3 class="w19">Разработка и строительство<br>индивидуальных проектов</h3>
+   <h1 class="entry-title">Строительство домов под ключ</h1><h3 class="w19">Разработка и строительство индивидуальных проектов</h3>
  </header>
 
  <div class="ostavit col-md-8"><div class="inner-za"><?php echo do_shortcode('[contact-form-7 id="103" title="Проект бесплатно"]'); ?></div> </div>
@@ -126,7 +126,8 @@ get_header(); ?>
             </div></section>  
             <section id="contacts"><div class="container">  <div class="karta"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=kgYQkrVKh7kRp4VjaVYNY2altO4Zpw0G&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script></div>
               <div class="col-md-12"><div class="col-md-4 contact"><div class="co-inner"><div class="co-in">
-                <p class="brown">г. Сочи. Ул. Навагинская д 9</p>  
-                <p class="lkl">ТЕЛ: +7 (862) 123-45-67</p>
-                <p class="lkl">EMAIL: mail@evantika.ru</p><a href="#contact_form_pop" class="fancybox brown two">Оставить заявку</a></div></div></div></div></div></section>   
+                <p class="brown"><?php wsp24_adress(); ?></p>  
+                <p class="lkl">ТЕЛ: <?php wsp24_phone_1(); ?></p>
+                <p class="lkl">ТЕЛ: <?php wsp24_phone_2(); ?></p>
+                <p class="lkl">EMAIL: <?php wsp24_email(); ?></p><a href="#contact_form_pop" class="fancybox brown two">Оставить заявку</a></div></div></div></div></div></section>   
                 <?php get_footer(); ?>
