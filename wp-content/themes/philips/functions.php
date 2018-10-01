@@ -628,7 +628,7 @@ function wsp24_logo() {
 
 // Отображения адреса
 function wsp24_adress() {
-    echo "<a href='https://yandex.ru/maps/-/CBU-rLSjpD' target='_blank'>г.&nbsp;Сочи, ул.&nbsp;Пластунская, д.&nbsp;50/2, оф.&nbsp;64-66</a>";
+    echo "<a href='https://yandex.ru/maps/-/CBU-rLSjpD' target='_blank'>г.&nbsp;Сочи, ул.&nbsp;Пластунская, д.&nbsp;50/2, оф.&nbsp;56-57</a>";
 }
 
 // Отображение телефона
