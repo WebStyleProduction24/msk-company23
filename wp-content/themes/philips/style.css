@@ -5359,7 +5359,7 @@ h3.w19:before {
 	width: calc(16.66666667% + 50px);
 	position: relative;
 	height: 100vh;
-	min-height: 665px;
+	min-height: 655px;
 }
 a.fancybox.zvo {
 	background: #1773a0;
@@ -7961,7 +7961,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin-bottom: -40px;
 	}
 	.contact p {
-		font-size: 14px;
 		color: #4e4c4c;
 		margin-bottom: 10px;
 	}
@@ -9849,6 +9848,9 @@ a.home:hover h4.site-description {
 .logo {
 	padding-top: 8px;
 }
+.contact {
+	font-size: .95rem;
+}
 .contact span {
 	width: 50px;
 }
@@ -9943,9 +9945,25 @@ a.fancybox.zvo.tablet {
 .wsp24 {
 	display: none;
 }
+
+@media (min-width: 850px) and (max-width: 1050px) {
+	.soc a {
+		width: 30px;
+		height: 30px;
+    margin: 0px calc(12.5% - 18px);
+    line-height: 33px;
+    font-size: 14px;
+	}
+}
 @media screen and (max-width: 1050px) {
+	.custom-logo {
+		width: 55%;
+	}
+	.contact {
+		font-size: .82rem;
+	}
 	.header-area.col-md-2 {
-		min-height: 570px;
+		min-height: 605px;
 	}
 	.handle {
 		height: 150px;

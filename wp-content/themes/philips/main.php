@@ -5,6 +5,8 @@ Template Name: Главная страница
 Переработка шаблона произведена командой Web Style Production 24 (https://wsp24.ru/)
 */
 
+global $social;
+
 get_header('main');
 
 ?>
@@ -35,15 +37,15 @@ get_header('main');
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="mask"></div>
                         <header class="entry-header col-md-6 main"><img class="fgf" src="<?php echo get_template_directory_uri(); ?>/images/msk.png"/>
-                           <h1 class="entry-title">Многофункциональная строительная компания</h1>
-                           <h3 class="w19">Реализовывайте свои мечты с нами</h3>
-                       </header><!-- .entry-header -->
-                       <div class="entry-content">
+                         <h1 class="entry-title">Многофункциональная строительная компания</h1>
+                         <h3 class="w19">Реализовывайте свои мечты с нами</h3>
+                     </header><!-- .entry-header -->
+                     <div class="entry-content">
 
 
 
 
-                           <div class="owl-carousel owl-theme" id="owl-carousel">
+                         <div class="owl-carousel owl-theme" id="owl-carousel">
                             <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-1.png" alt="MSK+"></div>
                             <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-2.png" alt="MSK+"></div>
                             <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/images/home/home-image-3.png" alt="MSK+"></div>
@@ -79,28 +81,28 @@ get_header('main');
     <div class="mainmenu">
 
 
-       <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-             <span class="sr-only"><?php echo __('Toggle navigation', 'philips');?></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-         </button>
-     </div>	
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+       <span class="sr-only"><?php echo __('Toggle navigation', 'philips');?></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+   </button>
+</div>	
 
-     <?php
-     wp_nav_menu( array(
-         'menu'              => 'Menu1',
-         'theme_location'    => 'primary',
-         'depth'             => 2,
-         'container'         => 'div',
-         'container_class'   => 'collapse navbar-collapse',
-         'container_id'      => 'bs-example-navbar-collapse-1',
-         'menu_class'        => 'nav navbar-nav navbar-right',
-         'fallback_cb'       => 'philips_custom_navwalker::fallback',
-     )
- );
- ?>			
+<?php
+wp_nav_menu( array(
+   'menu'              => 'Menu1',
+   'theme_location'    => 'primary',
+   'depth'             => 2,
+   'container'         => 'div',
+   'container_class'   => 'collapse navbar-collapse',
+   'container_id'      => 'bs-example-navbar-collapse-1',
+   'menu_class'        => 'nav navbar-nav navbar-right',
+   'fallback_cb'       => 'philips_custom_navwalker::fallback',
+)
+);
+?>			
 </div>    
 
 
@@ -150,10 +152,10 @@ get_header('main');
     <a class="fancybox zvo desktop" href="#contact_form_pop">Заказать звонок</a>
     <div class="foot">
         <div class="soc">
-            <a target="_blank" href="https://vk.com/"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            <a target="_blank" href="https://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a target="_blank" href="https://ok.ru/"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-            <a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://vk.com/<?php echo $social['vk'];?>"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://facebook.com/<?php echo $social['facebook'];?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://ok.ru/group/<?php echo $social['ok'];?>"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://instagram.com/<?php echo $social['instagram'];?>"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
         <div class="copyright">
             <p>COPYRIGHT © <?php echo date("Y"); ?> <?php bloginfo('name'); ?><br><?php bloginfo('description'); ?><br>ВСЕ ПРАВА ЗАЩИЩЕНЫ <a href="/"><?php bloginfo('name'); ?> ™</a></p>

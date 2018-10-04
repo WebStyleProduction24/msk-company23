@@ -1,0 +1,4 @@
+User-agent: *
+Dissalow: /otdelka-i-remont-kottedzhej-pod-klyuch
+Dissalow: /prodazha-uchastkov-i-nedvizhimosti-v-soch
+Dissalow: /stroitelstvo-domov-pod-klyuch

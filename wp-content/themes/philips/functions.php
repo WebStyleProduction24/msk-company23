@@ -644,3 +644,11 @@ function wsp24_phone_2() {
 function wsp24_email() {
     echo "<a href='mailto:info@msk-company23.ru'>info@msk-company23.ru</a>";   
 }
+
+//Социальные сети
+$social = array(
+    'vk'        => 'msk_company23',
+    'facebook'  => 'МСК-Многофункциональная-строительная-компани-1103667993137406',
+    'ok'        => '59280022962238',
+    'instagram' => 'ilya_reklama_official'
+);
