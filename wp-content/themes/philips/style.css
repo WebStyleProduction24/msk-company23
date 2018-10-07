@@ -5213,6 +5213,7 @@ h1.site-title a {
 	top: 2px;
 }
 a.fancybox.zvo:hover {
+	color: #fff !important;
 	opacity: 0.8;
 	box-shadow: 0 8px 8px -2px rgba(0, 0, 0, 0.9);
 }
@@ -5287,7 +5288,8 @@ div.page-content input.search-submit {
 	font-size: 14px;
 	margin-right: 15px;
 }
-header.entry-header.col-md-6.main {
+header.entry-header.main {
+	padding-top: 5px;
 	float: none;
 	margin: 0 auto;
 	text-align: center;
@@ -5300,6 +5302,9 @@ header.entry-header.col-md-6.main {
 	border-radius: 30px 5px;
 	z-index: 100;
 }
+section h3.w19 {
+	font-size: 1.1em;
+}
 h3.w19 {
 	color: #fff;
 	font-size: 1.5em;
@@ -5310,7 +5315,10 @@ h3.w19 {
 	text-transform: uppercase;
 	position: relative;
 }
-header.entry-header.col-md-6.main h1 {
+section header.entry-header.main h1 {
+	font-size: 31px;
+}
+header.entry-header.main h1 {
 	color: #fff;
 	font-size: 38px;
 	font-family: 'akrobatregular';
@@ -5320,7 +5328,13 @@ header.entry-header.col-md-6.main h1 {
 	padding: 30px 0;
 	line-height: 40px;
 }
-header.entry-header.col-md-6.main h1:before {
+section header.entry-header.main h1:before {
+	margin-top: -10px;
+}
+section h3.w19:before {
+	margin-top: -20px;
+}
+header.entry-header.main h1:before, h3.w19:before {
 	width: 50%;
 	height: 1px;
 	background: #fff;
@@ -5331,19 +5345,7 @@ header.entry-header.col-md-6.main h1:before {
 	position: relative;
 	left: 0;
 }
-h3.w19:before {
-	width: 50%;
-	height: 1px;
-	background: #fff;
-	content: "";
-	position: absolute !important;
-	margin-left: 25%;
-	margin-top: -15px;
-	position: relative;
-	left: 0;
-}
-.soc a:hover,
-.soc a:focus {
+.soc a:hover, .soc a:focus {
 	opacity: 0.7;
 	color: #fff;
 	box-shadow: 0 0 10px 3px #000;
@@ -5359,7 +5361,7 @@ h3.w19:before {
 	width: calc(16.66666667% + 50px);
 	position: relative;
 	height: 100vh;
-	min-height: 665px;
+	min-height: 655px;
 }
 a.fancybox.zvo {
 	background: #1773a0;
@@ -5437,7 +5439,9 @@ body.page-template.page-template-main ul.nav.navbar-nav li {
 }
 body.page-template.page-template-main ul.nav.navbar-nav li a:hover {
 	background: #1773a0!important;
-	color: #fff;
+}
+body.page-template.page-template-main ul.nav.navbar-nav > li > a:hover {
+	color: #fff!important;
 }
 body.page-template.page-template-main .nav.navbar-nav.navbar-right {
 	margin-top: 3px;
@@ -5601,13 +5605,12 @@ section#first {
 	min-height: 100vh;
 	position: relative;
 }
-section header.entry-header.col-md-6.main {
-	right: 8%;
-	padding-top: 20px;
-	top: 15%;
+section header.entry-header.main {
+	right: 10%;
+	top: 20%;
 	position: absolute;
 }
-.ostavit.col-md-7 {
+.ostavit {
 	margin: 0 5%;
 	text-align: center;
 	margin-top: 35px;
@@ -5847,11 +5850,9 @@ table.haract td {
 section#projects {
 	width: 100%;
 	display: inline-block;
-	background: url(/wp-content/uploads/2016/12/fon2.png)  center 0 no-repeat;
-	padding: 320px 0;
-	margin-top: -175px;
-	/*background-position: center top;*/
-	padding-bottom: 130px;
+	background: url(/wp-content/uploads/2016/12/fon2.png)  center -75px no-repeat;
+	padding-bottom: 60px;
+	margin-top: -110px;
 	z-index: 7 !important;
 	position: relative;
 	min-height: 100vh;
@@ -5888,9 +5889,7 @@ section#types {
 	display: inline-block;
 	background: url(/wp-content/uploads/2016/12/fon3.jpg);
 	background-repeat: no-repeat;
-	padding-top: 60px;
-	background-position: center top;
-	margin-top: -150px;
+	background-position: center -25px;
 	padding-bottom: 100px;
 }
 #types .col-md-4:after {
@@ -6240,22 +6239,22 @@ h3.zsa {
 div#contact_form_pop {
 	overflow: hidden;
 }
-body.page-template.page-template-l2 section header.entry-header.col-md-6.main {
+body.page-template.page-template-l2 section header.entry-header.main {
 	top: -450px;
 	margin-bottom: -450px;
 	right: -20%;
 }
-body.page-template.page-template-l2 section header.entry-header.col-md-6.main h1.entry-title {
+body.page-template.page-template-l2 section header.entry-header.main h1.entry-title {
 	font-size: 42px;
 }
 .posab a {
 	color: #debb8d;
 	font-size: 30px;
 }
-body.page-template.page-template-l2 section header.entry-header.col-md-6.main h3.w19 {
+body.page-template.page-template-l2 section header.entry-header.main h3.w19 {
 	font-size: 15px;
 }
-body.page-template.page-template-l2 section header.entry-header.col-md-6.main h3.w19:before {
+body.page-template.page-template-l2 section header.entry-header.main h3.w19:before {
 	height: 1px;
 	background: #fff;
 	content: "";
@@ -7083,7 +7082,7 @@ a {
 }
 a:hover,
 a:focus {
-	color: #1773a0;
+	color: #0aacc8 !important;
 }
 .intro {
 	margin: 1.75em 0 .75em;
@@ -7300,7 +7299,7 @@ section#testimonials h3.l2-zag {
 	padding-left: 20px;
 	margin-top: -200px;
 }
-.page-template.page-template-l3 section header.entry-header.col-md-6.main h1 {
+.page-template.page-template-l3 section header.entry-header.main h1 {
 	font-weight: bold;
 	font-size: 32px;
 	line-height: 40px;
@@ -7961,7 +7960,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin-bottom: -40px;
 	}
 	.contact p {
-		font-size: 14px;
 		color: #4e4c4c;
 		margin-bottom: 10px;
 	}
@@ -8169,7 +8167,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	section#principles {
 		background-size: cover;
 	}
-	body.page-template.page-template-l2 section header.entry-header.col-md-6.main h1.entry-title {
+	body.page-template.page-template-l2 section header.entry-header.main h1.entry-title {
 		font-size: 32px;
 		line-height: 40px;
 	}
@@ -8211,7 +8209,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		max-width: 1000px;
 		width: auto;
 	}
-	.home header.entry-header.col-md-6.main h1 {
+	.home header.entry-header.main h1 {
 		font-size: 31px;
 	}
 	.podro a {
@@ -8292,7 +8290,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin: 0 1.5%;
 		width: 30%;
 	}
-	header.entry-header.col-md-6.main {
+	header.entry-header.main {
 		max-width: 600px;
 	}
 	.home .logo {
@@ -8329,7 +8327,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		font-size: 25px;
 		line-height: 66px;
 	}
-	section header.entry-header.col-md-6.main h1:before {
+	section header.entry-header.main h1:before {
 		display: none
 	}
 	section h3.w19:before {
@@ -8377,7 +8375,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		max-width: 100% !important;
 		margin-left: 17%;
 	}
-	body.page-template.page-template-l2 section header.entry-header.col-md-6.main {
+	body.page-template.page-template-l2 section header.entry-header.main {
 		position: absolute;
 		top: 150px;
 		right: 50px;
@@ -8522,7 +8520,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	.large-12.columns {
 		padding: 0;
 	}
-	header.entry-header.col-md-6.main {
+	header.entry-header.main {
 		max-width: 100%;
 		padding: 70px 0;
 	}
@@ -8652,7 +8650,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	p.sub {
 		position: relative;
 	}
-	section header.entry-header.col-md-6.main {
+	section header.entry-header.main {
 		margin: 0 auto;
 		max-width: 500px;
 		position: relative;
@@ -8786,7 +8784,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		position: relative;
 		z-index: 999;
 	}
-	body.page-template.page-template-l2 section header.entry-header.col-md-6.main {
+	body.page-template.page-template-l2 section header.entry-header.main {
 		position: relative;
 		right: auto;
 		width: 100%;
@@ -8794,18 +8792,18 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin-bottom: -70px;
 		top: -130px;
 	}
-	body.page-template.page-template-l2 section header.entry-header.col-md-6.main h1.entry-title {
+	body.page-template.page-template-l2 section header.entry-header.main h1.entry-title {
 		font-size: 22px;
 		line-height: 23px;
 		padding: 15px 0;
 	}
-	body.page-template.page-template-l2 section header.entry-header.col-md-6.main h1.entry-title br {
+	body.page-template.page-template-l2 section header.entry-header.main h1.entry-title br {
 		display: none
 	}
 	img.fgf {
 		max-width: 50px;
 	}
-	body.page-template.page-template-l2 section header.entry-header.col-md-6.main h3.w19 {
+	body.page-template.page-template-l2 section header.entry-header.main h3.w19 {
 		padding-bottom: 0;
 	}
 	.posab a {
@@ -8979,7 +8977,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		top: 5px;
 		left: 5px;
 	}
-	header.entry-header.col-md-6.main {
+	header.entry-header.main {
 		padding: 30px 0;
 	}
 	body.page-template.page-template-l1 .logo.col-md-1 {
@@ -9369,10 +9367,10 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		max-width: 280px;
 		background-repeat: no-repeat !important;
 	}
-	header.entry-header.col-md-6.main h1 {
+	header.entry-header.main h1 {
 		font-size: 30px;
 	}
-	header.entry-header.col-md-6.main h1:before {
+	header.entry-header.main h1:before {
 		width: 99%;
 		height: 1px;
 		background: #fff;
@@ -9465,7 +9463,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	body.page-template.page-template-main ul.nav.navbar-nav li a {
 		padding: 5px 0;
 	}
-	body.page-template.page-template-l2 section header.entry-header.col-md-6.main h3.w19 {
+	body.page-template.page-template-l2 section header.entry-header.main h3.w19 {
 		padding-bottom: 5px;
 		font-size: 14px;
 	}
@@ -9769,17 +9767,24 @@ body.page-template.page-template-l2 section#first {
 	padding-bottom: 250px;
 }
 
-
-
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 ===========================================*/
+section h3.w19 {
+	padding: 0;
+	margin-bottom: 10px;
+}
+#projects h4.fgfgf {
+	margin-top: 60px;
+	background: none;
+	padding-bottom: 30px;
+}
+.cont li {
+	font-size: 15px;
+}
 #first .wpcf7 label {
 	position: relative;
 	z-index: 10;
-}
-.politika a:hover {
-	color: #ee3b56;
 }
 .politika a {
 	color: #53c2d6;
@@ -9809,7 +9814,7 @@ body.page-template.page-template-l2 section#first {
 .inner-za:hover {
 	box-shadow: 0 0 10px 8px rgba(0, 0, 0, .75);
 }
-.ostavit.col-md-7:hover {
+.ostavit:hover {
 	z-index: 10;
 	opacity: 1;
 }
@@ -9848,6 +9853,9 @@ a.home:hover h4.site-description {
 }
 .logo {
 	padding-top: 8px;
+}
+.contact {
+	font-size: .95rem;
 }
 .contact span {
 	width: 50px;
@@ -9943,9 +9951,25 @@ a.fancybox.zvo.tablet {
 .wsp24 {
 	display: none;
 }
+
+@media (min-width: 850px) and (max-width: 1050px) {
+	.soc a {
+		width: 30px;
+		height: 30px;
+		margin: 0px calc(12.5% - 18px);
+		line-height: 33px;
+		font-size: 14px;
+	}
+}
 @media screen and (max-width: 1050px) {
+	.custom-logo {
+		width: 55%;
+	}
+	.contact {
+		font-size: .82rem;
+	}
 	.header-area.col-md-2 {
-		min-height: 570px;
+		min-height: 605px;
 	}
 	.handle {
 		height: 150px;
@@ -10029,7 +10053,7 @@ a.fancybox.zvo.tablet {
 		height: 100px;
 		width: 100px;
 	}
-	header.entry-header.col-md-6.main {
+	header.entry-header.main {
 		border-radius: 0;
 		padding: 10px 0;
 	}
@@ -10063,7 +10087,7 @@ a.fancybox.zvo.tablet {
 	.panel {
 		width: 305px;
 	}
-	header.entry-header.col-md-6.main {
+	header.entry-header.main {
 		padding: 0;
 	}		
 	body.page-template.page-template-main ul.nav.navbar-nav>li {

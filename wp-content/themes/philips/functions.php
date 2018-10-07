@@ -620,7 +620,7 @@ function wsp24_logo() {
     $bloginfo .= get_bloginfo( 'name' );
     $bloginfo .= '</h1></div></a>';
 
-    $html = has_custom_logo()  ? get_custom_logo() : $bloginfo;
+    $html = has_custom_logo() ? get_custom_logo() : $bloginfo;
     $html = sprintf('<div class="col-md-1 logo">%1$s</div>', $html );
 
     echo $html;
@@ -643,4 +643,38 @@ function wsp24_phone_2() {
 
 function wsp24_email() {
     echo "<a href='mailto:info@msk-company23.ru'>info@msk-company23.ru</a>";   
+}
+
+//Социальные сети
+$social = array(
+    'vk'        => 'msk_company23',
+    'facebook'  => 'МСК-Многофункциональная-строительная-компани-1103667993137406',
+    'ok'        => '59280022962238',
+    'instagram' => 'ilya_reklama_official'
+);
+
+add_action('login_head', 'my_custom_login_logo');
+function my_custom_login_logo(){
+    echo '<style type="text/css">
+    h1 a {
+        background-image:url('.get_bloginfo('template_directory').'/images/logo.png) !important;
+        background-size: contain !important;
+        height: 100px !important;
+    }
+    </style>';
+}
+
+
+add_action('admin_bar_init', function(){
+    add_action('wp_head', 'top_custom'); // html margin bumps
+});
+
+function top_custom() {
+    echo '
+    <style type="text/css" media="screen">
+    .call.col-md-1 img, .header-area.page, .panel {top: 32px !important; }
+    @media screen and ( max-width: 782px ) {
+        .call.col-md-1 img, .header-area.page, .panel {top: 32px !important; }
+    }
+    </style>';
 }
