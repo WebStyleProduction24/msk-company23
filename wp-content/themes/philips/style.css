@@ -5680,21 +5680,6 @@ span.wpcf7-not-valid-tip {
 	padding: 0;
 	max-width: 290px;
 }
-.hesperiden .tp-thumb .tp-thumb-title {
-	display: block !important;
-	opacity: 1 !important;
-	position: relative !important;
-	top: 0 !important;
-	margin: 0 !important;
-	height: 30px !important;
-	background: none !important;
-	color: #000 !important;
-	overflow: visible !important;
-	font-size: 12px !important;
-	margin-top: 110px !important;
-	font-weight: bold;
-	transform: none !important;
-}
 table.haract {
 	font-size: 15px;
 	line-height: 25px;
@@ -5711,19 +5696,8 @@ table.haract tr:nth-child(1n) {
 table.haract tr:nth-child(2n) {
 	background: #e1e1e1;
 }
-.tp-thumb-mask {
-	max-height: 160px !important;
-	height: 160px !important;
-	margin-top: 150px;
-	left: -5px;
-	max-width: calc(100% + 10px) !important;
-}
-.hesperiden .tp-thumb {
-	text-align: center !important;
-	border: solid 5px #e1e1e1;
-}
 ul.tp-revslider-mainul {
-	border: solid 5px #e1e1e1;
+	border: solid 1px #ee3b56;
 }
 h2.titl {
 	font-size: 40px;
@@ -5746,33 +5720,29 @@ p.opis {
 .cont p {
 	font-size: 15px;
 	line-height: 19px;
+	margin-bottom: .25em;
 }
-.rev_slider_wrapper:before {
+.rev_slider:before, .rev_slider:after {
 	content: "";
 	position: absolute;
-	background: url(/wp-content/uploads/2016/12/h1.png);
 	width: 53px;
 	height: 100%;
 	z-index: 999;
+	background-repeat: no-repeat;
+}
+.rev_slider:before {
+	background: url(/wp-content/themes/philips/images/h1.png);
 	left: -53px;
+}
+.rev_slider:after {
+	background: url(/wp-content/themes/philips/images/h2.png);
+	right: -53px;
 }
 .house.type-house {
 	width: 100%;
 	display: inline-block;
 	position: relative;
 	margin-bottom: 12px;
-}
-.house.type-house:before {
-	content: "";
-	border: solid 2px #000;
-	position: absolute;
-	left: 40px;
-	top: 83px;
-	width: calc(100% - 40px);
-	height: calc(100% - 83px);
-}
-.tp-thumb.selected {
-	border-color: #97b8ce !important;
 }
 table.haract td:first-child {
 	list-style-type: disc;
@@ -5795,7 +5765,7 @@ table.haract td {
 	position: relative;
 }
 .owl-nav:before {
-	content: "следующий дом";
+	content: "Другие проекты";
 	background: #282828 !important;
 	color: #fff;
 	font-size: 18px;
@@ -5827,25 +5797,14 @@ table.haract td {
 	position: absolute;
 	margin-left: -243px;
 }
-.kno a {
-	position: relative;
-	color: #fff;
-	padding: 0 20px;
-	margin-left: 10px;
-	background: #282828;
-	line-height: 39px;
-	display: block;
-	float: left;
-}
 .kno {
 	float: right;
 	text-transform: uppercase;
 	font-size: 19px;
-	margin-top: -20px;
+	margin-right: 5%;
 }
 .kno a.fancybox.brown {
-	background: #b07d66;
-	position: relative;
+	padding: 10px;
 }
 section#projects {
 	width: 100%;
@@ -9770,6 +9729,31 @@ body.page-template.page-template-l2 section#first {
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 ===========================================*/
+.hesperiden .tp-thumb .tp-thumb-title {
+	background-color: rgba(23,115,160,.75);
+}
+.tparrows {	
+	background: rgba(23,115,160,0.75);
+}
+.hesperiden .tp-thumb .tp-thumb-title,.tparrows {
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	transition: all 0.6s ease
+}
+.tparrows:hover {	
+	background: rgba(23,115,160,1);
+}
+.item .col-md-7 {
+	padding-left: 0;
+}
+.item .col-md-7 h2, .item .col-md-7 h3 {
+	margin-left: 15px;
+}
+.border-content {
+	border: solid 2px #0aacc8;
+	padding: 15px;
+	border-radius: 30px 5px;
+}
 section h3.w19 {
 	padding: 0;
 	margin-bottom: 10px;

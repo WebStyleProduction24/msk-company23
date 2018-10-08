@@ -6,6 +6,7 @@ Template Name: Отделка
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -15,6 +16,7 @@ Template Name: Отделка
 <script src="/wp-content/themes/philips/owl.carousel.js"></script><script src="/wp-content/themes/philips/jquery.twentytwenty.js"></script>
 <script src="http://shansu.ru/wp-content/themes/llorix-one-lite/wow.js"></script>
 <script src="/wp-content/themes/philips/jquery.event.move.js"></script>   
+	<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?159",t.onload=function(){VK.Retargeting.Init("VK-RTRG-291063-8ASDh"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-291063-8ASDh" style="position:fixed; left:-999px;" alt=""/></noscript>
   
  <?php wp_head(); ?>
 </head>

@@ -53,8 +53,15 @@ get_header(); ?>
               <div class="col-md-7">
                 <h2 class="titl"><?php the_title(); ?></h2>
                 <h3 class="podz"><?php echo (get_post_meta($post->ID, 'подзаголовок', true)); ?></h3>
-                <p class="opis">Описание:</p>
-                <div class="cont"><?php the_content();?></div>
+                <div class="border-content">
+                  <p class="opis">Описание:</p>
+                  <div class="cont"><?php the_content();?></div>
+                </div>
+
+                <div class="kno">
+                  <a href="#contact_form_pop" class="fancybox zvo brown">Оставить заявку</a>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -100,9 +107,6 @@ get_header(); ?>
     })
   </script>
 
-  <div class="kno">
-    <a href="#contact_form_pop" class="fancybox brown">Оставить заявку</a>
-  </div>
 </div>
 </section>
 
