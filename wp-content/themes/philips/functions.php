@@ -650,7 +650,7 @@ $social = array(
     'vk'        => 'msk_company23',
     'facebook'  => 'МСК-Многофункциональная-строительная-компани-1103667993137406',
     'ok'        => '59280022962238',
-    'instagram' => 'ilya_reklama_official'
+    //'instagram' => ''
 );
 
 add_action('login_head', 'my_custom_login_logo');
