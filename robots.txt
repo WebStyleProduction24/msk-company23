@@ -1,0 +1,5 @@
+User-agent: *
+Dissalow: /otdelka-i-remont-pod-klyuch/
+Dissalow: /stroitelstvo-pod-klyuch/
+Dissalow: /proektirovanie-pod-klyuch/
+Allow: /wp-content/uploads

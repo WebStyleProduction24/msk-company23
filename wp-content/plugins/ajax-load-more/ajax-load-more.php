@@ -7,14 +7,14 @@ Text Domain: ajax-load-more
 Author: Darren Cooney
 Twitter: @KaptonKaos
 Author URI: https://connekthq.com
-Version: 3.7
+Version: 3.7.1
 License: GPL
-Copyright: Darren Cooney & Connekt Media		
+Copyright: Darren Cooney & Connekt Media
 */
 
 
-define('ALM_VERSION', '3.7');
-define('ALM_RELEASE', 'September 19, 2018');
+define('ALM_VERSION', '3.7.1');
+define('ALM_RELEASE', 'October 3, 2018');
 define('ALM_STORE_URL', 'https://connekthq.com');
 
 
@@ -106,8 +106,8 @@ if( !class_exists('AjaxLoadMore') ):
    		add_action( 'wp_ajax_alm_query_total', array(&$this, 'alm_query_total') );
    		add_action( 'wp_ajax_nopriv_alm_query_total', array(&$this, 'alm_query_total') );
    		add_action( 'wp_enqueue_scripts', array(&$this, 'alm_enqueue_scripts') );
-   		add_action( 'after_setup_theme',  array(&$this, 'alm_image_sizes') );   		
-   		add_filter( 'alm_noscript', array(&$this, 'alm_noscript'), 10, 3 );  		
+   		add_action( 'after_setup_theme',  array(&$this, 'alm_image_sizes') );
+   		add_filter( 'alm_noscript', array(&$this, 'alm_noscript'), 10, 5 );
    		add_filter( 'alm_noscript_pagination', array(&$this, 'alm_noscript_pagination'), 10, 2 );
    		add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array(&$this, 'alm_action_links') );
    		add_filter( 'plugin_row_meta', array(&$this, 'alm_plugin_meta_links'), 10, 2 );
@@ -149,12 +149,12 @@ if( !class_exists('AjaxLoadMore') ):
          if (!defined('ALM_SEO_ITEM_NAME')) define('ALM_SEO_ITEM_NAME', '3482');
          if (!defined('ALM_THEME_REPEATERS_ITEM_NAME')) define('ALM_THEME_REPEATERS_ITEM_NAME', '8860');
          if (!defined('ALM_USERS_ITEM_NAME')) define('ALM_USERS_ITEM_NAME', '32311');
-         if (!defined('ALM_PRO_ITEM_NAME')) define('ALM_PRO_ITEM_NAME', '42166');         
+         if (!defined('ALM_PRO_ITEM_NAME')) define('ALM_PRO_ITEM_NAME', '42166');
 
       }
-   	
-   	
-   	
+
+
+
    	/*
    	*  alm_noscript
    	*  This function will build an query for users without JS enabled
@@ -162,19 +162,19 @@ if( !class_exists('AjaxLoadMore') ):
    	*  @return $return string
    	*  @since 3.7
    	*/
-   	function alm_noscript($args, $container_element){   
+   	function alm_noscript($args, $container_element, $css_classes = '', $transition_container_classes = ''){
       	if(is_admin()){
-         	return false;         	
-         }  	        
-         $return = '';  
-         include_once( ALM_PATH . 'core/classes/class.alm-noscript.php'); // Load Noscript Class      	
-      	$return = ALM_NOSCRIPT::alm_get_noscript($args, $container_element);      	
-         
+         	return false;
+         }
+         $return = '';
+         include_once( ALM_PATH . 'core/classes/class.alm-noscript.php'); // Load Noscript Class
+      	$return = ALM_NOSCRIPT::alm_get_noscript($args, $container_element, $css_classes, $transition_container_classes);
+
          return $return;
    	}
-   	
-   	
-   	
+
+
+
    	/*
    	*  alm_noscript_pagination
    	*  This function will build an pagination for users without JS enabled
@@ -182,14 +182,14 @@ if( !class_exists('AjaxLoadMore') ):
    	*  @return $return string
    	*  @since 3.7
    	*/
-   	function alm_noscript_pagination($query){   
+   	function alm_noscript_pagination($query){
       	if(is_admin()){
-         	return false;         	
-         }  	
-         $return = '';         
-         include_once( ALM_PATH . 'core/classes/class.alm-noscript.php'); // Load Noscript Class      	
-      	$return = ALM_NOSCRIPT::build_noscript_paging($query);      	
-      	
+         	return false;
+         }
+         $return = '';
+         include_once( ALM_PATH . 'core/classes/class.alm-noscript.php'); // Load Noscript Class
+      	$return = ALM_NOSCRIPT::build_noscript_paging($query);
+
       	return '<noscript>'. $return .'</noscript>';
    	}
 
@@ -243,9 +243,9 @@ if( !class_exists('AjaxLoadMore') ):
    	public function alm_includes(){
       	include_once( ALM_PATH . 'core/functions.php'); // Load Core Functions
       	include_once( ALM_PATH . 'core/classes/class.alm-shortcode.php'); // Load Shortcode Class
-      	include_once( ALM_PATH . 'core/classes/class.alm-enqueue.php'); // Load Enqueue Class      	
-      	include_once( ALM_PATH . 'core/classes/class.alm-queryargs.php'); // Load Query Args Class 	
-      	include_once( ALM_PATH . 'core/classes/class.alm-localize.php'); // Load Localize Class	
+      	include_once( ALM_PATH . 'core/classes/class.alm-enqueue.php'); // Load Enqueue Class
+      	include_once( ALM_PATH . 'core/classes/class.alm-queryargs.php'); // Load Query Args Class
+      	include_once( ALM_PATH . 'core/classes/class.alm-localize.php'); // Load Localize Class
 
    		if( is_admin() ){
    			include_once('admin/editor/editor.php');
@@ -257,16 +257,16 @@ if( !class_exists('AjaxLoadMore') ):
             }
    		}
       }
-      
-      
-      
+
+
+
       /*
    	*  alm_return_addons
    	*  Returns add-on data (admin/admin-functions.php)
    	*
    	*  @since 2.0.0
    	*/
-   	
+
       public function alm_return_addons(){
 	      return alm_get_addons();
       }
@@ -343,7 +343,7 @@ if( !class_exists('AjaxLoadMore') ):
 			$dependencies = apply_filters( 'alm_js_dependencies', array('jquery') );
 
 
-   		// Core ALM JS   		
+   		// Core ALM JS
          $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min'; // Use minified libraries if SCRIPT_DEBUG is turned off
    		wp_register_script( 'ajax-load-more', plugins_url( '/core/dist/js/ajax-load-more'. $suffix .'.js', __FILE__ ), $dependencies,  ALM_VERSION, true );
 
@@ -432,20 +432,20 @@ if( !class_exists('AjaxLoadMore') ):
 
 			// Ajax Query Type
    		$queryType = (isset($_GET['query_type'])) ? $_GET['query_type'] : 'standard';	// 'standard' or 'totalposts'; totalposts returns $alm_found_posts
-			
-			
-			// Cache 
+
+
+			// Cache
    		$cache_id = (isset($_GET['cache_id'])) ? $_GET['cache_id'] : '';
    		$cache_logged_in = (isset($_GET['cache_logged_in'])) ? $_GET['cache_logged_in'] : false;
    		$do_create_cache = true;
    		if($cache_logged_in === 'true' && is_user_logged_in()){
       		$do_create_cache = false;
    		}
-   		
+
    		// Offset
    		$offset = (isset($_GET['offset'])) ? $_GET['offset'] : 0;
-			
-			
+
+
 			// Repeater Templates
    		$repeater = (isset($_GET['repeater'])) ? $_GET['repeater'] : 'default';
    		$type = alm_get_repeater_type($repeater);
@@ -459,7 +459,7 @@ if( !class_exists('AjaxLoadMore') ):
    		// Page Parameters
    		$posts_per_page = (isset($_GET['posts_per_page'])) ? $_GET['posts_per_page'] : 5;
    		$page = (isset($_GET['page'])) ? $_GET['page'] : 0;
-   		
+
 
    		// Advanced Custom Fields
    		$acfData = (isset($_GET['acf'])) ? $_GET['acf'] : false;
@@ -473,7 +473,7 @@ if( !class_exists('AjaxLoadMore') ):
 
    		// Paging Add-on
    		$paging = (isset($_GET['paging'])) ? $_GET['paging'] : 'false';
-   		
+
 
    		// Preload Add-on
    		$preloaded = (isset($_GET['preloaded'])) ? $_GET['preloaded'] : 'false';
@@ -514,12 +514,12 @@ if( !class_exists('AjaxLoadMore') ):
 
          // SEO Add-on
    		$seo_start_page = (isset($_GET['seo_start_page'])) ? $_GET['seo_start_page'] : 1;
-         
-         
+
+
          // Set up initial WP_Query $args
          $args = ALM_QUERY_ARGS::alm_build_queryargs($_GET, true);
    		$args['paged'] = (get_query_var('paged')) ? get_query_var('paged') : 1;
-   		$args['offset'] = $offset + ($posts_per_page*$page);   		
+   		$args['offset'] = $offset + ($posts_per_page*$page);
 
 
    		// Get current page number for determining item number
@@ -743,6 +743,6 @@ if( !class_exists('AjaxLoadMore') ):
    	return $ajax_load_more;
    }
    // initialize
-   AjaxLoadMore(); 
+   AjaxLoadMore();
 
 endif; // class_exists check

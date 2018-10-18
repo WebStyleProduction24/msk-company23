@@ -27,7 +27,7 @@ if(!class_exists('ALM_NOSCRIPT')):
    	 * @param $container string
    	 * @return           <noscript>
    	 */      
-      public static function alm_get_noscript($q, $container = 'ul'){
+      public static function alm_get_noscript($q, $container = 'ul', $css_classes = '', $transition_container_classes = ''){
          
          $paged = ($q['paged']) ? $q['paged'] : 1;
          
@@ -56,7 +56,7 @@ if(!class_exists('ALM_NOSCRIPT')):
 			      // Build output
 			      $output = apply_filters('alm_users_preloaded', $q, $q['users_per_page'], $q['repeater'], $q['theme_repeater']); // located in Users add-on
                
-               return ALM_NOSCRIPT::render($output['data'], $container);
+               return ALM_NOSCRIPT::render($output['data'], $container, '', $css_classes, $transition_container_classes);
             }
          }        
          
@@ -71,7 +71,7 @@ if(!class_exists('ALM_NOSCRIPT')):
 			      // Build output
                $output = apply_filters('alm_acf_preloaded', $q, $q['repeater'], $q['theme_repeater']); //located in ACF add-on
                
-               return ALM_NOSCRIPT::render($output, $container);
+               return ALM_NOSCRIPT::render($output, $container, '', $css_classes, $transition_container_classes);
             }
          }
          
@@ -129,7 +129,7 @@ if(!class_exists('ALM_NOSCRIPT')):
             
             $paging = ALM_NOSCRIPT::build_noscript_paging($noscript_query); 
                   
-            return ALM_NOSCRIPT::render($output, $container, $paging);                        
+            return ALM_NOSCRIPT::render($output, $container, $paging, $css_classes, $transition_container_classes);                        
             
          }
          
@@ -206,8 +206,8 @@ if(!class_exists('ALM_NOSCRIPT')):
    	 * @param $paging		string
    	 * @return           <noscript>
    	 */ 
-      public static function render($output, $container, $paging = ''){
-	      return (!empty($output)) ? '<'. self::$element .'><'. $container .' class="alm-listing alm-noscript">'. $output .'</'. $container .'>'. $paging .'</'. self::$element .'>' : '';	      
+      public static function render($output, $container, $paging = '', $css_classes, $transition_container_classes){
+	      return (!empty($output)) ? '<'. self::$element .'><'. $container .' class="alm-listing alm-noscript'. $css_classes .'"><div class="alm-reveal'. $transition_container_classes .'">'. $output .'</div></'. $container .'>'. $paging .'</'. self::$element .'>' : '';	      
       }    
       
       

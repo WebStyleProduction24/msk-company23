@@ -4,7 +4,7 @@ Donate link: https://connekthq.com/donate/
 Tags: infinite scroll, infinite scrolling, scroll, infinite, lazy load, lazy loading, endless scroll, pagination, ajax pagination, ajax, ajax posts, woocommerce, ajax load more, masonry
 Requires at least: 3.6
 Tested up to: 4.9.8
-Stable tag: 3.7
+Stable tag: 3.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -368,6 +368,13 @@ How to install Ajax Load More.
 
 
 == Changelog ==
+
+= 3.7.1 - October 3, 2018 =
+Minor point release that affects Preloaded and Search Engine Optimization add-on users only. This release fixes 2 critical bugs in Ajax Load More 3.7.
+
+* FIX - Fix for Preloaded add-on not parsing multiple Post Types (I'm sorry about that!).
+* FIX - Adding `.alm-reveal` div and `css_classes` to NO_SCRIPT render to keep styling and layouts consistent.
+
 
 = 3.7 - September 19, 2018 =
 * UPDATE NOTICE for Preloaded Addon Users - this ALM update moves preloaded posts into core .alm-listing container. This update was required for refactoring of core JS and HTML elements while making future enhancements easier to maintain.

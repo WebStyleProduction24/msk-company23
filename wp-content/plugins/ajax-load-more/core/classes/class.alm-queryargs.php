@@ -35,7 +35,11 @@ if(!class_exists('ALM_QUERY_ARGS')):
       	$posts_per_page = (isset($a['posts_per_page'])) ? $a['posts_per_page'] : 5;
       	
       	// Post Type
-      	$post_type = (isset($a['post_type'])) ? $a['post_type'] : 'post';  
+      	if($is_ajax){
+      		$post_type = (isset($a['post_type'])) ? $a['post_type'] : 'post'; 
+      	} else {	      	
+      		$post_type = explode(",", $a['post_type']);
+      	} 
       	
       	// Format
       	$post_format = (isset($a['post_format'])) ? $a['post_format'] : '';
