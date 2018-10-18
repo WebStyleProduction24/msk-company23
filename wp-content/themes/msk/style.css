@@ -5371,7 +5371,7 @@ header.entry-header.main h1:before, h3.w19:before {
 	width: calc(16.66666667% + 50px);
 	position: relative;
 	height: 100vh;
-	min-height: 630px;
+	min-height: 670px;
 }
 a.fancybox.zvo {
 	background: #1773a0;
@@ -9718,10 +9718,10 @@ body.page-template.page-template-l2 section#first {
 	box-shadow: none;
 }
 .owl-next:hover {
-	box-shadow: 10px 0px 23px -2px rgba(0, 0, 0, 0.9);
+	box-shadow: 13px 0px 15px 0px rgba(0, 0, 0, 0.25), 13px -8px 15px -9px rgba(0, 0, 0, 0.25), 13px 8px 15px -8px rgba(0, 0, 0, 0.25);
 }
 .owl-prev:hover {
-	box-shadow: -10px 0px 23px -2px rgba(0, 0, 0, 0.9);
+	box-shadow: -13px 0px 15px 0px rgba(0, 0, 0, 0.25), -13px -8px 15px -9px rgba(0, 0, 0, 0.25), -13px 8px 15px -8px rgba(0, 0, 0, 0.25);
 }
 .hesperiden .tp-thumb .tp-thumb-title {
 	background-color: rgba(23,115,160,.75);
