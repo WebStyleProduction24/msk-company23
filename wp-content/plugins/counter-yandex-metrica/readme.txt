@@ -4,8 +4,7 @@ Donate link: https://semikashev.com/wordpress/plugin-yametrika-counter#donate
 Tags: яндекс, yandex, метрика ,metrica, метрик, metrik, stats, statistics, tools, analytics, analytics tool
 Requires at least: 3.5
 Tested up to: 4.9.8
-Stable tag: 1.3
-Requires PHP: 5.3
+Stable tag: 1.3.1
 License: GPLv2 (or later)
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +46,9 @@ Plugin for the easy install Yandex Metrica in your WordPress site.
 2. Widget settings
 
 == Changelog ==
+= 1.3.1 =
+add supports php 5.2
+
 = 1.1 =
 added the ability to display the Yandex.Informer in widgets
 

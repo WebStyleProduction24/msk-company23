@@ -3,7 +3,7 @@
 Plugin Name: Yandex.Metrica Counter
 Plugin URI: http://semikashev.com/wordpress/plugin-yametrika-counter
 Description: Easy installation of counter Yandex.Metrica. Support Webvisor 2.0.
-Version: 1.3
+Version: 1.3.1
 
 Author: Alexander Semikashev
 Author URI: http://semikashev.com
@@ -26,7 +26,10 @@ require_once( YMC__PLUGIN_DIR . 'class.ymc.php' );
 require_once( YMC__PLUGIN_DIR . 'class.ymc-widget.php' );
 
 add_action( 'init', array( 'YMC', 'init' ) );
-add_action( 'widgets_init', function(){ register_widget( 'YMC_Widget' ); } );
+
+add_action('widgets_init',
+	create_function('', 'return register_widget("YMC_Widget");')
+);
 
 if( is_admin() ){
     require_once( YMC__PLUGIN_DIR . 'class.ymc-admin.php' );

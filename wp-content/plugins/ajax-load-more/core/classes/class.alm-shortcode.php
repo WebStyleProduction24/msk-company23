@@ -869,7 +869,7 @@ if( !class_exists('ALM_SHORTCODE') ):
 		   	 * @return html;
 		   	 */
 	   		if($seo === 'true' && $preloaded !== 'true' && !$restapi){
-	            $ajaxloadmore .= apply_filters('alm_noscript', $query_args, $container_element);
+	            $ajaxloadmore .= apply_filters('alm_noscript', $query_args, $container_element, $css_classes, $transition_container_classes);
 	         }
 
 
