@@ -148,30 +148,30 @@ get_header(); ?>
         <img src="/wp-content/uploads/2016/12/str.png" class="c1"/>
         <img src="/wp-content/uploads/2016/12/v1.png"/>
         <div class="cont1">ВЫ ОСТАВЛЯЕТЕ<br>ЗАЯВКУ</div>
-        <div class="cont2">Вы оставляете заявку в<br><a href="#form">контактной форме</a> и наш менеджер перезвонит Вам в ближайшее время<br>или можете сами позвонить по телефону:<br><a href="tel:+79284571297">+7&nbsp;(928)&nbsp;457-12-97</a>,<br><a href="tel:+79889660527">+7&nbsp;(988)&nbsp;966-05-27</a></div>
+        <div class="cont2">Вы оставляете заявку в&nbsp;<a href="#form">контактной форме</a> и&nbsp;наш менеджер перезвонит Вам в&nbsp;ближайшее время или можете сами позвонить по&nbsp;телефону:<br><a href="tel:+79284571297">+7&nbsp;(928)&nbsp;457-12-97</a>,<br><a href="tel:+79889660527">+7&nbsp;(988)&nbsp;966-05-27</a></div>
       </div>
       <div class="one-5">
         <img src="/wp-content/uploads/2016/12/str.png" class="c2"/>
         <img src="/wp-content/uploads/2016/12/v2.png"/>
         <div class="cont1">Встреча и<br>обсуждение деталей</div>
-        <div class="cont2">Не следует, однако забывать,<br>что постоянный количественный<br>рост  нашей активности  позволяет<br>выполнять важные задания</div>
+        <div class="cont2">Наш специалист выезжает к&nbsp;Вам и&nbsp;обсуждаете с&nbsp;ним все детали будущего проекта</div>
       </div>
       <div class="one-5">
         <img src="/wp-content/uploads/2016/12/str.png" class="c3"/>
         <img src="/wp-content/uploads/2016/12/v3.png"/>
         <div class="cont1">Создание проекта и<br>составление сметы</div>
-        <div class="cont2">Не следует, однако забывать,<br>что постоянный количественный<br>рост  нашей активности  позволяет<br>выполнять важные задания</div>
+        <div class="cont2">В нашем офисе вместе с&nbsp;Вами мы создаем проект и&nbsp;формируем смету с&nbsp;фиксируемой стоимостью</div>
       </div>
       <div class="one-5">
         <img src="/wp-content/uploads/2016/12/str.png" class="c4"/>
         <img src="/wp-content/uploads/2016/12/v4.png"/>
         <div class="cont1">МЫ НАЧИНАЕМ<br>СТРОИТЕЛЬСТВО ДОМА</div>
-        <div class="cont2">Не следует, однако забывать,<br>что постоянный количественный<br>рост  нашей активности  позволяет<br>выполнять важные задания</div>
+        <div class="cont2">В&nbsp;установленные сроки мы начинаем строительство дома Вашей мечты</div>
       </div>
       <div class="one-5">
         <img src="/wp-content/uploads/2016/12/v5.png"/>
         <div class="cont1">ВРУЧАЕМ ВАМ КЛЮЧИ<br>ОТ ДОМА МЕЧТЫ</div>
-        <div class="cont2">Не следует, однако забывать,<br>что постоянный количественный<br>рост  нашей активности  позволяет<br>выполнять важные задания</div>
+        <div class="cont2">По&nbsp;завершению строительства мы торжественно вручаем Вам ключи от&nbsp;дома мечты</div>
       </div>
     </div>
   </div>
@@ -236,16 +236,14 @@ get_header(); ?>
       <div class="karta">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A19bee56aa55bb6e557a83ca6ab1e79a8e064a98928a3fc40236d312bd46bb9db&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
       </div>
-      <div class="col-md-12">
-        <div class="col-md-4 contact">
-          <div class="co-inner">
-            <div class="co-in">
-              <p class="brown"><?php wsp24_adress(); ?></p>
-              <p class="lkl">ТЕЛ: <?php wsp24_phone_1(); ?></p>
-              <p class="lkl">ТЕЛ: <?php wsp24_phone_2(); ?></p>
-              <p class="lkl">EMAIL: <?php wsp24_email(); ?></p>
-              <a href="#contact_form_pop" class="fancybox brown two">Оставить заявку</a>
-            </div>
+      <div class="col-md-5 contact">
+        <div class="co-inner inner-za">
+          <div class="co-in">
+            <p class="brown"><?php wsp24_adress(); ?></p>
+            <p class="lkl">ТЕЛ: <?php wsp24_phone_1(); ?></p>
+            <p class="lkl">ТЕЛ: <?php wsp24_phone_2(); ?></p>
+            <p class="lkl">EMAIL: <?php wsp24_email(); ?></p>
+            <a href="#contact_form_pop" class="fancybox brown two">Оставить заявку</a>
           </div>
         </div>
       </div>

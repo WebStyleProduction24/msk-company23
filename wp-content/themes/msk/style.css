@@ -4533,7 +4533,7 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
-button,input[type="button"],input[type="reset"],input[type="submit"] {
+button,input[type="button"],input[type="reset"],input[type="submit"], a.fancybox.brown.two {
 	font-size: 20px;
 	border: none;
 	border-radius: 0;
@@ -4551,8 +4551,8 @@ button,input[type="button"],input[type="reset"],input[type="submit"] {
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
-input[type="submit"]:hover {
-	color: #202020;
+input[type="submit"]:hover, #contacts a.fancybox.brown.two:hover {
+	color: #202020 !important;
 	border-color: #ccc #bbb #4e4c4c;
 	box-shadow: inset 0 1px 0 rgba(83, 194, 214, 0.8), inset 0 15px 17px rgba(83, 194, 214, 0.8), inset 0 -5px 12px rgba(0, 172, 200, .02);
 }
@@ -5622,12 +5622,12 @@ section header.entry-header.main {
 	margin: 0 5%;
 	text-align: center;
 	margin-top: 35px;
-	position: absolute;
 	-moz-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 	bottom: 5%;
 	opacity: .8;
+	position: absolute;
 }
 .inner-za {
 	position: relative;
@@ -5647,7 +5647,7 @@ section header.entry-header.main {
 	width: calc(100% - 10px);
 	height: calc(100% - 10px);
 }
-.inner-za div.wpcf7 {
+.inner-za div.wpcf7, .inner-za div.co-in {
 	background: #1773a0;
 	display: inline-block;
 	width: calc(100% - 14px);
@@ -5818,23 +5818,22 @@ section#projects {
 	width: 100%;
 	display: inline-block;
 	background: url(/wp-content/uploads/2016/12/fon2.png)  center -75px no-repeat;
-	padding-bottom: 60px;
 	margin-top: -110px;
 	z-index: 7 !important;
 	position: relative;
 	min-height: 100vh;
 }
 section#types img {
-	border: solid 5px #e1e1e1;
+	border: solid 5px #53c2d6;
 	width: 100%;
 }
 p.blue {
 	font-size: 21px;
 	text-transform: uppercase;
-	color: #000;
+	color: #fff;
 	text-align: center;
-	background: #97b8ce;
-	border: solid 1px;
+	background: #1773a0;
+	border: solid 1px #53c2d6;
 	line-height: 40px;
 	margin-top: 10px;
 	font-weight: bold;
@@ -5880,6 +5879,8 @@ h3.fff {
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
+	position: relative;
+	z-index: 1000;
 }
 section#form input[type="text"],
 section#form input[type="email"],
@@ -5896,46 +5897,53 @@ select.wpcf7-form-control.wpcf7-select {
 	height: 35px;
 	text-transform: uppercase;
 	font-weight: bold;
-	background: #8cb0c2 url(/wp-content/uploads/2016/12/aaa.png);
+	background: #fff;
 	border: 0;
 	color: #222;
 	background-position: right;
 	background-repeat: no-repeat;
+	box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, .75);
+	font-weight: bold;
+	width: 226px;
+	color:#4e4c4c;
+	opacity:1;
+	font-weight: normal;
 }
 textarea.wpcf7-form-control.wpcf7-textarea {
 	width: 100%;
 	border-radius: 0px;
-	height: 85px;
+	height: 115px;
 	font-size: 15px;
 	text-transform: uppercase;
-	padding-left: 10px;
-	background: #8cb0c2;
+	padding: 10px;
+	box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, .75);
+	font-weight: bold;
+	color: #202020;
 	border: 0;
-}
-.col-md-11 input.wpcf7-form-control.wpcf7-submit {
-	background: #d0803b !important;
+	margin-bottom: 5px;
 }
 .in:before {
 	content: "";
-	border: solid 2px #222;
+	border: solid 2px #ee3b56;
 	position: absolute;
 	top: -8px;
 	width: calc(100% + 16px);
 	margin-left: -8px;
 	height: calc(100% + 16px);
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, .75);
 }
 .in {
 	display: inline-block;
-	background: #97b8ce;
-	padding: 8px 0;
+	background: #1773a0;
+	padding-top: 15px;
 	position: relative;
 }
 .in-v {
 	margin: 0 8px;
 	display: inline-block;
 	width: calc(100% - 16px);
-	background: #272625;
-	padding: 20px 0;
+	background: #1773a0;
+	padding-top: 20px;
 }
 section#form .container:before {
 	background: url(/wp-content/uploads/2016/12/domik.png);
@@ -5955,12 +5963,10 @@ section#form .container {
 	margin-top: -80px;
 }
 section#form {
-	padding-bottom: 140px;
 	position: relative;
 	display: inline-block;
 	width: 100%;
 	background: url(/wp-content/uploads/2016/12/fon7.png);
-	margin-bottom: -120px;
 	background-repeat: no-repeat;
 	z-index: 999;
 }
@@ -5970,8 +5976,6 @@ section#etapi {
 	background: url(/wp-content/uploads/2016/12/fon6.png);
 	background-position: center top;
 	background-repeat: no-repeat;
-	padding-top: 50px;
-	padding-bottom: 100px;
 }
 section#etapi h4.fgfgf {
 	font-size: 30px;
@@ -6013,8 +6017,8 @@ section#etapi h4.fgfgf {
 	border-radius: 5px;
 	font-size: 15px;
 	background: #fff;
-	margin: 10px 10px;
-	padding: 10px 0;
+	margin: 10px 5px;
+	padding: 5px;
 }
 img.c1 {
 	height: auto;
@@ -6066,7 +6070,7 @@ h4.gr {
 	margin-bottom: -10px;
 	background-repeat: no-repeat;
 	background-position: center top;
-	padding: 30px 0;
+	padding: 20px 0;
 	line-height: 65px;
 	text-transform: uppercase;
 }
@@ -6092,31 +6096,30 @@ section#services .col-md-4:nth-child(4) {
 }
 section#services {
 	background: url(/wp-content/uploads/2016/12/fon8.png);
-	padding-bottom: 80px;
 	background-position: center top;
 	background-repeat: no-repeat;
-	margin-bottom: -20px;
+	padding-bottom: 0;
 }
 section#services .ostavit.col-md-8 {
 	margin-top: 20px;
 	max-width: 768px;
 	margin-left: calc(45.333% - 335px);
+	position: relative;
+	z-index: 10;
 }
 section#services h3.zsa1 span {
-	color: #cd9981;
+	color: #53c2d6;
 	font-weight: bold;
 }
 .ostavit.col-md-8 input {
 	height: 38px;
 }
-.col-md-4.contact {
-	margin: 150px 0;
+.col-md-5.contact {
+	margin: 200px 0 0;
 	float: right;
-	border: solid 2px #171717;
 	padding: 5px;
 	text-align: center;
 	font-size: 23px;
-	margin-bottom: 90px;
 }
 body.page-template.page-template-l1 section#contacts {
 	margin-bottom: -10px;
@@ -6127,52 +6130,31 @@ section#contacts {
 	display: inline-block;
 	background-position: center top;
 	background-repeat: no-repeat;
-	margin-top: -165px;
-	margin-bottom: -10px;
-	margin-bottom: 10px;
+	padding: 0;
+	margin-top: -130px;
 }
-.col-md-4.contact p {
+.col-md-5.contact p {
 	font-size: 23px;
 	margin-bottom: 0;
-	color: #222;
-}
-.col-md-4.contact p.brown {
-	color: #895137;
+	color: #fff;
 }
 .co-inner:before {
-	content: "";
-	border: solid 2px #fff;
-	position: absolute;
-	width: calc(100% - 10px);
 	left: 5px;
-	height: calc(100% - 10px);
 	top: 5px;
 }
 .co-inner {
-	background: #7393a8;
 	padding: 12px;
 	position: relative;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, .75);
 }
 .co-in {
-	background: #fdf1c2;
+	background: #1773a0;
 	padding: 8px;
 }
 a.fancybox.brown.two {
-	color: #222;
-	font-size: 20px;
-	border: none;
-	border-radius: 0;
-	background: #b07d66 !important;
-	width: 100%;
-	box-shadow: none;
-	border-bottom: solid 3px #6f3c25;
-	text-transform: uppercase;
-	font-weight: bold;
-	line-height: 36px;
 	display: block;
 	max-width: 230px;
 	margin: 5px auto;
-	position: relative;
 }
 div#contact_form_pop {
 	padding: 10px;
@@ -7868,6 +7850,9 @@ li#menu-item-40:hover:before {
 	background: url(/wp-content/uploads/2016/12/Контакты.jpg);
 }
 a.fancybox.brown.two:hover {
+	opacity: 0.7;
+}
+#contacts a.fancybox.brown.two:hover {
 	opacity: 0.7;
 }
 .call.col-md-1:hover {
@@ -9714,6 +9699,40 @@ body.page-template.page-template-l2 section#first {
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 ===========================================*/
+
+#contacts .contact a:not[class="brown"] {
+	color: #53c2d6;
+	font-weight: bold;
+}
+a.fancybox.brown.two {
+	background-color: buttonface;
+}
+#contacts .inner-za div.co-in {
+	width: 100%;
+	margin: 0;
+}
+.col-md-5.contact {
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	opacity: .8;
+}
+.col-md-5.contact:hover {
+	opacity: 1;
+}
+section {
+	padding-bottom: 40px;
+}
+.feedback-wsp24 > div {
+	padding: 0;
+	margin-bottom: 5px;
+}
+h3.fff a {
+	color: #53c2d6;
+}
+h3.fff a:hover {
+	color: #ee3b56;
+}
 .owl-next.disabled:hover, .owl-prev.disabled:hover {
 	box-shadow: none;
 }
@@ -9753,7 +9772,7 @@ section h3.w19 {
 	margin-bottom: 10px;
 }
 #projects h4.fgfgf {
-	margin-top: 60px;
+	margin-top: 45px;
 	background: none;
 	padding-bottom: 30px;
 }
@@ -9840,6 +9859,8 @@ a.home:hover h4.site-description {
 }
 .contact a {
 	color: inherit;
+	position: relative;
+	z-index: 1000000;
 }
 .contact a:hover,
 .contact a:focus {
@@ -9931,8 +9952,8 @@ a.fancybox.zvo.tablet {
 }
 @media screen and (min-width: 1051px) {
 	.soc a {
-    margin: 0px 4%;
-  }
+		margin: 0px 4%;
+	}
 }
 @media (min-width: 851px) and (max-width: 1050px) {
 	.soc a {
