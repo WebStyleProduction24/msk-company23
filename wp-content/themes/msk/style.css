@@ -8276,14 +8276,8 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		right: 10px;
 	}
 	.phone.col-md-3 a {
-		font-size: 25px;
-		line-height: 66px;
-	}
-	section header.entry-header.main h1:before {
-		display: none
-	}
-	section h3.w19:before {
-		display: none
+		font-size: 18px;
+		line-height: 25px;
 	}
 	h3.w19 {
 		font-size: 19px;
@@ -8457,9 +8451,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	button.navbar-toggle {
 		max-width: 44px;
 	}
-	.header-area.page {
-		min-height: 95px;
-	}
 	.kno {
 		float: right;
 		text-transform: uppercase;
@@ -8582,9 +8573,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		bottom: 0;
 		position: relative;
 	}
-	.mainmenu.col-md-7 {
-		width: 100%;
-	}
 	.logo.col-md-1 h1 {
 		opacity: 0;
 		margin-bottom: 0;
@@ -8592,20 +8580,13 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin-bottom: -20px;
 	}
 	.phone.col-md-3 {
-		max-width: 100%;
 		text-align: center;
-		position: absolute;
-		width: 100%;
-		left: auto;
-		right: 90px;
-		top: 0;
 	}
 	p.sub {
 		position: relative;
 	}
 	section header.entry-header.main {
 		margin: 0 auto;
-		max-width: 500px;
 		position: relative;
 		left: 0;
 	}
@@ -8754,7 +8735,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		display: none
 	}
 	img.fgf {
-		max-width: 50px;
+		max-width: 40px;
 	}
 	body.page-template.page-template-l2 section header.entry-header.main h3.w19 {
 		padding-bottom: 0;
@@ -9698,6 +9679,10 @@ body.page-template.page-template-l2 section#first {
 
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
+
+Служебное оглавление: 
+
+Экран max-width:850px с 10039;
 ===========================================*/
 
 #contacts .contact a:not[class="brown"] {
@@ -9968,6 +9953,10 @@ a.fancybox.zvo.tablet {
 	}
 }
 @media screen and (max-width: 1050px) {
+	.header-area.page .container {
+		width: 100%;
+		margin: 0;
+	}
 	.custom-logo {
 		width: 100%;
 	}
@@ -9990,6 +9979,9 @@ a.fancybox.zvo.tablet {
 @media (min-width: 651px) and (max-width: 850px) {
 	.hentry {
 		margin: 0;
+	}
+	.page .custom-logo-link {
+		width: 100%;
 	}
 	.custom-logo-link {
 		float: left;
@@ -10045,6 +10037,44 @@ a.fancybox.zvo.tablet {
 	}
 }
 @media screen and (max-width: 850px) {
+	.fullwidthbanner-container {
+		overflow: hidden !important;
+	}
+	h4.fgfgf {
+		padding-top: 30px
+	}
+	#projects h4.fgfgf {
+		margin-top: 0;
+	}
+	.ostavit .wpcf7 input:not([type="submit"]) {
+		width: 100%;
+	}
+	.call.col-md-1 img{
+		display: none;
+	}
+	.ostavit {
+		margin: 35px auto 0;
+		opacity: 1;
+		position: relative;
+		width: 75%;
+		z-index: 10;
+	}
+	.w19 br {
+		display: none;
+	}
+	header.entry-header.main {
+		opacity: 1;
+	}
+	.header-area.page {
+		bottom: 0;
+		top: auto;
+	}
+	.phone.col-md-3{
+		right: 4%;
+	}
+	.mainmenu.col-md-7 {
+		left: 3%;
+	}
 	body.page-template.page-template-main .navbar-nav>li>.sub-menu {
 		display: none;
 	}

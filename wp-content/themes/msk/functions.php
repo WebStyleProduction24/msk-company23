@@ -616,12 +616,12 @@ function wsp24_logo() {
     $gtml = '';
 
     $bloginfo = '<a href="/" rel="home">';
-    $bloginfo .= '<div class="logo col-md-1"><h1 class="site-title">';
+    $bloginfo .= '<div class="logo col-md-1 col-sm-1"><h1 class="site-title">';
     $bloginfo .= get_bloginfo( 'name' );
     $bloginfo .= '</h1></div></a>';
 
     $html = has_custom_logo() ? get_custom_logo() : $bloginfo;
-    $html = sprintf('<div class="col-md-1 logo">%1$s</div>', $html );
+    $html = sprintf('<div class="col-md-1- col-sm-1 logo">%1$s</div>', $html );
 
     echo $html;
 }
@@ -673,8 +673,11 @@ function top_custom() {
     echo '
     <style type="text/css" media="screen">
     .call.col-md-1 img, .header-area.page, .panel {top: 32px !important; }
+    @media screen and ( max-width: 850px ) {
+        .header-area.page {top: auto !important; }
+    }
     @media screen and ( max-width: 782px ) {
-        .call.col-md-1 img, .header-area.page, .panel {top: 32px !important; }
+        .call.col-md-1 img, .panel {top: 46px !important; }
     }
     </style>';
 }
