@@ -679,5 +679,11 @@ function top_custom() {
     @media screen and ( max-width: 782px ) {
         .call.col-md-1 img, .panel {top: 46px !important; }
     }
+    @media screen and ( max-width: 650px ) {
+        header.entry-header.main {padding-top: 46px !important;}
+    }
+    @media screen and ( max-width: 600px ) {
+        html {margin-top: 0px !important; }
+    }
     </style>';
 }

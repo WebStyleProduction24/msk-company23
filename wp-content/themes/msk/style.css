@@ -5599,7 +5599,7 @@ img.fgf {
 	padding: 5px 0;
 	background: #fff;
 	position: fixed;
-	z-index: 9999 !important;
+	z-index: 99999999999 !important;
 	width: 100%;
 	top: 0;	
 	box-shadow: 0 0 15px rgba(0,0,0,.75);
@@ -5855,7 +5855,7 @@ section#types {
 	display: inline-block;
 	background: url(/wp-content/uploads/2016/12/fon3.jpg);
 	background-repeat: no-repeat;
-	background-position: center -25px;
+	background-position: center -40px;
 	padding-bottom: 100px;
 }
 #types .col-md-4:after {
@@ -8455,7 +8455,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		float: right;
 		text-transform: uppercase;
 		font-size: 14px;
-		margin-top: -20px;
+		margin-right: 10%;
 	}
 	button.navbar-toggle {
 		max-width: 44px;
@@ -8600,9 +8600,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		max-width: calc(100% - 60px);
 	}
 	section#projects {
-		padding: 50px 0;
-		padding-bottom: 100px;
-		padding-bottom: 180px;
+		padding: 50px 0 10px;
 		background-repeat: no-repeat;
 	}
 	.house.type-house:before {
@@ -8632,7 +8630,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	.in-v .col-md-6 {
 		max-width: 50%;
 		float: left;
-		padding: 0 8px !important;
+		padding: 0 !important;
 		margin: 2px 0 !important;
 	}
 	.in-v label {
@@ -8642,9 +8640,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin-left: 0%;
 		width: 100%;
 		padding: 0;
-	}
-	section#form select.wpcf7-form-control.wpcf7-select {
-		width: calc(100% + 14px);
 	}
 	section#garanties .col-md-3 {
 		padding: 0;
@@ -8681,6 +8676,15 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		position: absolute;
 		width: calc(100% - 10px);
 		height: calc(100% - 10px);
+	}
+	.ostavit .inner-za:before {
+    border: solid 2px #fff;
+    content: "";
+    left: 2px;
+    top: 2px;
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
 	}
 	section#form .container {
 		padding-top: 150px;
@@ -8970,7 +8974,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin: 0;
 	}
 	.owl-theme .owl-nav {
-		top: 70px;
 		margin: 0;
 		left: 30%;
 	}
@@ -9032,17 +9035,13 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	}
 	section#form select.wpcf7-form-control.wpcf7-select {
 		max-width: 100%;
+		width: 100%;
 	}
 	textarea.wpcf7-form-control.wpcf7-textarea {
-		margin: 0 9px;
-		width: calc(100% - 18px);
+		margin: 0;
 	}
 	section#form {
 		margin-bottom: -10px;
-	}
-	.col-md-11 input.wpcf7-form-control.wpcf7-submit {
-		background: #d0803b !important;
-		margin-right: 9px !important;
 	}
 	section#etapi h4.fgfgf {
 		font-size: 25px;
@@ -9281,7 +9280,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		font-size: 30px;
 	}
 	header.entry-header.main h1:before {
-		width: 99%;
+		width: 100%;
 		height: 1px;
 		background: #fff;
 		content: "";
@@ -9293,7 +9292,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin: 0px auto;
 	}
 	h3.w19:before {
-		width: 99%;
+		width: 100%;
 		height: 1px;
 		background: #fff;
 		content: "";
@@ -9513,12 +9512,10 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		padding: 0;
 	}
 	.owl-theme .owl-nav {
-		top: 110px;
 		margin: 0;
 		left: 19%;
 	}
 	.kno a.fancybox.brown {
-		background: #b07d66;
 		position: relative;
 		font-size: 14px;
 	}
@@ -9953,6 +9950,9 @@ a.fancybox.zvo.tablet {
 	}
 }
 @media screen and (max-width: 1050px) {
+	select.wpcf7-form-control.wpcf7-select {
+		width: 100%;
+	}
 	.header-area.page .container {
 		width: 100%;
 		margin: 0;
@@ -9993,7 +9993,7 @@ a.fancybox.zvo.tablet {
 		z-index: 5;
 	}
 	.contact {
-		width: 40%;
+		width: 45%;
 		float: left;
 		padding: 0 15px;
 	}
@@ -10037,11 +10037,14 @@ a.fancybox.zvo.tablet {
 	}
 }
 @media screen and (max-width: 850px) {
+	.col-md-5.contact {
+		opacity: 1;
+	}
+	.col-md-5.contact p {
+		font-size: 15px;
+	}
 	.fullwidthbanner-container {
 		overflow: hidden !important;
-	}
-	h4.fgfgf {
-		padding-top: 30px
 	}
 	#projects h4.fgfgf {
 		margin-top: 0;
@@ -10164,9 +10167,15 @@ a.fancybox.zvo.tablet {
 		width: 305px;
 	}
 	header.entry-header.main {
-		padding: 0 15px;
+		padding: 0 15px 15px;
 	}	
 	#map iframe {
 		height: 200px;
+	}
+	.ostavit {
+		width: 100%;
+	}
+	section#contacts {
+		padding-bottom: 135px;
 	}
 }
