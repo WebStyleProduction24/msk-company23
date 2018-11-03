@@ -5599,7 +5599,7 @@ img.fgf {
 	padding: 5px 0;
 	background: #fff;
 	position: fixed;
-	z-index: 9999 !important;
+	z-index: 99999999999 !important;
 	width: 100%;
 	top: 0;	
 	box-shadow: 0 0 15px rgba(0,0,0,.75);
@@ -5855,7 +5855,7 @@ section#types {
 	display: inline-block;
 	background: url(/wp-content/uploads/2016/12/fon3.jpg);
 	background-repeat: no-repeat;
-	background-position: center -25px;
+	background-position: center -40px;
 	padding-bottom: 100px;
 }
 #types .col-md-4:after {
@@ -8276,14 +8276,8 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		right: 10px;
 	}
 	.phone.col-md-3 a {
-		font-size: 25px;
-		line-height: 66px;
-	}
-	section header.entry-header.main h1:before {
-		display: none
-	}
-	section h3.w19:before {
-		display: none
+		font-size: 18px;
+		line-height: 25px;
 	}
 	h3.w19 {
 		font-size: 19px;
@@ -8457,14 +8451,11 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	button.navbar-toggle {
 		max-width: 44px;
 	}
-	.header-area.page {
-		min-height: 95px;
-	}
 	.kno {
 		float: right;
 		text-transform: uppercase;
 		font-size: 14px;
-		margin-top: -20px;
+		margin-right: 10%;
 	}
 	button.navbar-toggle {
 		max-width: 44px;
@@ -8582,9 +8573,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		bottom: 0;
 		position: relative;
 	}
-	.mainmenu.col-md-7 {
-		width: 100%;
-	}
 	.logo.col-md-1 h1 {
 		opacity: 0;
 		margin-bottom: 0;
@@ -8592,20 +8580,13 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin-bottom: -20px;
 	}
 	.phone.col-md-3 {
-		max-width: 100%;
 		text-align: center;
-		position: absolute;
-		width: 100%;
-		left: auto;
-		right: 90px;
-		top: 0;
 	}
 	p.sub {
 		position: relative;
 	}
 	section header.entry-header.main {
 		margin: 0 auto;
-		max-width: 500px;
 		position: relative;
 		left: 0;
 	}
@@ -8619,9 +8600,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		max-width: calc(100% - 60px);
 	}
 	section#projects {
-		padding: 50px 0;
-		padding-bottom: 100px;
-		padding-bottom: 180px;
+		padding: 50px 0 10px;
 		background-repeat: no-repeat;
 	}
 	.house.type-house:before {
@@ -8651,7 +8630,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	.in-v .col-md-6 {
 		max-width: 50%;
 		float: left;
-		padding: 0 8px !important;
+		padding: 0 !important;
 		margin: 2px 0 !important;
 	}
 	.in-v label {
@@ -8661,9 +8640,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin-left: 0%;
 		width: 100%;
 		padding: 0;
-	}
-	section#form select.wpcf7-form-control.wpcf7-select {
-		width: calc(100% + 14px);
 	}
 	section#garanties .col-md-3 {
 		padding: 0;
@@ -8700,6 +8676,15 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		position: absolute;
 		width: calc(100% - 10px);
 		height: calc(100% - 10px);
+	}
+	.ostavit .inner-za:before {
+    border: solid 2px #fff;
+    content: "";
+    left: 2px;
+    top: 2px;
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
 	}
 	section#form .container {
 		padding-top: 150px;
@@ -8754,7 +8739,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		display: none
 	}
 	img.fgf {
-		max-width: 50px;
+		max-width: 40px;
 	}
 	body.page-template.page-template-l2 section header.entry-header.main h3.w19 {
 		padding-bottom: 0;
@@ -8989,7 +8974,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin: 0;
 	}
 	.owl-theme .owl-nav {
-		top: 70px;
 		margin: 0;
 		left: 30%;
 	}
@@ -9051,17 +9035,13 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	}
 	section#form select.wpcf7-form-control.wpcf7-select {
 		max-width: 100%;
+		width: 100%;
 	}
 	textarea.wpcf7-form-control.wpcf7-textarea {
-		margin: 0 9px;
-		width: calc(100% - 18px);
+		margin: 0;
 	}
 	section#form {
 		margin-bottom: -10px;
-	}
-	.col-md-11 input.wpcf7-form-control.wpcf7-submit {
-		background: #d0803b !important;
-		margin-right: 9px !important;
 	}
 	section#etapi h4.fgfgf {
 		font-size: 25px;
@@ -9300,7 +9280,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		font-size: 30px;
 	}
 	header.entry-header.main h1:before {
-		width: 99%;
+		width: 100%;
 		height: 1px;
 		background: #fff;
 		content: "";
@@ -9312,7 +9292,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin: 0px auto;
 	}
 	h3.w19:before {
-		width: 99%;
+		width: 100%;
 		height: 1px;
 		background: #fff;
 		content: "";
@@ -9532,12 +9512,10 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		padding: 0;
 	}
 	.owl-theme .owl-nav {
-		top: 110px;
 		margin: 0;
 		left: 19%;
 	}
 	.kno a.fancybox.brown {
-		background: #b07d66;
 		position: relative;
 		font-size: 14px;
 	}
@@ -9698,6 +9676,10 @@ body.page-template.page-template-l2 section#first {
 
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
+
+Служебное оглавление: 
+
+Экран max-width:850px с 10039;
 ===========================================*/
 
 #contacts .contact a:not[class="brown"] {
@@ -9968,6 +9950,13 @@ a.fancybox.zvo.tablet {
 	}
 }
 @media screen and (max-width: 1050px) {
+	select.wpcf7-form-control.wpcf7-select {
+		width: 100%;
+	}
+	.header-area.page .container {
+		width: 100%;
+		margin: 0;
+	}
 	.custom-logo {
 		width: 100%;
 	}
@@ -9991,6 +9980,9 @@ a.fancybox.zvo.tablet {
 	.hentry {
 		margin: 0;
 	}
+	.page .custom-logo-link {
+		width: 100%;
+	}
 	.custom-logo-link {
 		float: left;
 		width: 25%;
@@ -10001,7 +9993,7 @@ a.fancybox.zvo.tablet {
 		z-index: 5;
 	}
 	.contact {
-		width: 40%;
+		width: 45%;
 		float: left;
 		padding: 0 15px;
 	}
@@ -10045,6 +10037,47 @@ a.fancybox.zvo.tablet {
 	}
 }
 @media screen and (max-width: 850px) {
+	.col-md-5.contact {
+		opacity: 1;
+	}
+	.col-md-5.contact p {
+		font-size: 15px;
+	}
+	.fullwidthbanner-container {
+		overflow: hidden !important;
+	}
+	#projects h4.fgfgf {
+		margin-top: 0;
+	}
+	.ostavit .wpcf7 input:not([type="submit"]) {
+		width: 100%;
+	}
+	.call.col-md-1 img{
+		display: none;
+	}
+	.ostavit {
+		margin: 35px auto 0;
+		opacity: 1;
+		position: relative;
+		width: 75%;
+		z-index: 10;
+	}
+	.w19 br {
+		display: none;
+	}
+	header.entry-header.main {
+		opacity: 1;
+	}
+	.header-area.page {
+		bottom: 0;
+		top: auto;
+	}
+	.phone.col-md-3{
+		right: 4%;
+	}
+	.mainmenu.col-md-7 {
+		left: 3%;
+	}
 	body.page-template.page-template-main .navbar-nav>li>.sub-menu {
 		display: none;
 	}
@@ -10134,9 +10167,15 @@ a.fancybox.zvo.tablet {
 		width: 305px;
 	}
 	header.entry-header.main {
-		padding: 0 15px;
+		padding: 0 15px 15px;
 	}	
 	#map iframe {
 		height: 200px;
+	}
+	.ostavit {
+		width: 100%;
+	}
+	section#contacts {
+		padding-bottom: 135px;
 	}
 }

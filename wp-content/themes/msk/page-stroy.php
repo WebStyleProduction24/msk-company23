@@ -24,7 +24,7 @@ get_header(); ?>
 	<header class="entry-header col-md-4 main">
     <img class="fgf" src="<?php echo get_template_directory_uri(); ?>/images/msk.png"/>
     <h1 class="entry-title">Строительство домов под ключ</h1>
-    <h3 class="w19">Разработка и строительство<br>индивидуальных проектов</h3>
+    <h3 class="w19">Разработка и строительство <br>индивидуальных проектов</h3>
   </header>
   <div class="ostavit col-md-5">
     <div class="inner-za"><?php echo do_shortcode('[contact-form-7 id="103" title="Проект бесплатно"]'); ?></div>
@@ -93,7 +93,7 @@ get_header(); ?>
           },
           600: {
             items: 1,
-            nav: false
+            nav: true
           },
           1000: {
             items: 1,
@@ -148,7 +148,7 @@ get_header(); ?>
         <img src="/wp-content/uploads/2016/12/str.png" class="c1"/>
         <img src="/wp-content/uploads/2016/12/v1.png"/>
         <div class="cont1">ВЫ ОСТАВЛЯЕТЕ<br>ЗАЯВКУ</div>
-        <div class="cont2">Вы оставляете заявку в&nbsp;<a href="#form">контактной форме</a> и&nbsp;наш менеджер перезвонит Вам в&nbsp;ближайшее время или можете сами позвонить по&nbsp;телефону:<br><a href="tel:+79284571297">+7&nbsp;(928)&nbsp;457-12-97</a>,<br><a href="tel:+79889660527">+7&nbsp;(988)&nbsp;966-05-27</a></div>
+        <div class="cont2">Вы оставляете заявку и наш менеджер перезвонит в&nbsp;ближайшее время</div>
       </div>
       <div class="one-5">
         <img src="/wp-content/uploads/2016/12/str.png" class="c2"/>

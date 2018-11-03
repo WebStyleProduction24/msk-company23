@@ -78,7 +78,7 @@
 		<div class="container">
 			
 			<?php wsp24_logo(); ?>
-			<div class="mainmenu col-md-7">
+			<div class="mainmenu col-md-7 col-sm-7">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="sr-only"><?php echo __('Меню', 'philips');?></span>
@@ -145,11 +145,15 @@
 	?>			          
 <?php } ?>          
 </div>
-<div class="phone col-md-3">
+<div class="phone col-md-3 col-sm-3">
 	<p><?php wsp24_phone_1(); ?></p>
 	<p><?php wsp24_phone_2(); ?></p>
 </div>        
-<div class="call col-md-1"><a href="#contact_form_pop" class="fancybox"><img class="fgf" src="<?php echo get_template_directory_uri(); ?>/images/callback.png"/></a></div>          
+<div class="call col-md-1 col-sm-1">
+	<a href="#contact_form_pop" class="fancybox">
+		<img class="fgf" src="<?php echo get_template_directory_uri(); ?>/images/callback.png"/>
+	</a>
+</div>          
 
 </div>
 </div><!-- End header-area -->
