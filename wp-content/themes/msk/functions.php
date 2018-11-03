@@ -616,12 +616,12 @@ function wsp24_logo() {
     $gtml = '';
 
     $bloginfo = '<a href="/" rel="home">';
-    $bloginfo .= '<div class="logo col-md-1"><h1 class="site-title">';
+    $bloginfo .= '<div class="logo col-md-1 col-sm-1"><h1 class="site-title">';
     $bloginfo .= get_bloginfo( 'name' );
     $bloginfo .= '</h1></div></a>';
 
     $html = has_custom_logo() ? get_custom_logo() : $bloginfo;
-    $html = sprintf('<div class="col-md-1 logo">%1$s</div>', $html );
+    $html = sprintf('<div class="col-md-1- col-sm-1 logo">%1$s</div>', $html );
 
     echo $html;
 }
@@ -673,8 +673,54 @@ function top_custom() {
     echo '
     <style type="text/css" media="screen">
     .call.col-md-1 img, .header-area.page, .panel {top: 32px !important; }
+    @media screen and ( max-width: 850px ) {
+        .header-area.page {top: auto !important; }
+    }
     @media screen and ( max-width: 782px ) {
-        .call.col-md-1 img, .header-area.page, .panel {top: 32px !important; }
+        .call.col-md-1 img, .panel {top: 46px !important; }
+    }
+    @media screen and ( max-width: 650px ) {
+        header.entry-header.main {padding-top: 46px !important;}
+    }
+    @media screen and ( max-width: 600px ) {
+        html {margin-top: 0px !important; }
     }
     </style>';
+}
+
+
+add_action( 'wp_footer', 'mycustom_wp_footer' );
+ 
+function mycustom_wp_footer() {
+?>
+<script type="text/javascript">
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+    if ( '271' == event.detail.contactFormId ) {
+        yaCounter46469931.reachGoal('otdelka akciya');
+    }
+    if ( '115' == event.detail.contactFormId ) {
+        yaCounter50448268.reachGoal('voprosi');
+    }
+    if ( '47' == event.detail.contactFormId ) {
+        yaCounter50448268.reachGoal('zvonok');
+    }
+    if ( '158' == event.detail.contactFormId ) {
+        yaCounter50448268.reachGoal('Calkulator');
+    }
+    if ( '103' == event.detail.contactFormId ) {
+        yaCounter50448268.reachGoal('project');
+    }
+    if ( '108' == event.detail.contactFormId ) {
+        yaCounter50448268.reachGoal('stroitelstvo');
+    }
+    if ( '195' == event.detail.contactFormId ) {
+        yaCounter50448268.reachGoal('otdelka');
+    }
+    if ( '244' == event.detail.contactFormId ) {
+        yaCounter50448268.reachGoal('prodaja');
+    }
+}, false );
+
+</script>
+<?php
 }
