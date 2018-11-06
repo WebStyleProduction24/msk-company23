@@ -16,19 +16,15 @@ jQuery(document).ready(function($) {
    *  @since 2.5.0
    */
    _alm.select2 = function(){
+      
       // Default Select2
       $('.row select, .cnkt-main select, select.jump-menu').not('.multiple, .meta-compare, .meta-type, .alm-filter-select').select2({});
-
-      // multiple
-      $('.ajax-load-more .categories select.multiple').select2({
-         placeholder : '-- '+  alm_admin_localize.select_cats +' --',
+      
+      // Set placeholder
+      $('.ajax-load-more select.multiple').select2({
+         placeholder : '-- '+ alm_admin_localize.select +' --'
       });
-      $('.ajax-load-more .tags select.multiple').select2({
-         placeholder : '-- '+ alm_admin_localize.select_tags +' --'
-      });
-      $('.ajax-load-more .authors select.multiple').select2({
-         placeholder : '-- '+ alm_admin_localize.select_authors +' --'
-      });
+      
    };
    _alm.select2();
 
@@ -519,11 +515,30 @@ jQuery(document).ready(function($) {
 			var users_per_page = $('#alm-users input#users-per-page').val();
 			var users_order = $('#alm-users select#users-order').val();
 			var users_orderby = $('#alm-users select#users-orderby').val();
+			
+			// Deselect other roles if 'All Roles' is selected.
+         var UsersList = document.querySelector("#alm-users select#users-role");
+         var users_all_selected = false;
+         // Loop all roles
+         for (var i = 0; i < UsersList.length; i++){
+            if (UsersList.options[i].selected ){               
+               if(users_all_selected){
+                  UsersList.options[i].selected = false
+               }
+               if(UsersList.options[i].value === 'all'){
+                  users_all_selected = true;
+               }
+            }
+         }
+         $('#alm-users select#users-role').select2(); // Reset Select2
+         users_role = $('#alm-users select#users-role').val(); // Get new users_role value
+			
+			
          $('#users-extended').slideDown(150, 'alm_easeInOutQuad');
 
          output += ' users="'+users+'"';
          
-         if(users_role !== ''){
+         if(users_role !== '' && users_role != undefined){
 	         output += ' users_role="'+ users_role +'"';
          }
          if(users_include !== ''){
@@ -628,11 +643,36 @@ jQuery(document).ready(function($) {
       // ---------------------------
       // - Categories
       // ---------------------------
-
+		
+		var category_type =  $('.categories #category__and');
+		var category_populate =  $('.categories .alm-populate');	
+		var category_populate_eg =  $('.categories .alm-populate-eg');	
+		// If checked	
+		if(category_type.get(0).checked){
+			$('.category-toggle.category_name').hide()
+			$('.category-toggle.category_name select').select2('val','');
+			$('.category-toggle.category__and').show();
+			category_populate.text('ID');
+			category_populate_eg.text('e.g. 2, 9, 7 etc...');
+		} else {
+			$('.category-toggle.category__and').hide()
+			$('.category-toggle.category__and select').select2('val','');
+			$('.category-toggle.category_name').show();	
+			category_populate.text('slug');
+			category_populate_eg.text('e.g. design, research etc...');	
+		}
+		
       // IN
       var cat = $('.categories #category-select').val();
-      if(cat !== '' && cat !== undefined && cat !== null)
+      if(cat !== '' && cat !== undefined && cat !== null){
          output += ' category="'+cat+'"';
+      }
+
+      // AND
+      var cat__and = $('.categories #category--and-select').val();  
+      if(cat__and !== '' && cat__and !== undefined && cat__and !== null){
+         output += ' category__and="'+cat__and+'"';
+      }
 
       // NOT_IN
       var cat_not_in = $('.categories #category-exclude-select').val();
@@ -643,10 +683,37 @@ jQuery(document).ready(function($) {
       // ---------------------------
       // - Tags
       // ---------------------------
-
+		
+		var tag_type =  $('.tags #tag__and');
+		var tag_populate =  $('.tags .alm-populate');	
+		var tag_populate_eg =  $('.tags .alm-populate-eg');	
+		
+		// If checked	
+		if(tag_type.get(0).checked){
+			$('.tag-toggle.tag_normal').hide()
+			$('.tag-toggle.tag_normal select').select2('val','');
+			$('.tag-toggle.tag__and').show();
+			tag_populate.text('ID');
+			tag_populate_eg.text('e.g. 3, 4, 6 etc...');
+		} else {
+			$('.tag-toggle.tag__and').hide()
+			$('.tag-toggle.tag__and select').select2('val','');
+			$('.tag-toggle.tag_normal').show();	
+			tag_populate.text('slug');
+			tag_populate_eg.text('e.g. toronto, canada etc...');	
+		}
+		
+		// IN
       var tag = $('.tags #tag-select').val();
-      if(tag !== '' && tag !== undefined && tag !== null)
+      if(tag !== '' && tag !== undefined && tag !== null){
          output += ' tag="'+tag+'"';
+      }      
+
+      // AND
+      var tag__and = $('.tags #tag--and-select').val();
+      if(tag__and !== '' && tag__and !== undefined && tag__and !== null){
+         output += ' tag__and="'+tag__and+'"';
+      }
 
       // NOT_IN
       var tag_not_in = $('.tags #tag-exclude-select').val();

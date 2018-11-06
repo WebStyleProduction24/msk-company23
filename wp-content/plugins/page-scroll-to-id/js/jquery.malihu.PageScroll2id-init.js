@@ -40,7 +40,7 @@
 					$(this).data(_p+"Element",true);
 				});
 				if(_validateLocHash(_hash,_o.instances[_p+"_instance_"+k]["scrollToHashForAll"]==="true")){
-					var href=window.location.href.replace(/#.*$/,"#");
+					var href=_o.instances[_p+"_instance_"+k]["scrollToHashRemoveUrlHash"]==="true" ? window.location.href.replace(/#.*$/,"") : window.location.href.replace(/#.*$/,"#");
 					_toTop(_o.instances[_p+"_instance_"+k]["layout"]); //stop jump to hash straight away
 					if(window.history && window.history.replaceState){
 						window.history.replaceState("","",href);
@@ -53,7 +53,8 @@
 	});
 	$(window).on("load",function(){
 		for(var i=0; i<_o.total_instances; i++){
-			var sel=$(_o.instances[_p+"_instance_"+i]["selector"]+",."+shortcodeClass+","+autoSelectors);
+			var sel=$(_o.instances[_p+"_instance_"+i]["selector"]+",."+shortcodeClass+","+autoSelectors),
+				autoCorrectScrollOpt=_o.instances[_p+"_instance_"+i]["autoCorrectScroll"],autoCorrectScroll=0;
 			sel.mPageScroll2id({
 				scrollSpeed:_o.instances[_p+"_instance_"+i]["scrollSpeed"],
 				autoScrollSpeed:(_o.instances[_p+"_instance_"+i]["autoScrollSpeed"]==="true") ? true : false,
@@ -70,18 +71,35 @@
 				keepHighlightUntilNext:(_o.instances[_p+"_instance_"+i]["keepHighlightUntilNext"]==="true") ? true : false,
 				highlightByNextTarget:(_o.instances[_p+"_instance_"+i]["highlightByNextTarget"]==="true") ? true : false,
 				disablePluginBelow:_screen(_o.instances[_p+"_instance_"+i]["disablePluginBelow"].toString()),
-				appendHash:(_o.instances[_p+"_instance_"+i]["appendHash"]==="true") ? true : false
+				appendHash:(_o.instances[_p+"_instance_"+i]["appendHash"]==="true") ? true : false,
+				onStart:function(){
+					if(autoCorrectScrollOpt==="true" && mPS2id.trigger==="selector") autoCorrectScroll++;
+				},
+				onComplete:function(){
+					if(autoCorrectScroll==1){
+						if(mPS2id.clicked.length) mPS2id.clicked.trigger("click.mPS2id");
+						autoCorrectScroll=0;
+					}
+				}
 			});
 			//scroll to location hash on page load
 			if(_o.instances[_p+"_instance_"+i]["scrollToHash"]==="true" && _hash){
 				if(_validateLocHash(_hash,_o.instances[_p+"_instance_"+i]["scrollToHashForAll"]==="true")){
 					_toTop(_o.instances[_p+"_instance_"+i]["layout"]); //jump/start from the top
+					var scrollToHashUseElementData=_o.instances[_p+"_instance_"+i]["scrollToHashUseElementData"],
+						linkMatchesHash=$("a._mPS2id-h[href$='"+_hash+"'][data-ps2id-offset]:not([data-ps2id-offset=''])").last();
 					setTimeout(function(){
-						$.mPageScroll2id("scrollTo",_hash);
-						if(window.history && window.history.replaceState){
-							window.history.replaceState("","",_hash);
+						if(scrollToHashUseElementData==="true" && linkMatchesHash.length){
+							linkMatchesHash.trigger("click.mPS2id");
 						}else{
-							window.location.hash=_hash;
+							$.mPageScroll2id("scrollTo",_hash);
+						}
+						if(window.location.href.indexOf("#")!==-1){
+							if(window.history && window.history.replaceState){
+								window.history.replaceState("","",_hash);
+							}else{
+								window.location.hash=_hash;
+							}
 						}
 					},_o.instances[_p+"_instance_"+i]["scrollToHashDelay"]);
 				}
@@ -89,11 +107,19 @@
 			//attempt to unbind click events from other scripts 
 			if(_o.instances[_p+"_instance_"+i]["unbindUnrelatedClickEvents"]==="true"){
 				setTimeout(function(){
-					var $events=sel.length ? $._data(sel[0],"events") : null;
+					var $events=sel.length ? $._data(sel.add($(document))[0],"events") : null;
 					if($events){
 						for(var i=$events.click.length-1; i>=0; i--){
 							var handler=$events.click[i];
-							if(handler && handler.namespace != "mPS2id") sel.off("click",handler.handler);
+							if(handler && handler.namespace != "mPS2id"){
+								if(handler.selector==='a[href*="#"]'){
+									handler.selector='a[href*="#"]:not(._mPS2id-h)';
+								}else if(handler.selector==='a[href*=#]:not([href=#])'){
+									handler.selector='a[href*=#]:not([href=#]):not(._mPS2id-h)';
+								}else{
+									sel.off("click",handler.handler);
+								}
+							}
 						}
 					}
 				},300);

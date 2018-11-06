@@ -1,6 +1,6 @@
 /*
 == Page scroll to id == 
-Version: 1.5.6 
+Version: 1.5.9 
 Plugin URI: http://manos.malihu.gr/page-scroll-to-id/
 Author: malihu
 Author URI: http://manos.malihu.gr
@@ -151,7 +151,7 @@ THE SOFTWARE.
 						}
 						var $this=$(this),
 							href=$this.attr("href"),
-							hrefProp=$this.prop("href");
+							hrefProp=$this.prop("href").baseVal || $this.prop("href");
 						if(href && href.indexOf("#/")!==-1){
 							return;
 						}
@@ -270,7 +270,7 @@ THE SOFTWARE.
 				hrefProp=(!hrefProp) ? href : hrefProp;
 				var str=(hrefProp.indexOf("#/")!==-1) ? hrefProp.split("#/")[0] : hrefProp.split("#")[0],
 					loc=window.location.toString().split("#")[0];
-				return href!=="#" && href.indexOf("#")!==-1 && (str==="" || str===loc);
+				return href!=="#" && href.indexOf("#")!==-1 && (str==="" || decodeURIComponent(str)===decodeURIComponent(loc));
 			},
 			
 			/* setup selectors, target elements, basic plugin classes etc. */
@@ -278,7 +278,7 @@ THE SOFTWARE.
 			_setup:function(){
 				var el=functions._highlightSelector(),i=1,tp=0;
 				return $(el).each(function(){
-					var $this=$(this),href=$this.attr("href"),hrefProp=$this.prop("href");
+					var $this=$(this),href=$this.attr("href"),hrefProp=$this.prop("href").baseVal || $this.prop("href");
 					if(functions._isValid.call(null,href,hrefProp)){
 						var id=(href.indexOf("#/")!==-1) ? href.split("#/")[1] : href.split("#")[1],t=$("#"+id); 
 						if(t.length>0){
@@ -551,7 +551,7 @@ THE SOFTWARE.
 						if($this.attr("class")){
 							var clickedClasses=$this.attr("class").split(" ");
 							for(var index in clickedClasses){
-								if(clickedClasses[index].match(/^ps2id-speed-\d+$/)){
+								if(String(clickedClasses[index]).match(/^ps2id-speed-\d+$/)){
 									speed=clickedClasses[index].split("ps2id-speed-")[1];
 									break;
 								}

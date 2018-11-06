@@ -17,7 +17,7 @@ $help_shortcodes_text=<<<EOD
 	</li>
 	<li>
 		<a href="http://manos.malihu.gr/page-scroll-to-id-for-wordpress/#plugin-shortcodes-link-offset" target="_blank">offset</a> (optional) - Link-specific offset (bypasses the general offset value in plugin settings)  <br /> 
-		Examples: <code>ps2id url='#some-id' offset='100']link text[/ps2id]</code> (offset scrolling by 100 pixels), <code>[ps2id url='#some-id' offset='#navigation-menu']link text[/ps2id]</code> (Offset scrolling by the height/width of the element with id <code>navigation-menu</code>)
+		Examples: <code>[ps2id url='#some-id' offset='100']link text[/ps2id]</code> (offset scrolling by 100 pixels), <code>[ps2id url='#some-id' offset='#navigation-menu']link text[/ps2id]</code> (Offset scrolling by the height/width of the element with id <code>navigation-menu</code>)
 	</li>
 	<li>
 		<a href="http://manos.malihu.gr/page-scroll-to-id-for-wordpress/#plugin-shortcodes-link-class" target="_blank">class</a> (optional) - Link custom class(es) <br />

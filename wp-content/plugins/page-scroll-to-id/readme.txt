@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: page scrolling, page animation, smooth scroll, navigation, single-page navigation
 Requires at least: 3.3
 Tested up to: 4.9
-Stable tag: 1.6.2
+Stable tag: 1.6.3
 License: The MIT License (MIT)
 License URI: http://opensource.org/licenses/MIT
 
@@ -94,6 +94,19 @@ Because it works and it already has a ton of features. The plugin has little dep
 6. Visual editor "Insert Page scoll to id target" modal
 
 == Changelog ==
+
+= 1.6.3 =
+
+* Fixed a bug which was breaking page scrolling in some WordPress themes/installations in version 1.6.2. 
+* Fixed a bug regarding links with URL in non-latin characters (e.g. Greek, Cyrillic etc.). 
+* Better plugin version control for multisite installations. 
+* Fixed PHP 7 notices and warnings. 
+* Plugin is now enabled by default on all links with a non-empty hash value (e.g. #some-id) in their URL.
+* Changed default scroll duration from 1000 to 800 milliseconds.
+* Added support for anchors inside SVG elements. 
+* Added new option 'Verify target position and readjust scrolling if necessary'.
+* Added new option 'Use element custom offset when scrolling from/to different pages'.
+* Added new option 'Remove URL hash when scrolling from/to different pages'.
 
 = 1.6.2 =
 * Changed default options for scroll duration and easing type. Plugin is now enabled by default on WordPress menu items/links. These changes affect only first-time installations (upgrading won't change these options).
@@ -202,6 +215,10 @@ Because it works and it already has a ton of features. The plugin has little dep
 * Launch!
 
 == Upgrade Notice ==
+
+= 1.6.3 =
+
+Fixed a bug which was breaking page scrolling in some WordPress themes/installations in version 1.6.2, fixed a bug regarding links with URL in non-latin characters (e.g. Greek, Cyrillic etc.), better plugin version control for multisite installations, fixed PHP 7 notices/warnings. 
 
 = 1.6.2 =
 

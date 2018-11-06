@@ -54,7 +54,7 @@ class malihuPageScroll2idWidget extends WP_Widget {
 
 }
 
-add_action('widgets_init',
-	create_function('', 'return register_widget("malihuPageScroll2idWidget");')
+include_once(
+	plugin_dir_path( __FILE__ ).(version_compare(PHP_VERSION, '5.3', '<') ? 'class-malihu-pagescroll2id-widget-init-php52.php' : 'class-malihu-pagescroll2id-widget-init.php')
 );
 ?>
