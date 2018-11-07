@@ -4,21 +4,8 @@ Template Name: Строительство под ключ
 
 */
 
-get_header(); ?>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('section[data-type="background"]').each(function(){
-      var $bgobj = $(this); // создаем объект
-      $(window).scroll(function() {
-        var yPos = -($window.scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
-        // Присваиваем значение background-position
-        var coords = 'center '+ yPos + 'px';
-        // Создаем эффект Parallax Scrolling
-        $bgobj.css({ backgroundPosition: coords });
-      });
-    });
-  });
-</script>
+get_header();
+get_header('stroy'); ?>
 
 <section id="first" data-type="background" data-speed="10">
 	<header class="entry-header col-md-4 main">

@@ -2,14 +2,13 @@
 /*
 Template Name: Главная страница
 
-Переработка шаблона произведена командой Web Style Production 24 (https://wsp24.ru/)
 */
 
 global $social;
 
-get_header('main');
-
+get_header();
 ?>
+</head>
 
 <body <?php body_class(); ?>><div id="wptime-plugin-preloader"></div>
     <div style="display:none" class="fancybox-hidden">
