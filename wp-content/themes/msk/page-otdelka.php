@@ -46,7 +46,7 @@ get_header('otdelka');
 <a href="#" class="dizajn-landshafta1">Дизайн ландшафта</a>
 <a href="#" class="3d-vizualizatsiya1">3D визуализация</a>
 </div> 
-<?php echo do_shortcode('[ajax_load_more container_type="ul" post_type="item" posts_per_page="8" scroll="false" button_label="Показать еще" button_loading_label="Подождите..."]'); ?>
+<?php echo do_shortcode('[ajax_load_more container_type="ul" post_type="item" posts_per_page="8" scroll="false" button_label="Показать еще" button_loading_label="Загрузка..."]'); ?>
 </section>
 
 <section id="principles"><div class="container">
