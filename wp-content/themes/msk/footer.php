@@ -15,8 +15,8 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="copyright">
-				<p>2017 <span>®</span> Все права зищены - <a href="/">Евро Дом </a></p>
-				<div class="raz"><a href="" target="_blank"></></a></div></div>
+				<p><?php echo date('Y') ?> <span>®</span> Все права зищены - <a href="/">Многофункциональная Строительная компания МСК+ </a></p>
+				<div class="raz">Разработано студией <a href="https://wsp24.ru/" target="_blank">Web Style Production 24</a></div></div>
 			</div>
 		</div>
 	</div>
