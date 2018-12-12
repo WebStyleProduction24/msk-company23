@@ -26,7 +26,7 @@ define('DB_NAME', 'msk-company23.ru');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'еуые');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
