@@ -5,18 +5,9 @@ Template Name: Строительство под ключ
 */
 
 get_header();
-get_header('stroy'); ?>
+get_header('stroy'); 
 
-<section id="first" data-type="background" data-speed="10">
-	<header class="entry-header col-md-4 main">
-    <img class="fgf" src="<?php echo get_template_directory_uri(); ?>/images/msk.png"/>
-    <h1 class="entry-title">Строительство домов под ключ</h1>
-    <h3 class="w19">Разработка и строительство <br>индивидуальных проектов</h3>
-  </header>
-  <div class="ostavit col-md-5">
-    <div class="inner-za"><?php echo do_shortcode('[contact-form-7 id="103" title="Проект бесплатно"]'); ?></div>
-  </div>
-</section>	
+get_template_part('page-parts/stroy', 'first'); ?>
 
 <section id="projects" data-type="background" data-speed="10">
   <div class="container">
@@ -115,17 +106,7 @@ get_header('stroy'); ?>
   </div>
 </section>
 
-<section id="form">
-  <div class="container">
-    <div class="col-md-11">
-      <div class="in">
-        <div class="in-v">
-          <?php echo do_shortcode('[contact-form-7 id="108" title="Форма (строительство)"]');?>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('page-parts/stroy', 'form'); ?>
 
 <section id="etapi">
   <div class="container">
@@ -188,35 +169,12 @@ get_header('stroy'); ?>
   </div>
 </section>
 
-<section id="services">
-  <div class="container">
-    <h4 class="fgfgf">СТРОИТЕЛЬСТВО ПОД КЛЮЧ</h4>
-    <div class="col-md-12">
-      <div class="col-md-4">
-        <img src="/wp-content/uploads/2016/12/x1.png"/>
-        <p class="servic">3D МОДЕЛИРОВАНИЕ</p>
-      </div>
-      <div class="col-md-4">
-        <img src="/wp-content/uploads/2016/12/x2.png"/>
-        <p class="servic">Дизайн экстерьера и интерьера</p>
-      </div>  
-      <div class="col-md-4">
-        <img src="/wp-content/uploads/2016/12/x3.png"/>
-        <p class="servic">Ландшафтный дизайн</p>
-      </div>  
-      <div class="col-md-4">
-        <img src="/wp-content/uploads/2016/12/x4.png"/>
-        <p class="servic">ВЫБОР И СОГЛАСОВАНИЕ МАТЕРИАЛОВ</p>
-      </div>
-      <div class="col-md-4">
-        <img src="/wp-content/uploads/2016/12/x5.png"/>
-        <p class="servic">ВНЕШНЯЯ / внутреняя ОТДЕЛКА</p>
-      </div>
-    </div>
-    <div class="ostavit col-md-8">
-      <div class="inner-za"><?php echo do_shortcode('[contact-form-7 id="115" title="Вопросы менеджеру"]'); ?></div>
-    </div>
-  </section>
+<?php
+
+  get_template_part('page-parts/stroy', 'form');
+  get_template_part('page-parts/stroy', 'services');
+
+?>
 
   <section id="contacts">
     <div class="container">

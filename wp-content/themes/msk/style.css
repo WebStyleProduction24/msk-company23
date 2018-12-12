@@ -8624,11 +8624,9 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		float: left;
 	}
 	.in-v .col-md-6 {
-		max-width: 50%;
 		float: left;
 	}
 	.in-v .col-md-6 {
-		max-width: 50%;
 		float: left;
 		padding: 0 !important;
 		margin: 2px 0 !important;
@@ -8668,23 +8666,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		max-width: 500px !important;
 		margin: 0 auto;
 		display: flex;
-	}
-	.inner-za:before {
-		border: solid 2px #fff;
-		content: "";
-		left: 5px;
-		position: absolute;
-		width: calc(100% - 10px);
-		height: calc(100% - 10px);
-	}
-	.ostavit .inner-za:before {
-		border: solid 2px #fff;
-		content: "";
-		left: 2px;
-		top: 2px;
-		position: absolute;
-		width: calc(100% - 4px);
-		height: calc(100% - 4px);
 	}
 	section#form .container {
 		padding-top: 150px;
@@ -9682,6 +9663,15 @@ body.page-template.page-template-l2 section#first {
 Экран max-width:850px с 10039;
 ===========================================*/
 
+.in-v .col-md-6 {
+	float: left;
+	padding: 0 !important;
+	margin: 2px 0 !important;
+}
+.in-v .col-md-6 {
+	padding-left: 0;
+}
+
 #garanties img, #garanties img + h4, #services img, #services p, #types img, #types img + p {
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
@@ -10063,6 +10053,25 @@ a.fancybox.zvo.tablet {
 	}
 }
 @media screen and (max-width: 850px) {
+	section#form input[type="text"],
+	section#form input[type="email"],
+	section#form input[type="url"],
+	section#form input[type="password"],
+	section#form input[type="search"] {
+		width:100%;
+	}
+	.in-v .col-md-6.col-sm-12 {
+		padding: 0 15px !important;
+	}
+	.in-v .col-md-6.col-sm-6 {
+		padding: 0;
+	}
+	.in-v .col-md-6.col-sm-6:nth-child(odd) {
+		padding-right: 15px !important;
+	}
+	.in-v .col-md-6.col-sm-6:nth-child(even) {
+		padding-left: 15px !important;
+	}
 	.col-md-5.contact {
 		opacity: 1;
 	}
