@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the MailOptin - Lite package.
 msgid ""
 msgstr ""
-"Project-Id-Version: MailOptin - Lite 1.2.10.1\n"
+"Project-Id-Version: MailOptin - Lite 1.2.11.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mailoptin\n"
-"POT-Creation-Date: 2018-11-01 12:31:26+00:00\n"
+"POT-Creation-Date: 2018-12-11 12:23:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -58,10 +58,10 @@ msgstr ""
 #: vendor/mailoptin/connections/ActiveCampaignConnect/Connect.php:206
 #: vendor/mailoptin/connections/GetResponseConnect/ConnectSettingsPage.php:72
 #: vendor/mailoptin/connections/MailChimpConnect/Connect.php:459
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:433
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:144
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:435
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:125
 #: vendor/mailoptin/core/src/Admin/SettingsPage/AddEmailCampaign.php:78
-#: vendor/mailoptin/core/src/OptinForms/SidebarWidgets.php:107
+#: vendor/mailoptin/core/src/OptinForms/SidebarWidgets.php:109
 #: vendor/mailoptin/core/src/Repositories/ConnectionsRepository.php:20
 msgid "Select..."
 msgstr ""
@@ -77,13 +77,13 @@ msgstr ""
 #: vendor/mailoptin/connections/EmailOctopusConnect/ConnectSettingsPage.php:17
 #: vendor/mailoptin/connections/GetResponseConnect/ConnectSettingsPage.php:40
 #: vendor/mailoptin/connections/KlaviyoConnect/ConnectSettingsPage.php:17
-#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:75
+#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:69
 #: vendor/mailoptin/connections/MailPoetConnect/ConnectSettingsPage.php:17
 #: vendor/mailoptin/connections/MailerliteConnect/ConnectSettingsPage.php:17
 #: vendor/mailoptin/connections/MailsterConnect/ConnectSettingsPage.php:17
 #: vendor/mailoptin/connections/SendinblueConnect/ConnectSettingsPage.php:17
 #: vendor/mailoptin/connections/SendlaneConnect/ConnectSettingsPage.php:17
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:54
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:48
 msgid "Connected"
 msgstr ""
 
@@ -98,13 +98,13 @@ msgstr ""
 #: vendor/mailoptin/connections/EmailOctopusConnect/ConnectSettingsPage.php:19
 #: vendor/mailoptin/connections/GetResponseConnect/ConnectSettingsPage.php:42
 #: vendor/mailoptin/connections/KlaviyoConnect/ConnectSettingsPage.php:19
-#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:77
+#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:71
 #: vendor/mailoptin/connections/MailPoetConnect/ConnectSettingsPage.php:19
 #: vendor/mailoptin/connections/MailerliteConnect/ConnectSettingsPage.php:19
 #: vendor/mailoptin/connections/MailsterConnect/ConnectSettingsPage.php:19
 #: vendor/mailoptin/connections/SendinblueConnect/ConnectSettingsPage.php:19
 #: vendor/mailoptin/connections/SendlaneConnect/ConnectSettingsPage.php:19
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:56
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:50
 msgid "Not Connected"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 #: vendor/mailoptin/connections/EmailOctopusConnect/ConnectSettingsPage.php:28
 #: vendor/mailoptin/connections/GetResponseConnect/ConnectSettingsPage.php:51
 #: vendor/mailoptin/connections/KlaviyoConnect/ConnectSettingsPage.php:27
-#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:86
+#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:80
 #: vendor/mailoptin/connections/MailerliteConnect/ConnectSettingsPage.php:28
 #: vendor/mailoptin/connections/SendinblueConnect/ConnectSettingsPage.php:27
 #: vendor/mailoptin/connections/SendlaneConnect/ConnectSettingsPage.php:27
@@ -146,13 +146,13 @@ msgstr ""
 #: vendor/mailoptin/connections/MailChimpConnect/SendCampaign.php:124
 #: vendor/mailoptin/connections/MailerliteConnect/SendCampaign.php:87
 #: vendor/mailoptin/connections/SendinblueConnect/SendCampaign.php:113
-#: vendor/mailoptin/connections/SendyConnect/SendCampaign.php:93
-#: vendor/mailoptin/connections/SendyConnect/SendCampaign.php:96
+#: vendor/mailoptin/connections/SendyConnect/SendCampaign.php:92
+#: vendor/mailoptin/connections/SendyConnect/SendCampaign.php:95
 msgid "Unexpected error. Please try again"
 msgstr ""
 
-#: vendor/mailoptin/connections/ActiveCampaignConnect/Subscription.php:64
-#: vendor/mailoptin/connections/ActiveCampaignConnect/Subscription.php:69
+#: vendor/mailoptin/connections/ActiveCampaignConnect/Subscription.php:70
+#: vendor/mailoptin/connections/ActiveCampaignConnect/Subscription.php:75
 #: vendor/mailoptin/connections/AweberConnect/Subscription.php:63
 #: vendor/mailoptin/connections/AweberConnect/Subscription.php:76
 #: vendor/mailoptin/connections/CampaignMonitorConnect/Subscription.php:69
@@ -177,12 +177,12 @@ msgstr ""
 #: vendor/mailoptin/connections/MailerliteConnect/Subscription.php:64
 #: vendor/mailoptin/connections/MailerliteConnect/Subscription.php:74
 #: vendor/mailoptin/connections/MailsterConnect/Subscription.php:77
-#: vendor/mailoptin/connections/SendinblueConnect/Subscription.php:63
-#: vendor/mailoptin/connections/SendinblueConnect/Subscription.php:68
+#: vendor/mailoptin/connections/SendinblueConnect/Subscription.php:64
+#: vendor/mailoptin/connections/SendinblueConnect/Subscription.php:69
 #: vendor/mailoptin/connections/SendlaneConnect/Subscription.php:60
 #: vendor/mailoptin/connections/SendlaneConnect/Subscription.php:66
-#: vendor/mailoptin/connections/SendyConnect/Subscription.php:63
-#: vendor/mailoptin/connections/SendyConnect/Subscription.php:67
+#: vendor/mailoptin/connections/SendyConnect/Subscription.php:61
+#: vendor/mailoptin/connections/SendyConnect/Subscription.php:65
 msgid "There was an error saving your contact. Please try again."
 msgstr ""
 
@@ -391,7 +391,7 @@ msgid "Select Email Service"
 msgstr ""
 
 #: vendor/mailoptin/connections/ElementorConnect/Elementor.php:72
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:262
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:259
 msgid "Select Email List"
 msgstr ""
 
@@ -588,8 +588,8 @@ msgid "Choose how users will select groups to subscribe to."
 msgstr ""
 
 #: vendor/mailoptin/connections/MailChimpConnect/Connect.php:321
-#: vendor/mailoptin/connections/MailChimpConnect/Connect.php:623
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:213
+#: vendor/mailoptin/connections/MailChimpConnect/Connect.php:624
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:215
 msgid "No MailChimp group found. Try selecting another email list."
 msgstr ""
 
@@ -618,20 +618,20 @@ msgid "Display Style"
 msgstr ""
 
 #: vendor/mailoptin/connections/MailChimpConnect/Connect.php:369
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:751
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:775
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:753
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:777
 msgid "Left"
 msgstr ""
 
 #: vendor/mailoptin/connections/MailChimpConnect/Connect.php:370
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:752
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:776
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:754
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:778
 msgid "Center"
 msgstr ""
 
 #: vendor/mailoptin/connections/MailChimpConnect/Connect.php:371
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:753
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:777
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:755
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:779
 msgid "Right"
 msgstr ""
 
@@ -655,19 +655,19 @@ msgstr ""
 msgid "Error message displayed when a visitor failed to select at least a group."
 msgstr ""
 
-#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:59
+#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:53
 msgid "MailChimp Segment"
 msgstr ""
 
-#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:62
+#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:56
 msgid "Select MailChimp segment to send to. Leave empty to send to all list subscribers."
 msgstr ""
 
-#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:81
+#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:75
 msgid "MailChimp Connection"
 msgstr ""
 
-#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:88
+#: vendor/mailoptin/connections/MailChimpConnect/ConnectSettingsPage.php:82
 msgid "Log in to your %sMailChimp account%s to get your API Key."
 msgstr ""
 
@@ -741,15 +741,15 @@ msgstr ""
 msgid "%sThis integration is disabled because you currently do not have Mailster installed and activated.%s"
 msgstr ""
 
-#: vendor/mailoptin/connections/RegisteredUsersConnect/Connect.php:60
+#: vendor/mailoptin/connections/RegisteredUsersConnect/Connect.php:54
 msgid "Registered Users"
 msgstr ""
 
-#: vendor/mailoptin/connections/RegisteredUsersConnect/Connect.php:96
+#: vendor/mailoptin/connections/RegisteredUsersConnect/Connect.php:90
 msgid "Restrict to User Role"
 msgstr ""
 
-#: vendor/mailoptin/connections/RegisteredUsersConnect/Connect.php:99
+#: vendor/mailoptin/connections/RegisteredUsersConnect/Connect.php:93
 msgid "Select user role(s) that newsletter will only be delivered to. Leave empty to send to all roles."
 msgstr ""
 
@@ -825,49 +825,49 @@ msgstr ""
 msgid "Sendy"
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:40
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:34
 msgid "Sendy Campaign Query String"
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:43
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:37
 msgid "Query string to append to all links in newsletter sent to Sendy email service. E.g Google Analytics tracking. Don't include '?' in your query string."
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:60
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:54
 msgid "Sendy Connection"
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:65
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:59
 msgid "API Key"
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:66
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:60
 msgid "Enter your Sendy API key."
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:70
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:64
 msgid "Installation URL"
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:71
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:65
 msgid "Enter your Sendy installation URL."
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:75
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:69
 msgid "Email List"
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:80
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:81
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:74
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:75
 msgid "List Name"
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:88
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:89
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:82
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:83
 msgid "List ID"
 msgstr ""
 
-#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:93
+#: vendor/mailoptin/connections/SendyConnect/ConnectSettingsPage.php:87
 msgid "Enter the names and IDs of your Sendy email list"
 msgstr ""
 
@@ -932,6 +932,10 @@ msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Controls_Tab_Toggle.php:21
 msgid "Advance"
+msgstr ""
+
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_EA_CPT_Control_Trait.php:35
+msgid "Restrict to %s"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Email_Schedule_Time_Fields_Control.php:72
@@ -1208,24 +1212,24 @@ msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Font_Stack_Control.php:32
 #: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Google_Font_Control.php:36
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:293
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:295
 msgid "Inherit from Theme"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:432
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:434
 msgid "New Integration"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:456
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:458
 msgid "Email Provider"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:457
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:255
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:459
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:213
 msgid "Email Provider List"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:461
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:463
 #: vendor/mailoptin/core/src/Admin/SettingsPage/Campaign_Log_List.php:197
 #: vendor/mailoptin/core/src/Admin/SettingsPage/Campaign_Log_List.php:323
 #: vendor/mailoptin/core/src/Admin/SettingsPage/Email_Campaign_List.php:241
@@ -1237,15 +1241,15 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:470
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:472
 msgid "Collapse all"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:471
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:473
 msgid "Expand all"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:493
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php:495
 msgid "Add Another Integration"
 msgstr ""
 
@@ -1275,27 +1279,27 @@ msgstr ""
 msgid "Saved"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:241
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:199
 msgid "Text"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:242
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:200
 msgid "Visual"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:243
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:201
 msgid "Add Media"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:252
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:210
 msgid "ConvertKit Form"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:253
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:211
 msgid "Drip Campaign"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:254
+#: vendor/mailoptin/core/src/Admin/Customizer/CustomizerTrait.php:212
 msgid "GetResponse Campaign"
 msgstr ""
 
@@ -1303,19 +1307,19 @@ msgstr ""
 msgid "Round up of Latest Posts"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/AbstractCustomizer.php:78
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/AbstractCustomizer.php:80
 msgid "View this email in your browser"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/AbstractCustomizer.php:93
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/AbstractCustomizer.php:95
 msgid "Read more"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/AbstractCustomizer.php:100
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/AbstractCustomizer.php:102
 msgid "If you do not want to receive emails from us, you can"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/AbstractCustomizer.php:101
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/AbstractCustomizer.php:103
 msgid "unsubscribe"
 msgstr ""
 
@@ -1365,242 +1369,255 @@ msgid "Send Test Email"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/Customizer.php:420
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:439
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:552
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:672
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:869
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:441
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:554
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:674
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:871
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:138
 msgid "Background Color"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:125
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:106
 msgid "Available placeholders for use in subject line:%s %s"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:127
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:108
 msgid " title of new published post."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:162
-msgid "Automation Name"
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:138
+#: vendor/mailoptin/core/src/Admin/SettingsPage/AddEmailCampaign.php:46
+msgid "Automation Title"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:172
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:148
 msgid "Email Subject"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:175
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:151
 msgid "Enter a subject for the email."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:187
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:163
 msgid "Maximum Number of Posts"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:203
-msgid "Post Content Length"
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:179
+msgid "Content Length"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:206
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:182
 msgid "Number of words to limit the post content to. Set to \"0\" for full post content."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:214
-msgid "Restrict to selected categories"
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:189
+msgid "Select Post Type"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:215
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:192
+msgid "WordPress Posts"
+msgstr ""
+
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:193
+msgid "By default, automation works with WordPress posts. To make it work with a custom post type instead? Select one."
+msgstr ""
+
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:211
+msgid "Restrict to Post Categories"
+msgstr ""
+
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:212
 msgid "Only include post that has either of the selected categories."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:227
-msgid "Restrict to selected tags"
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:224
+msgid "Restrict to Post Tags"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:228
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:225
 msgid "Only include post that has either of the selected tags."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:240
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:237
 msgid "Recipient"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:251
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:248
 msgid "Select Connection"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:255
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:252
 msgid "Choose the email service or connection that newsletter will be sent to."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:266
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:263
 msgid "Email list that newsletter will be sent to."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:274
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:271
 msgid "Schedule"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:286
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:283
 msgid "Send Immediately"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:289
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:286
 msgid "Enable to send newsletter immediately after a post is published."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:298
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:295
 msgid "Send Email"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:312
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:309
 msgid "When should we send?"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:353
-msgid "Upgrade to %sMailOptin Premium%s to restrict by post categories and tags."
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:355
+msgid "Upgrade to %sMailOptin Pro%s to support custom post types and restrict by post categories, tags and custom taxonomies."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:377
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:379
 msgid "%sUpgrade your MailOptin plan%s to send email campaigns directly to your list in MailChimp, Campaign Monitor, Aweber, Constant Contact, Drip, MailerLite, ConvertKit etc."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:455
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:457
 msgid "Upgrade to %sMailOptin Premium%s to access the Custom CSS feature that will allow you customize this template to your heart content."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:518
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:520
 msgid "Remove Header"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:530
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:532
 msgid "Logo"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:536
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:541
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:538
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:543
 msgid "Select Logo"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:537
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:539
 msgid "Change Logo"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:538
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:540
 msgid "Default"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:539
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:541
 msgid "Remove"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:540
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:542
 msgid "No logo selected"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:542
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:544
 msgid "Choose Logo"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:563
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:683
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:880
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:565
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:685
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:882
 msgid "Text Color"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:572
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:574
 msgid "Header Text"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:573
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:575
 msgid "This is used when template logo is not set."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:582
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:584
 msgid "Web Version Link Label"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:593
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:595
 msgid "Web Version Link Color"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:650
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:652
 msgid "Before Main Content"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:661
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:663
 msgid "After Main Content"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:694
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:696
 msgid "Remove Featured Image"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:704
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:706
 msgid "Fallback Featured Image"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:707
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:709
 msgid "Enter URL of an image to use when a post lacks a feature image."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:715
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:717
 msgid "Title Font Size"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:732
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:734
 msgid "Body Font Size"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:746
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:748
 msgid "Content Alignment"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:761
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:763
 msgid "Remove Read More Button"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:770
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:772
 msgid "Read More Button Alignment"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:785
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:787
 msgid "Read More Button Background Color"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:795
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:797
 msgid "Read More Button Text Color"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:802
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:804
 msgid "Read More Button Label"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:857
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:859
 msgid "Remove Footer"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:891
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:893
 msgid "Footer Font Size"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:906
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:908
 msgid "Copyright Line"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:915
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:917
 msgid "Mailing Address"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:924
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:926
 msgid "Unsubscribe Line"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:933
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:935
 msgid "Unsubscribe Link Label"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:945
+#: vendor/mailoptin/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php:947
 msgid "Unsubscribe Link Color"
 msgstr ""
 
@@ -1703,7 +1720,7 @@ msgid "Description"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/Customizer.php:748
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:424
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:425
 msgid "Note"
 msgstr ""
 
@@ -1746,8 +1763,8 @@ msgid "Border Color"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:161
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1174
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1337
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1175
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1351
 msgid "Premium Version Available"
 msgstr ""
 
@@ -1760,26 +1777,26 @@ msgid "Hide Headline"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:231
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:334
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:438
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:335
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:439
 msgid "Color"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:242
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:345
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:449
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:346
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:450
 msgid "Font Family"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:254
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:264
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:274
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:357
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:367
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:377
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:461
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:471
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:481
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:358
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:368
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:378
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:462
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:472
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:482
 msgid "Font Size"
 msgstr ""
 
@@ -1787,447 +1804,455 @@ msgstr ""
 msgid "Hide Description"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:412
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:413
 msgid "Hide Note"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:491
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:492
 msgid "Close Optin on Click"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:495
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:496
 msgid "Activate if you want a click on \"note\" to close the optin form. Particularly useful if close icon is hidden. %sLearn More%s"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:506
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:507
 msgid "Enable Acceptance Checkbox"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:510
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:511
 msgid "Activate to display an acceptance checkbox that users have to check before they are subscribed. %sLearn More%s"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:520
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:521
 msgid "Checkbox Error Message"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:523
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:524
 msgid "Error message displayed when the acceptance checkbox is not checked."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:551
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:552
 msgid "Reveal Optin Form"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:552
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:553
 msgid "Navigate to URL"
-msgstr ""
-
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:556
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1124
-msgid "Close optin"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:557
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1125
+msgid "Close optin"
+msgstr ""
+
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:558
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1126
 msgid "Close optin and reload page"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:563
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:564
 msgid "Upgrade to %sMailOptin Premium%s to have the option to close, close and reload or reveal optin form when CTA button is clicked."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:580
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:581
 msgid "Hide Name Field"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:583
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:584
 msgid "Activate to hide the name field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:593
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:594
 msgid "Name Field"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:604
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:605
 msgid "Name Placeholder"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:607
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:608
 msgid "The placeholder text for the name field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:615
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:616
 msgid "Name Color"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:619
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:620
 msgid "The text color for the name field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:627
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:628
 msgid "Name Background"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:631
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:632
 msgid "The background color of the name field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:639
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:640
 msgid "Name Font"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:642
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:643
 msgid "The font family for the name field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:652
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:653
 msgid "Name Field Required?"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:655
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:656
 msgid "Toggle to make name field required or not."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:665
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:666
 msgid "Email Field"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:676
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:677
 msgid "Email Placeholder"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:680
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:681
 msgid "The placeholder text for the email field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:687
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:688
 msgid "Email Color"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:691
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:692
 msgid "The text color for the email field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:699
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:700
 msgid "Email Background"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:703
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:704
 msgid "The background color of the email field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:711
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:712
 msgid "Email Font"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:716
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:717
 msgid "The font family for the email field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:724
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:725
 msgid "Submit Field"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:735
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:736
 msgid "Submit Button"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:739
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:740
 msgid "The value/label of the submit button."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:746
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:747
 msgid "Submit Button Color"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:750
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:751
 msgid "The text color for the submit button field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:758
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:759
 msgid "Submit Button Background"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:762
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:763
 msgid "The background color of the submit button."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:770
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:771
 msgid "Submit Button Font"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:773
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:774
 msgid "The font family for the submit button field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:791
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:792
 msgid "Display Only CTA Button"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:794
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:795
 msgid "Activate to hide opt-in form and display a call-to-action button instead."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:805
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:806
 msgid "Call-to-action Button"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:818
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:819
 msgid "Action After Button Click"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:827
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:828
 msgid "Enter URL"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:828
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:829
 msgid "URL should begin with http or https."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:839
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:840
 msgid "CTA Button"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:843
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:844
 msgid "The value/label of the call-to-action button."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:851
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:852
 msgid "CTA Button Color"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:855
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:856
 msgid "The text color for the call-to-action button field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:864
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:865
 msgid "CTA Button Background"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:868
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:869
 msgid "The background color of the call-to-action button."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:877
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:878
 msgid "CTA Button Font"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:880
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:881
 msgid "The font family for the call-to-action button field."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:910
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:911
 msgid "Optin Campaign Name"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:918
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:919
 #: vendor/mailoptin/core/src/Admin/SettingsPage/OptinCampaigns.php:197
 msgid "Split Test Note"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:921
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:922
 #: vendor/mailoptin/core/src/Admin/SettingsPage/OptinCampaigns.php:199
 msgid "Useful for keeping track of changes between each split test you create."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:927
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:928
 msgid "Optin Form Position"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:930
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:931
 msgid "Select position within your post the optin form will be displayed."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:932
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:933
 msgid "Before Content"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:933
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:934
 msgid "After Content"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:940
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:941
 msgid "Bottom Right"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:940
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:941
 msgid "Bottom Left"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:941
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:942
 msgid "Slide-in Position"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:949
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:950
 msgid "Top"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:949
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:950
 msgid "Bottom"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:950
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:951
 msgid "Bar Position"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:960
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:961
 msgid "Sticky Bar?"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:963
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:964
 msgid "Check to make bar sticky."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:973
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:974
 msgid "Hide Close Button"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:983
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:984
 msgid "Cookie Duration"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:988
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:989
 msgid "The length of time before this optin will display again to the user once they exit this campaign (defaults to 30 days). %sSet to 0 to prevent cookies from being set.%s"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:995
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:996
 msgid "Success Cookie Duration"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1000
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1001
 msgid "The length of time before the optin will display again to the user once they successfully opt in to this campaign (defaults to value of exit cookie above). %sSet to 0 to prevent cookies from being set.%s"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1009
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1010
 msgid "Remove MailOptin Branding"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1011
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1012
 msgid "%sSet your affiliate link%s and make money with branding."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1085
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1086
 msgid "No integration or email provider has been connected to MailOptin. %sClick here%s to do that now."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1123
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1124
 msgid "Display success message."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1126
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1127
 msgid "Redirect to URL"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1140
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1141
 msgid "Success Action"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1143
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1144
 msgid "What to do after users subscribe."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1150
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1151
 msgid "Optin Success Message"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1158
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1159
 msgid "Redirect URL"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1162
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1163
 msgid "Specify a URL to redirect users to after opt-in. Must begin with http or https."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1177
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1178
 msgid "Upgrade to %sMailOptin Premium%s for autoresponder, pass lead data to redirect URL, send email notification and trigger success script after conversion."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1223
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1224
 msgid "Globally load optin"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1227
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1228
 msgid "The optin will be loaded on all pages of your website if activated. %sDo not activate%s if you want to load optin on specific areas of your site using the settings below."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1240
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1241
 msgid "Load optin exclusively on:"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1243
-msgid "Loads the optin only on the selected posts and pages."
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1244
+msgid "Display the optin only on the selected posts and pages."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1257
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1258
 msgid "Front Page, Archive and Search Pages"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1260
-msgid "Loads the optin on home front page, archive and search pages"
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1261
+msgid "Display the optin on home front page, archive and search pages"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1270
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1271
 msgid "Load on post categories:"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1273
-msgid "Loads the optin on posts that are in one of the selected categories."
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1274
+msgid "Display the optin on posts that are in any of the selected categories."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1283
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1284
+msgid "Load on post tags:"
+msgstr ""
+
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1287
+msgid "Display the optin on posts that are in any of the selected tags."
+msgstr ""
+
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1297
 msgid "Load optin only on \"post types\":"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1286
-msgid "Loads the optin only on the selected \"post types\"."
-msgstr ""
-
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1296
-msgid "Never load optin on these posts:"
-msgstr ""
-
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1299
-msgid "Select the posts this optin should never be loaded on."
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1300
+msgid "Display the optin only on the selected \"post types\"."
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1310
-msgid "Never load optin on these pages:"
+msgid "Never load optin on these posts:"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1313
-msgid "Select the pages this optin should never be loaded on."
+msgid "Select the posts this optin should never be loaded on."
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1324
-msgid "Never load optin on these CPT posts:"
+msgid "Never load optin on these pages:"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1327
-msgid "Select \"custom post type\" posts this optin should never be loaded on."
+msgid "Select the pages this optin should never be loaded on."
+msgstr ""
+
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1338
+msgid "Never load optin on these CPT posts:"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1341
-msgid "Upgrade to %sMailOptin Premium%s to get optin triggers such as %3$sExit Intent%4$s, %3$sPage views%4$s, %3$sTime on Site%4$s, %3$sAdBlock detection%4$s, %3$sReferral Detection%4$s, %3$sScroll trigger%4$s, powerful page-level targeting and display rules proven to boost conversions."
+msgid "Select \"custom post type\" posts this optin should never be loaded on."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1398
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1355
+msgid "Upgrade to %sMailOptin Premium%s to embed with shortcodes, get optin triggers such as %3$sExit Intent%4$s, %3$sPage views%4$s, %3$sTime on Site%4$s, %3$sAdBlock detection%4$s, %3$sReferral Detection%4$s, %3$sScroll trigger%4$s, powerful page-level targeting and display rules proven to boost conversions."
+msgstr ""
+
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1412
 msgid "Who should see this optin?"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1401
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1415
 msgid "Decide who are able to see this optin."
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1403
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1417
 msgid "Show to all visitors and users"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1404
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1418
 msgid "Show to only logged-in users"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1405
+#: vendor/mailoptin/core/src/Admin/Customizer/OptinForm/CustomizerControls.php:1419
 msgid "Show to only users not logged-in"
 msgstr ""
 
@@ -2337,10 +2362,6 @@ msgstr ""
 #: vendor/mailoptin/core/src/Admin/SettingsPage/AddEmailCampaign.php:35
 #: vendor/mailoptin/core/src/Admin/SettingsPage/AddOptinCampaign.php:97
 msgid "Back to Overview"
-msgstr ""
-
-#: vendor/mailoptin/core/src/Admin/SettingsPage/AddEmailCampaign.php:46
-msgid "Automation Title"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/SettingsPage/AddEmailCampaign.php:47
@@ -2557,7 +2578,7 @@ msgstr ""
 msgid "Add New"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Admin/SettingsPage/EmailCampaigns.php:173
+#: vendor/mailoptin/core/src/Admin/SettingsPage/EmailCampaigns.php:178
 msgid "Disable %sMailOptin new post notification%s for this post."
 msgstr ""
 
@@ -2841,7 +2862,7 @@ msgid "Create Split Test"
 msgstr ""
 
 #: vendor/mailoptin/core/src/Admin/SettingsPage/OptinCampaigns.php:205
-#: vendor/mailoptin/core/src/AjaxHandler.php:420
+#: vendor/mailoptin/core/src/AjaxHandler.php:424
 msgid "An error occurred. Please try again."
 msgstr ""
 
@@ -3028,72 +3049,72 @@ msgstr ""
 msgid "No thanks"
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:244
-#: vendor/mailoptin/core/src/AjaxHandler.php:441
-#: vendor/mailoptin/core/src/AjaxHandler.php:489
-#: vendor/mailoptin/core/src/OptinForms/AbstractOptinForm.php:1013
+#: vendor/mailoptin/core/src/AjaxHandler.php:248
+#: vendor/mailoptin/core/src/AjaxHandler.php:445
+#: vendor/mailoptin/core/src/AjaxHandler.php:493
+#: vendor/mailoptin/core/src/OptinForms/AbstractOptinForm.php:1017
 msgid "Unexpected error. Please try again."
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:279
+#: vendor/mailoptin/core/src/AjaxHandler.php:283
 msgid "Optin campaign with similar variant name exist already."
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:388
+#: vendor/mailoptin/core/src/AjaxHandler.php:392
 msgid "Select a Winner"
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:391
+#: vendor/mailoptin/core/src/AjaxHandler.php:395
 msgid "Optin Name"
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:394
+#: vendor/mailoptin/core/src/AjaxHandler.php:398
 msgid "Conversion Rate"
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:408
+#: vendor/mailoptin/core/src/AjaxHandler.php:412
 msgid "Warning: selecting a winner will delete the other A/B test variants."
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:413
+#: vendor/mailoptin/core/src/AjaxHandler.php:417
 msgid "Cancel"
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:449
+#: vendor/mailoptin/core/src/AjaxHandler.php:453
 msgid "Optin campaign with similar name exist already."
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:456
+#: vendor/mailoptin/core/src/AjaxHandler.php:460
 msgid "Upgrade to %sMailOptin premium%s to create more than three optin campaigns"
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:499
+#: vendor/mailoptin/core/src/AjaxHandler.php:503
 msgid "Upgrade to %s to create multiple email campaigns"
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:506
+#: vendor/mailoptin/core/src/AjaxHandler.php:510
 msgid "Email campaign with similar name exist already."
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:664
+#: vendor/mailoptin/core/src/AjaxHandler.php:668
 msgid "Email address is invalid. Try again."
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:676
-#: vendor/mailoptin/core/src/OptinForms/AbstractOptinForm.php:1017
+#: vendor/mailoptin/core/src/AjaxHandler.php:680
+#: vendor/mailoptin/core/src/OptinForms/AbstractOptinForm.php:1021
 msgid "Your submission has been flagged as potential spam."
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:686
+#: vendor/mailoptin/core/src/AjaxHandler.php:690
 msgid "You cannot be added to our email list at this time. Please try again later."
 msgstr ""
 
-#: vendor/mailoptin/core/src/AjaxHandler.php:743
-#: vendor/mailoptin/core/src/AjaxHandler.php:804
+#: vendor/mailoptin/core/src/AjaxHandler.php:747
+#: vendor/mailoptin/core/src/AjaxHandler.php:808
 msgid "No email provider or list has been set for this optin. Please try again"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Connections/AbstractConnect.php:193
+#: vendor/mailoptin/core/src/Connections/AbstractConnect.php:200
 msgid ""
 "%s\n"
 "\n"
@@ -3102,11 +3123,11 @@ msgid ""
 "This e-mail was sent by %s plugin on %s (%s)"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Connections/AbstractConnect.php:198
+#: vendor/mailoptin/core/src/Connections/AbstractConnect.php:205
 msgid "Warning! \"%s\" Optin Campaign Is Not Working"
 msgstr ""
 
-#: vendor/mailoptin/core/src/Connections/AbstractConnect.php:203
+#: vendor/mailoptin/core/src/Connections/AbstractConnect.php:210
 msgid "The optin campaign \"%s\" is failing to convert leads due to the following error \"%s\". %6$s -- %6$sThis e-mail was sent by %s plugin on %s (%s)"
 msgstr ""
 
@@ -4119,19 +4140,19 @@ msgstr ""
 msgid "Activate"
 msgstr ""
 
-#: vendor/mailoptin/core/src/OptinForms/AbstractOptinForm.php:1014
+#: vendor/mailoptin/core/src/OptinForms/AbstractOptinForm.php:1018
 msgid "Please enter a valid email."
 msgstr ""
 
-#: vendor/mailoptin/core/src/OptinForms/AbstractOptinForm.php:1015
+#: vendor/mailoptin/core/src/OptinForms/AbstractOptinForm.php:1019
 msgid "Please enter a valid name."
 msgstr ""
 
-#: vendor/mailoptin/core/src/OptinForms/AbstractOptinTheme.php:598
+#: vendor/mailoptin/core/src/OptinForms/AbstractOptinTheme.php:621
 msgid "Close optin form"
 msgstr ""
 
-#: vendor/mailoptin/core/src/OptinForms/AbstractOptinTheme.php:947
+#: vendor/mailoptin/core/src/OptinForms/AbstractOptinTheme.php:970
 msgid "Invalid email address"
 msgstr ""
 
@@ -4216,15 +4237,15 @@ msgstr ""
 msgid "Display a MailOptin sidebar/widget optin form in a widget area."
 msgstr ""
 
-#: vendor/mailoptin/core/src/OptinForms/SidebarWidgets.php:99
+#: vendor/mailoptin/core/src/OptinForms/SidebarWidgets.php:101
 msgid "Title:"
 msgstr ""
 
-#: vendor/mailoptin/core/src/OptinForms/SidebarWidgets.php:105
+#: vendor/mailoptin/core/src/OptinForms/SidebarWidgets.php:107
 msgid "Select Optin:"
 msgstr ""
 
-#: vendor/mailoptin/core/src/OptinForms/SidebarWidgets.php:114
+#: vendor/mailoptin/core/src/OptinForms/SidebarWidgets.php:116
 msgid "Not Activated"
 msgstr ""
 

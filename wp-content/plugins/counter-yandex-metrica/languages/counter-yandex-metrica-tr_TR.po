@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Yandex.Metrika Counter by Semikashev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-04 18:33+0000\n"
-"PO-Revision-Date: 2018-09-07 21:23+0300\n"
+"POT-Creation-Date: 2018-12-01 11:32+0000\n"
+"PO-Revision-Date: 2018-12-01 14:39+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: tr_TR\n"
@@ -116,76 +116,84 @@ msgstr "Bilgi sağlayıcının önizlemesi"
 msgid "Yandex.Metrika"
 msgstr "Yandex.Metrica"
 
-#: _tpl/config.php:5
-msgid "easy installation of the counter by"
-msgstr "easy installation of the counter by"
+#: _tpl/config.php:7
+msgid "Author on coffee:"
+msgstr "Kahve yazarı:"
 
-#: _tpl/config.php:15
+#: _tpl/config.php:8
+msgid "Ya.Money"
+msgstr "Ya.Money"
+
+#: _tpl/config.php:9
+msgid "PayPal"
+msgstr "PayPal"
+
+#: _tpl/config.php:20
 msgid "Enter the number of the counter"
 msgstr "Sayaç numarasını giriniz"
 
-#: _tpl/config.php:23
+#: _tpl/config.php:28
 msgid "Additional settings"
 msgstr "Gelişmiş ayarlar"
 
-#: _tpl/config.php:29 _tpl/config.php:73
+#: _tpl/config.php:34 _tpl/config.php:78
 msgid "not use"
 msgstr "kullanmayın"
 
-#: _tpl/config.php:33
+#: _tpl/config.php:38
 msgid "Session Replay, scroll map, form analysis"
 msgstr "Oturum Kaydı, Kaydırma Haritası, Form Analizi"
 
-#: _tpl/config.php:37
+#: _tpl/config.php:42
 msgid "Session Replay 2.0"
 msgstr "Oturum Kaydı 2.0"
 
-#: _tpl/config.php:42
+#: _tpl/config.php:47
 msgid "Gathering statistics for the click map report"
 msgstr "Tıklama Haritası"
 
-#: _tpl/config.php:42 _tpl/config.php:46 _tpl/config.php:50
+#: _tpl/config.php:47 _tpl/config.php:51 _tpl/config.php:55
 msgid "recommends"
 msgstr "öneriyor"
 
-#: _tpl/config.php:46
+#: _tpl/config.php:51
 msgid "Tracking of external links"
 msgstr "Dış bağlantılar, dosya yüklemeleri ve Paylaş butonu raporu"
 
-#: _tpl/config.php:50
+#: _tpl/config.php:55
 msgid "Asynchronous code"
 msgstr "Eşzamansız kod"
 
-#: _tpl/config.php:51
+#: _tpl/config.php:56
 msgid ""
 "Asynchronous code does not block or influence the loading speed of your site."
 msgstr ""
 "Eşzamansız kod engel yaratmaz ve sitenizin sayfasının yüklenme hızını "
 "etkilemez."
 
-#: _tpl/config.php:56
+#: _tpl/config.php:61
 msgid "Hash tracking in the browser address bar"
 msgstr "Tarayıcının adres satırında hash'in takip edilmesi"
 
-#: _tpl/config.php:57
+#: _tpl/config.php:62
 msgid "Option applied to AJAX sites."
 msgstr "Seçenek, AJAX tabanlı siteler için geçerlidir."
 
-#: _tpl/config.php:61
+#: _tpl/config.php:66
 msgid "Stop automatic page indexing"
 msgstr "Otomatik indekslemeyi devre dışı bırakır"
 
-#: _tpl/config.php:62
+#: _tpl/config.php:67
 msgid ""
 "Stop automatic Yandex.Search page indexing for sites with Yandex.Metrica tags"
 msgstr ""
 "Site sayfalarının Yandex ile indekslenmemesi için bu özelliği etkinleştirin"
 
-#: _tpl/config.php:68
+#: _tpl/config.php:73
 msgid "Alternative CDN"
 msgstr "Alternatif CDN"
 
-#: _tpl/config.php:69
+#: _tpl/config.php:74
 msgid ""
 "Allows you to correctly register sessions from regions in which access to "
 "Yandex resources is restricted. Using this option may affect the loading "
@@ -195,43 +203,43 @@ msgstr ""
 "ziyaretlerini doğru hesaplamayı sağlar. Bu özellik sayesinde sayaç kodu daha "
 "hızlı yüklenebilir."
 
-#: _tpl/config.php:77
+#: _tpl/config.php:82
 msgid "use standard"
 msgstr "standart kullanın"
 
-#: _tpl/config.php:81
+#: _tpl/config.php:86
 msgid "enter another"
 msgstr "başka bir girin"
 
-#: _tpl/config.php:89
+#: _tpl/config.php:94
 msgid "Ways to install the code snippet"
 msgstr "Sayaç kodu yükleme yöntemleri"
 
-#: _tpl/config.php:92
+#: _tpl/config.php:97
 msgid "Plugin output area:"
 msgstr "Eklenti çıktı alanı:"
 
-#: _tpl/config.php:104
+#: _tpl/config.php:109
 msgid "Track logged in users:"
 msgstr "Giriş yapmış kullanıcıları dahil et:"
 
-#: _tpl/config.php:107
+#: _tpl/config.php:112
 msgid "Yes"
 msgstr "Evet"
 
-#: _tpl/config.php:111
+#: _tpl/config.php:116
 msgid "No"
 msgstr "Hayır"
 
-#: _tpl/config.php:120
+#: _tpl/config.php:125
 msgid "User roles to not track:"
 msgstr "Takip edilmeyecek kullanıcı seviyesi:"
 
-#: _tpl/config.php:137
+#: _tpl/config.php:142
 msgid "Save"
 msgstr "Kaydet"
 
-#: _tpl/config.php:138
+#: _tpl/config.php:143
 msgid "Reset"
 msgstr "Sıfırla"
 
@@ -254,6 +262,9 @@ msgstr "Alexander Semikashev"
 #. Author URI of the plugin
 msgid "http://semikashev.com"
 msgstr "http://semikashev.com"
+
+#~ msgid "easy installation of the counter by"
+#~ msgstr "easy installation of the counter by"
 
 #~ msgid "Yandex.Metrica Counter by Semikashev"
 #~ msgstr "Yandex.Metric Counter by Semikashev"

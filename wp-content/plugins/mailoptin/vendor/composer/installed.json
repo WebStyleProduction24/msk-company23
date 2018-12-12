@@ -185,24 +185,24 @@
     },
     {
         "name": "collizo4sky/persist-admin-notices-dismissal",
-        "version": "1.4.1",
-        "version_normalized": "1.4.1.0",
+        "version": "1.4.2",
+        "version_normalized": "1.4.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/collizo4sky/persist-admin-notices-dismissal.git",
-            "reference": "5c77ea58c30318041d321b0f7e33586e262eac0b"
+            "reference": "b63922b4ad023d78039cca71caf9002913058fd8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/collizo4sky/persist-admin-notices-dismissal/zipball/5c77ea58c30318041d321b0f7e33586e262eac0b",
-            "reference": "5c77ea58c30318041d321b0f7e33586e262eac0b",
+            "url": "https://api.github.com/repos/collizo4sky/persist-admin-notices-dismissal/zipball/b63922b4ad023d78039cca71caf9002913058fd8",
+            "reference": "b63922b4ad023d78039cca71caf9002913058fd8",
             "shasum": ""
         },
-        "time": "2018-10-24T14:32:02+00:00",
+        "time": "2018-11-25T07:06:31+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
-            "files": [
+            "classmap": [
                 "persist-admin-notices-dismissal.php"
             ]
         },
@@ -381,34 +381,35 @@
     },
     {
         "name": "guzzlehttp/psr7",
-        "version": "1.4.2",
-        "version_normalized": "1.4.2.0",
+        "version": "1.5.2",
+        "version_normalized": "1.5.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/guzzle/psr7.git",
-            "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            "reference": "9f83dded91781a01c63574e387eaa769be769115"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
-            "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+            "url": "https://api.github.com/repos/guzzle/psr7/zipball/9f83dded91781a01c63574e387eaa769be769115",
+            "reference": "9f83dded91781a01c63574e387eaa769be769115",
             "shasum": ""
         },
         "require": {
             "php": ">=5.4.0",
-            "psr/http-message": "~1.0"
+            "psr/http-message": "~1.0",
+            "ralouphie/getallheaders": "^2.0.5"
         },
         "provide": {
             "psr/http-message-implementation": "1.0"
         },
         "require-dev": {
-            "phpunit/phpunit": "~4.0"
+            "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
         },
-        "time": "2017-03-20T17:10:46+00:00",
+        "time": "2018-12-04T20:46:45+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.4-dev"
+                "dev-master": "1.5-dev"
             }
         },
         "installation-source": "dist",
@@ -439,58 +440,12 @@
         "keywords": [
             "http",
             "message",
+            "psr-7",
             "request",
             "response",
             "stream",
             "uri",
             "url"
-        ]
-    },
-    {
-        "name": "jacobbennett/sendyphp",
-        "version": "v1.3",
-        "version_normalized": "1.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/JacobBennett/SendyPHP.git",
-            "reference": "cc43cad8c345a013671f44c61db722695877a8f2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/JacobBennett/SendyPHP/zipball/cc43cad8c345a013671f44c61db722695877a8f2",
-            "reference": "cc43cad8c345a013671f44c61db722695877a8f2",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "3.7.*",
-            "squizlabs/php_codesniffer": "1.*"
-        },
-        "time": "2016-03-10T16:47:44+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "SendyPHP\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jacob Bennett",
-                "email": "me@jakebennett.net",
-                "homepage": "http://jakebennett.net"
-            }
-        ],
-        "description": "A PHP Library for interfacing with the Sendy newsletter system (http://sendy.co)",
-        "keywords": [
-            "Sendy",
-            "newsletter"
         ]
     },
     {
@@ -602,8 +557,8 @@
     },
     {
         "name": "mailoptin/authifly",
-        "version": "0.1.0-alpha.1541063338",
-        "version_normalized": "0.1.0.0-alpha1541063338",
+        "version": "0.1.0-alpha.1544530379",
+        "version_normalized": "0.1.0.0-alpha1544530379",
         "source": {
             "type": "git",
             "url": "https://github.com/mailoptin/authifly.git",
@@ -652,11 +607,11 @@
     },
     {
         "name": "mailoptin/connections",
-        "version": "0.2.1-alpha.122",
-        "version_normalized": "0.2.1.0-alpha122",
+        "version": "0.2.1-alpha.127",
+        "version_normalized": "0.2.1.0-alpha127",
         "dist": {
             "type": "zip",
-            "url": "https://php.fury.io/uDXRvLf8b2ywvgcokC7z/mailoptin/~/d/mailoptin%2Fconnections/mailoptin%2Fconnections-0.2.1-alpha.122",
+            "url": "https://php.fury.io/uDXRvLf8b2ywvgcokC7z/mailoptin/~/d/mailoptin%2Fconnections/mailoptin%2Fconnections-0.2.1-alpha.127",
             "reference": null,
             "shasum": null
         },
@@ -664,7 +619,6 @@
             "a5hleyrich/wp-background-processing": "^1.0",
             "activecampaign/api-php": "^2.0",
             "drewm/drip": "^0.7.0",
-            "jacobbennett/sendyphp": "^1.3",
             "mailerlite/mailerlite-api-v2-php-sdk": "^0.2.1",
             "thinkshout/mailchimp-api-php": "^1.0"
         },
@@ -697,17 +651,17 @@
     },
     {
         "name": "mailoptin/core",
-        "version": "0.1.0-alpha.1541063350",
-        "version_normalized": "0.1.0.0-alpha1541063350",
+        "version": "0.1.0-alpha.1544530392",
+        "version_normalized": "0.1.0.0-alpha1544530392",
         "source": {
             "type": "git",
             "url": "https://github.com/mailoptin/core.git",
-            "reference": "55b283b98c0d2dcb95d9576d595b0e3d2d55507f"
+            "reference": "98a0aedca467fde9099cfb940082cade4eaf300b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/mailoptin/core/zipball/55b283b98c0d2dcb95d9576d595b0e3d2d55507f",
-            "reference": "55b283b98c0d2dcb95d9576d595b0e3d2d55507f",
+            "url": "https://api.github.com/repos/mailoptin/core/zipball/98a0aedca467fde9099cfb940082cade4eaf300b",
+            "reference": "98a0aedca467fde9099cfb940082cade4eaf300b",
             "shasum": ""
         },
         "require": {
@@ -718,7 +672,7 @@
             "pelago/emogrifier": "^1.0",
             "soundasleep/html2text": "~0.5"
         },
-        "time": "2018-11-01T07:24:33+00:00",
+        "time": "2018-11-30T17:45:01+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -736,17 +690,17 @@
     },
     {
         "name": "nesbot/carbon",
-        "version": "1.34.0",
-        "version_normalized": "1.34.0.0",
+        "version": "1.36.1",
+        "version_normalized": "1.36.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/briannesbitt/Carbon.git",
-            "reference": "1dbd3cb01c5645f3e7deda7aa46ef780d95fcc33"
+            "reference": "63da8cdf89d7a5efe43aabc794365f6e7b7b8983"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/1dbd3cb01c5645f3e7deda7aa46ef780d95fcc33",
-            "reference": "1dbd3cb01c5645f3e7deda7aa46ef780d95fcc33",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/63da8cdf89d7a5efe43aabc794365f6e7b7b8983",
+            "reference": "63da8cdf89d7a5efe43aabc794365f6e7b7b8983",
             "shasum": ""
         },
         "require": {
@@ -754,10 +708,13 @@
             "symfony/translation": "~2.6 || ~3.0 || ~4.0"
         },
         "require-dev": {
-            "friendsofphp/php-cs-fixer": "~2",
             "phpunit/phpunit": "^4.8.35 || ^5.7"
         },
-        "time": "2018-09-20T19:36:25+00:00",
+        "suggest": {
+            "friendsofphp/php-cs-fixer": "Needed for the `composer phpcs` command. Allow to automatically fix code style.",
+            "phpstan/phpstan": "Needed for the `composer phpstan` command. Allow to detect potential errors."
+        },
+        "time": "2018-11-22T18:23:02+00:00",
         "type": "library",
         "extra": {
             "laravel": {
@@ -793,31 +750,31 @@
     },
     {
         "name": "pelago/emogrifier",
-        "version": "v1.2.1",
-        "version_normalized": "1.2.1.0",
+        "version": "v1.2.2",
+        "version_normalized": "1.2.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/MyIntervals/emogrifier.git",
-            "reference": "e005ae86dbf11d385ea26dcc7299d22bc0238bc5"
+            "reference": "fef6a4d3a6cefb2fdc8e749a3f3a100ab43f883a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/MyIntervals/emogrifier/zipball/e005ae86dbf11d385ea26dcc7299d22bc0238bc5",
-            "reference": "e005ae86dbf11d385ea26dcc7299d22bc0238bc5",
+            "url": "https://api.github.com/repos/MyIntervals/emogrifier/zipball/fef6a4d3a6cefb2fdc8e749a3f3a100ab43f883a",
+            "reference": "fef6a4d3a6cefb2fdc8e749a3f3a100ab43f883a",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.4.0,<=7.2.99"
+            "php": ">=5.4.0,<=7.3.99"
         },
         "require-dev": {
             "phpunit/phpunit": "4.8.27",
-            "squizlabs/php_codesniffer": "2.6.0"
+            "squizlabs/php_codesniffer": "^3.3.0"
         },
-        "time": "2018-06-26T10:13:48+00:00",
+        "time": "2018-12-10T08:26:52+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.3.x-dev"
+                "dev-master": "2.1.x-dev"
             }
         },
         "installation-source": "dist",
@@ -843,15 +800,24 @@
             },
             {
                 "name": "Oliver Klee",
-                "email": "typo3-coding@oliverklee.de"
+                "email": "github@oliverklee.de"
             },
             {
-                "name": "Roman Ožana",
-                "email": "ozana@omdesign.cz"
+                "name": "Zoli Szabó",
+                "email": "zoli.szabo+github@gmail.com"
+            },
+            {
+                "name": "Jake Hotson",
+                "email": "jake@qzdesign.co.uk"
             }
         ],
         "description": "Converts CSS styles into inline style attributes in your HTML code",
-        "homepage": "http://www.pelagodesign.com/sidecar/emogrifier/"
+        "homepage": "https://www.myintervals.com/emogrifier.php",
+        "keywords": [
+            "css",
+            "email",
+            "pre-processing"
+        ]
     },
     {
         "name": "php-http/curl-client",
@@ -1264,6 +1230,48 @@
         ]
     },
     {
+        "name": "ralouphie/getallheaders",
+        "version": "2.0.5",
+        "version_normalized": "2.0.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ralouphie/getallheaders.git",
+            "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+            "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~3.7.0",
+            "satooshi/php-coveralls": ">=1.0"
+        },
+        "time": "2016-02-11T07:05:27+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/getallheaders.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ralph Khattar",
+                "email": "ralph.khattar@gmail.com"
+            }
+        ],
+        "description": "A polyfill for getallheaders."
+    },
+    {
         "name": "soundasleep/html2text",
         "version": "0.5.0",
         "version_normalized": "0.5.0.0",
@@ -1378,17 +1386,17 @@
     },
     {
         "name": "symfony/translation",
-        "version": "v3.4.17",
-        "version_normalized": "3.4.17.0",
+        "version": "v3.4.20",
+        "version_normalized": "3.4.20.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/translation.git",
-            "reference": "94bc3a79008e6640defedf5e14eb3b4f20048352"
+            "reference": "bdbe940ed3ef4179f86032086c32d3a858becc0f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/translation/zipball/94bc3a79008e6640defedf5e14eb3b4f20048352",
-            "reference": "94bc3a79008e6640defedf5e14eb3b4f20048352",
+            "url": "https://api.github.com/repos/symfony/translation/zipball/bdbe940ed3ef4179f86032086c32d3a858becc0f",
+            "reference": "bdbe940ed3ef4179f86032086c32d3a858becc0f",
             "shasum": ""
         },
         "require": {
@@ -1413,7 +1421,7 @@
             "symfony/config": "",
             "symfony/yaml": ""
         },
-        "time": "2018-10-02T16:33:53+00:00",
+        "time": "2018-11-26T10:17:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

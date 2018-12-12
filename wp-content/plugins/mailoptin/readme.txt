@@ -1,11 +1,11 @@
 ﻿=== MailOptin - Popups, Email Optin Forms & Newsletters for MailChimp, Aweber etc. ===
 Contributors: Collizo4sky
 Donate link: https://mailoptin.io/pricing/
-Tags: popup, wordpress popup, newsletter, mailchimp, aweber, email, constantcontact, campaignmonitor, campaign monitor, convertkit, autoresponder, activecampaign, drip, sendy, mailerlite, sendinblue, klaviyo, convertfox, sendlane, ab test, a/b, split test, mailerlite form, lead generation, optin form, top bar, getresponse, autochimp, lightbox, modal, optin, email list, sidebar widget, sidebar form, emailoctopus, exit-intent, exit popups, pop up, exit intent, elementor, mailchimp form, widget form, subscribe form, new post notification, constant contact, mailpoet, aweber form, sendy, mailster, mymail, mailing list, opt-in, hello bar, hellobar, scroll trigger, newsletters, optinmonster, icegram, slide box, adblock, referrer, referrer detection, email notification, adblock detect, slide in, slidein, sumo, call to action, cta, list building, gdpr, google analytics
-Requires at least: 4.5
+Tags: popup, wordpress popup, newsletter, mailchimp, aweber, constantcontact, campaignmonitor, campaign monitor, convertkit, autoresponder, activecampaign, drip, sendy, mailerlite, sendinblue, klaviyo, convertfox, sendlane, form, lead generation, optin form, getresponse, lightbox, modal, optin, email list, emailoctopus, pop up, exit intent, subscribe form, constant contact, sendy, mailster, mailing list, opt-in, scroll trigger, newsletters, slide in, list building
+Requires at least: 4.6
 Requires PHP: 5.4
-Tested up to: 4.9.8
-Stable tag: 1.2.10.1
+Tested up to: 5.0
+Stable tag: 1.2.11.2
 License: GPL-2.0+
 
 Convert visitors into email subscribers via optin forms & keep them engaged with newsletters. MailChimp, AWeber, ActiveCampaign, ConvertKit etc.
@@ -61,7 +61,6 @@ With MailOptin, you can create lead capture or email optin forms with Elementor'
 * **Up to 3** optin forms can be created. [Upgrade for unlimited](https://mailoptin.io/pricing?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion).
 * **After Conversion Actions** such as immediately close opt-in form after converstion, close form and reload page or redirect to a custom URL. Additionally, [premium version](https://mailoptin.io/pricing?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion) allows you to trigger a JavaScript code as well as pass lead data to redirect URL.
 * **Page Level Targeting** lets you to display optin or email signup forms in specific posts and pages of your WordPress site.
-* **Great free alternative** to OptinMonster, Bloom, MailMunch, Icegram, Hustle, Popup Maker, Poptin, Jackmail, Mailchimp Popup, Sumo (SumoMe), GetSiteControl, Convertful, Optimonk, Supsystic, Yeloni, Hello bar, PopBox, Thrive Leads, AddThis, Sharethis, Shareaholic, Boxzilla, gravity forms, WPForms, Popupally, Popup Builder, WP Subscribe, Ninja Popups, Ninja Forms, Fancybox, wBounce etc.
 
 = Newsletters =
 
@@ -103,7 +102,7 @@ The [Scroll Trigger](https://mailoptin.io/demos/scroll-trigger/?utm_source=wprep
 
 The [Click Launch Trigger](https://mailoptin.io/click-launch/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion) display optin forms when a link, button or image on your site is clicked. Useful for implementing content upgrades.
 
-[AdBlock Detection](https://mailoptin.io/adblock-detection-wordpress/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion) helps you detect users using AdBlocking software such as AdBlock Plus, uBlock Origin so you can display alternative content to them.
+[AdBlock Detection](https://mailoptin.io/adblock-detection-wordpress/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion) helps you detect users using AdBlocking software such as AdBlock Plus, uBlock Origin so you can display another content to them.
 
 The [Referrer Detection](https://mailoptin.io/referrer-detection/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion) can automatically track sources of web traffic and create optin forms, call to actions and custom messages targeted from a specific traffic source
 
@@ -152,34 +151,19 @@ Absolutely not. You can create and manage optin forms and newsletters without an
 MailOptin Premium is the most powerful WordPress optin form and automated newsletter plugin in the market.
 
 * Exit Intent or Exit Popup.
-* Best alternative to Autochimp
 * WordPress autoresponder
-* WordPress New Post To Email Subscribers
-* New Post Notification To Email List
-* Email digest: daily, weekly and monthly roudup of posts.
-* WordPress Post To MailChimp Email Campaign.
 * WordPress Post To Aweber Newsletter Integration
-* Elementor form
 * Constant Contact Form
-* Content upgrade implementation
 * ConvertKit form
-* GDPR compliant form
 * Drip Forms
 * ActiveCampaign Forms
-* MailPoet optin Forms
 * Sendlane WordPress form
 * WordPress Drip Optin Form
 * WordPress ActiveCampaign Optin Form
-* Lead Capture Forms
 * Newsletter Signup Forms
 * Exit Intent Optin Forms
-* Scroll Trigger Optin Forms
-* MailChimp For WordPress Subscribe Forms
-* MailChimp Single And Double Optin Support.
 * MailChimp Signup Forms
 * Sidebar Email Optin Forms
-* Aweber Sidebar Form Widget
-* MailChimp, Aweber Form In WordPress Page
 * Aweber Optin Form
 * SendinBlue Optin Form
 * Klaviyo Signup Form
@@ -187,11 +171,6 @@ MailOptin Premium is the most powerful WordPress optin form and automated newsle
 * GetResponse Optin Form
 * Elementor form
 * Campaign Monitor Forms
-* ConvertFox Forms
-* Aweber, MailChimp, CampaignMonitor WordPress Popup Form
-* MailChimp Top Bar / Notification Bar Optin Form
-* MailChimp Slide-in Optin Form
-* Ajax Email Optin Form.
 
 = I'd like access to all features. How can I get them? =
 
@@ -215,6 +194,24 @@ Yes, MailOptin has full translation and localization support via the mailoptin t
 10. Elementor form integration with MailOptin
 
 == Changelog ==
+
+= 1.2.11.2 =
+* Sendinblue optin fix when automation is active.
+* Remove IP address from ActiveCampaign payload if ip is not ip4.
+* More tighter customizer cleanup for improve compatibility with most themes and plugins.
+* Fix support for youtube and vimeo embed.
+* Made description wysiwyg to be text/visual.
+
+= 1.2.11.1 =
+* Responsive font size fixes for optin forms.
+* Fixed a number of PHP notice errors.
+* Added filter to disable sending optin errors email.
+
+= 1.2.11.0 =
+* Added support for custom post type to email automation.
+* Optin branding now disabled by default.
+* Better control over google fonts to load when not necessary.
+* Improve optin themes compatibility with most WP themes.
 
 = 1.2.10.1 =
 * Fixed bug with Mailerlite subscription not working.

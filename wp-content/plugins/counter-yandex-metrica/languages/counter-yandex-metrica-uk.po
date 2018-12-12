@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Yandex.Metrika Counter by Semikashev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-04 18:33+0000\n"
-"PO-Revision-Date: 2018-09-07 21:23+0300\n"
+"POT-Creation-Date: 2018-12-01 11:32+0000\n"
+"PO-Revision-Date: 2018-12-01 14:38+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uk_UA\n"
@@ -116,77 +116,85 @@ msgstr "Попередній перегляд інформера"
 msgid "Yandex.Metrika"
 msgstr "Яндекс.Метрика"
 
-#: _tpl/config.php:5
-msgid "easy installation of the counter by"
-msgstr "проста установка лічильника від"
+#: _tpl/config.php:7
+msgid "Author on coffee:"
+msgstr "Автору на каву:"
 
-#: _tpl/config.php:15
+#: _tpl/config.php:8
+msgid "Ya.Money"
+msgstr "Я.Деньги"
+
+#: _tpl/config.php:9
+msgid "PayPal"
+msgstr "PayPal"
+
+#: _tpl/config.php:20
 msgid "Enter the number of the counter"
 msgstr "Введіть номер лічильника"
 
-#: _tpl/config.php:23
+#: _tpl/config.php:28
 msgid "Additional settings"
 msgstr "Додаткові налаштування"
 
-#: _tpl/config.php:29 _tpl/config.php:73
+#: _tpl/config.php:34 _tpl/config.php:78
 msgid "not use"
 msgstr "не використовувати"
 
-#: _tpl/config.php:33
+#: _tpl/config.php:38
 msgid "Session Replay, scroll map, form analysis"
 msgstr "Вебвізор, карта скролінгу, аналітика форм"
 
-#: _tpl/config.php:37
+#: _tpl/config.php:42
 msgid "Session Replay 2.0"
 msgstr "Вебвізор 2.0"
 
-#: _tpl/config.php:42
+#: _tpl/config.php:47
 msgid "Gathering statistics for the click map report"
 msgstr "Збір статистики для роботи звіту Карта кліків"
 
-#: _tpl/config.php:42 _tpl/config.php:46 _tpl/config.php:50
+#: _tpl/config.php:47 _tpl/config.php:51 _tpl/config.php:55
 msgid "recommends"
 msgstr "рекомендовано"
 
-#: _tpl/config.php:46
+#: _tpl/config.php:51
 msgid "Tracking of external links"
 msgstr "Відстеження переходів по зовнішніх посиланнях"
 
-#: _tpl/config.php:50
+#: _tpl/config.php:55
 msgid "Asynchronous code"
 msgstr "Асинхронний код"
 
-#: _tpl/config.php:51
+#: _tpl/config.php:56
 msgid ""
 "Asynchronous code does not block or influence the loading speed of your site."
 msgstr ""
 "Асинхронний код не блокує і не впливає на швидкість завантаження сторінки "
 "вашого сайту."
 
-#: _tpl/config.php:56
+#: _tpl/config.php:61
 msgid "Hash tracking in the browser address bar"
 msgstr "Відстежування хеша в адресному рядку браузера"
 
-#: _tpl/config.php:57
+#: _tpl/config.php:62
 msgid "Option applied to AJAX sites."
 msgstr "Опція застосовна для AJAX-сайтів."
 
-#: _tpl/config.php:61
+#: _tpl/config.php:66
 msgid "Stop automatic page indexing"
 msgstr "Заборона надсилання на індексацію сторінок сайту"
 
-#: _tpl/config.php:62
+#: _tpl/config.php:67
 msgid ""
 "Stop automatic Yandex.Search page indexing for sites with Yandex.Metrica tags"
 msgstr ""
 "Заборона автоматичного надсилання сторінок сайту, на яких встановлено "
 "лічильник Метрики, на індексацію Яндекс.Пошуку"
 
-#: _tpl/config.php:68
+#: _tpl/config.php:73
 msgid "Alternative CDN"
 msgstr "Альтернативный CDN"
 
-#: _tpl/config.php:69
+#: _tpl/config.php:74
 msgid ""
 "Allows you to correctly register sessions from regions in which access to "
 "Yandex resources is restricted. Using this option may affect the loading "
@@ -196,43 +204,43 @@ msgstr ""
 "доступ к ресурсам Яндекса. Использование этой опции может снизить скорость "
 "загрузки кода счётчика."
 
-#: _tpl/config.php:77
+#: _tpl/config.php:82
 msgid "use standard"
 msgstr "використовувати стандартний"
 
-#: _tpl/config.php:81
+#: _tpl/config.php:86
 msgid "enter another"
 msgstr "ввести інший"
 
-#: _tpl/config.php:89
+#: _tpl/config.php:94
 msgid "Ways to install the code snippet"
 msgstr "Способи встановлення коду лічильника"
 
-#: _tpl/config.php:92
+#: _tpl/config.php:97
 msgid "Plugin output area:"
 msgstr "Область висновку лічильника:"
 
-#: _tpl/config.php:104
+#: _tpl/config.php:109
 msgid "Track logged in users:"
 msgstr "Відстеження авторизованих користувачів:"
 
-#: _tpl/config.php:107
+#: _tpl/config.php:112
 msgid "Yes"
 msgstr "Так"
 
-#: _tpl/config.php:111
+#: _tpl/config.php:116
 msgid "No"
 msgstr "Нi"
 
-#: _tpl/config.php:120
+#: _tpl/config.php:125
 msgid "User roles to not track:"
 msgstr "Не відстежуються ролі користувачів:"
 
-#: _tpl/config.php:137
+#: _tpl/config.php:142
 msgid "Save"
 msgstr "Зберегти"
 
-#: _tpl/config.php:138
+#: _tpl/config.php:143
 msgid "Reset"
 msgstr "Скинути"
 
@@ -255,6 +263,9 @@ msgstr "Alexander Semikashev"
 #. Author URI of the plugin
 msgid "http://semikashev.com"
 msgstr "http://semikashev.com"
+
+#~ msgid "easy installation of the counter by"
+#~ msgstr "проста установка лічильника від"
 
 #~ msgid "Yandex.Metrica Counter by Semikashev"
 #~ msgstr "Яндекс.Метрика лічильника от Semikashev"

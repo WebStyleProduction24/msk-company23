@@ -26,8 +26,9 @@ class Subscription extends AbstractSendinblueConnect
         try {
 
             $lead_data = [
-                'email'   => $this->email,
-                'listIds' => [absint($this->list_id)]
+                'email'         => $this->email,
+                'listIds'       => [absint($this->list_id)],
+                'updateEnabled' => true
             ];
 
             if ( ! empty($name_split[0])) {
@@ -48,7 +49,7 @@ class Subscription extends AbstractSendinblueConnect
 
             $response = $this->sendinblue_instance()->make_request('contacts', $lead_data, 'post');
 
-            if ($response['status_code'] >= 200 && $response['status_code'] <= 299 && isset($response['body']->id)) {
+            if (self::is_http_code_success($response['status_code']) || isset($response['body']->id)) {
                 return parent::ajax_success();
             }
 

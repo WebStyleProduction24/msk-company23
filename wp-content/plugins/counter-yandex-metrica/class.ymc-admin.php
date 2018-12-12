@@ -53,7 +53,7 @@ class YMC_Admin {
             wp_die( __( 'You do not have sufficient permissions to access this page.', 'counter-yandex-metrica' ) );
         }
 
-        if ( !empty( $_POST )  && ( !current_user_can( 'manage_options' ) || empty( $_REQUEST['ymc_settings_nonce'] )  || ! wp_verify_nonce( $_REQUEST['ymc_settings_nonce'], 'ymc_update_settings' ) ) ) {
+        if ( isset( $_POST['ymc-save'] )  && ( !current_user_can( 'manage_options' ) || empty( $_REQUEST['ymc_settings_nonce'] )  || ! wp_verify_nonce( $_REQUEST['ymc_settings_nonce'], 'ymc_update_settings' ) ) ) {
             wp_die( esc_html__( 'You do not have sufficient permissions to access this page.', 'counter-yandex-metrica' ) );
         }
 

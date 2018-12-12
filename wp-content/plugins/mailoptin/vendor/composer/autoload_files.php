@@ -6,13 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    '7b11c4dc42b3b3023073cb14e519683c' => $vendorDir . '/ralouphie/getallheaders/src/getallheaders.php',
     'a0edc8309cc5e1d60e3047b5df6b7052' => $vendorDir . '/guzzlehttp/psr7/src/functions_include.php',
     'ddc0a4d7e61c0286f0f8593b1903e894' => $vendorDir . '/clue/stream-filter/src/functions.php',
     '8cff32064859f4559445b89279f3199c' => $vendorDir . '/php-http/message/src/filters.php',
     'c964ee0ededf28c96ebd9db5099ef910' => $vendorDir . '/guzzlehttp/promises/src/functions_include.php',
     '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => $vendorDir . '/symfony/polyfill-mbstring/bootstrap.php',
     '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
-    'f51bb131284ceb3bf7d980d1de33e647' => $vendorDir . '/collizo4sky/persist-admin-notices-dismissal/persist-admin-notices-dismissal.php',
     '784368192bb2be2d6178826e1a6f0ee9' => $vendorDir . '/mailoptin/authifly/OAuthCredentialStorage.php',
     '90058afbba53e4180c7aea859b5c23a3' => $vendorDir . '/mailoptin/authifly/ConstantContact.php',
     '086bcb11854b84d4e577ad21028d8bd7' => $vendorDir . '/mailoptin/authifly/Aweber.php',

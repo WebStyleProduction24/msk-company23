@@ -27,12 +27,6 @@ class Connect extends AbstractConnect implements ConnectionInterface
         add_filter('mailoptin_email_campaign_customizer_page_settings', array($this, 'integration_customizer_settings'), 10, 2);
         add_filter('mailoptin_email_campaign_customizer_settings_controls', array($this, 'integration_customizer_controls'), 10, 4);
 
-        add_filter('mailoptin_email_campaign_tab_toggle_general_config', function($val) {
-            $val[] = 'RegisteredUsersConnect_user_role';
-
-            return $val;
-        });
-
         add_action('plugins_loaded', array($this, 'init'));
 
         parent::__construct();

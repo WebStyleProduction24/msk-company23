@@ -3,7 +3,6 @@
 namespace MailOptin\SendyConnect;
 
 use MailOptin\Core\Repositories\EmailCampaignRepository;
-use SendyPHP\SendyPHP;
 
 class SendCampaign extends AbstractSendyConnect
 {

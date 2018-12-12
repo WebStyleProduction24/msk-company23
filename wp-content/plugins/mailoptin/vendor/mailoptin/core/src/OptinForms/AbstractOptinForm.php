@@ -387,7 +387,10 @@ if (typeof jQuery.MailOptin !== 'undefined' && typeof jQuery.MailOptin.track_imp
 
         $optin_effect = $this->get_customizer_value('modal_effects');
 
-        if(!empty($optin_effect) || is_customize_preview()) {
+        $global_css .= "div#{$optin_campaign_uuid} .mailoptin-video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+                        div#{$optin_campaign_uuid} .mailoptin-video-container iframe, div#{$optin_campaign_uuid} .mailoptin-video-container object, div#{$optin_campaign_uuid} .mailoptin-video-container embed, div#{$optin_campaign_uuid} .mailoptin-video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }";
+
+        if ( ! empty($optin_effect) || is_customize_preview()) {
             $global_css .= file_get_contents(MAILOPTIN_ASSETS_URL . 'css/animate.min.css');
         }
 
@@ -868,7 +871,8 @@ if (typeof jQuery.MailOptin !== 'undefined' && typeof jQuery.MailOptin.track_imp
         if ( ! empty($submit_button_font) && $submit_button_font != 'inherit') {
             $webfont[] = "'$submit_button_font'";
         }
-        if ( ! empty($cta_button_font) && $cta_button_font != 'inherit') {
+        if (OptinCampaignsRepository::is_cta_button_active($this->optin_campaign_id)
+            && ! empty($cta_button_font) && $cta_button_font != 'inherit') {
             $webfont[] = "'$cta_button_font'";
         }
 

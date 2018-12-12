@@ -2,8 +2,6 @@
 
 namespace MailOptin\SendyConnect;
 
-use SendyPHP\SendyPHP;
-
 class Subscription extends AbstractSendyConnect
 {
     public $email;

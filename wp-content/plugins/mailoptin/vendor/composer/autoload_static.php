@@ -4,16 +4,16 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8413ea1b71f7005935092378ff4816ab
+class ComposerStaticInit42fa664523d8c69cb71766d69d98171c
 {
     public static $files = array (
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'ddc0a4d7e61c0286f0f8593b1903e894' => __DIR__ . '/..' . '/clue/stream-filter/src/functions.php',
         '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        'f51bb131284ceb3bf7d980d1de33e647' => __DIR__ . '/..' . '/collizo4sky/persist-admin-notices-dismissal/persist-admin-notices-dismissal.php',
         '784368192bb2be2d6178826e1a6f0ee9' => __DIR__ . '/..' . '/mailoptin/authifly/OAuthCredentialStorage.php',
         '90058afbba53e4180c7aea859b5c23a3' => __DIR__ . '/..' . '/mailoptin/authifly/ConstantContact.php',
         '086bcb11854b84d4e577ad21028d8bd7' => __DIR__ . '/..' . '/mailoptin/authifly/Aweber.php',
@@ -29,7 +29,6 @@ class ComposerStaticInit8413ea1b71f7005935092378ff4816ab
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Translation\\' => 30,
-            'SendyPHP\\' => 9,
         ),
         'P' => 
         array (
@@ -108,10 +107,6 @@ class ComposerStaticInit8413ea1b71f7005935092378ff4816ab
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
-        ),
-        'SendyPHP\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/jacobbennett/sendyphp/src',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -409,6 +404,7 @@ class ComposerStaticInit8413ea1b71f7005935092378ff4816ab
         'GuzzleHttp\\Psr7\\PumpStream' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/PumpStream.php',
         'GuzzleHttp\\Psr7\\Request' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Request.php',
         'GuzzleHttp\\Psr7\\Response' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Response.php',
+        'GuzzleHttp\\Psr7\\Rfc7230' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Rfc7230.php',
         'GuzzleHttp\\Psr7\\ServerRequest' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/ServerRequest.php',
         'GuzzleHttp\\Psr7\\Stream' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Stream.php',
         'GuzzleHttp\\Psr7\\StreamDecoratorTrait' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/StreamDecoratorTrait.php',
@@ -562,6 +558,8 @@ class ComposerStaticInit8413ea1b71f7005935092378ff4816ab
         'MailOptin\\Core\\Admin\\Customizer\\CustomControls\\WP_Customize_Custom_Content' => __DIR__ . '/..' . '/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Custom_Content.php',
         'MailOptin\\Core\\Admin\\Customizer\\CustomControls\\WP_Customize_Custom_Input_Control' => __DIR__ . '/..' . '/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Custom_Input_Control.php',
         'MailOptin\\Core\\Admin\\Customizer\\CustomControls\\WP_Customize_Date_Picker_Control' => __DIR__ . '/..' . '/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Date_Picker_Control.php',
+        'MailOptin\\Core\\Admin\\Customizer\\CustomControls\\WP_Customize_EA_CPT_Control' => __DIR__ . '/..' . '/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_EA_CPT_Control.php',
+        'MailOptin\\Core\\Admin\\Customizer\\CustomControls\\WP_Customize_EA_CPT_Control_Trait' => __DIR__ . '/..' . '/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_EA_CPT_Control_Trait.php',
         'MailOptin\\Core\\Admin\\Customizer\\CustomControls\\WP_Customize_Email_Schedule_Time_Fields_Control' => __DIR__ . '/..' . '/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Email_Schedule_Time_Fields_Control.php',
         'MailOptin\\Core\\Admin\\Customizer\\CustomControls\\WP_Customize_Font_Size_Control' => __DIR__ . '/..' . '/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Font_Size_Control.php',
         'MailOptin\\Core\\Admin\\Customizer\\CustomControls\\WP_Customize_Font_Stack_Control' => __DIR__ . '/..' . '/mailoptin/core/src/Admin/Customizer/CustomControls/WP_Customize_Font_Stack_Control.php',
@@ -743,6 +741,7 @@ class ComposerStaticInit8413ea1b71f7005935092378ff4816ab
         'MailOptin\\SendyConnect\\Connect' => __DIR__ . '/..' . '/mailoptin/connections/SendyConnect/Connect.php',
         'MailOptin\\SendyConnect\\ConnectSettingsPage' => __DIR__ . '/..' . '/mailoptin/connections/SendyConnect/ConnectSettingsPage.php',
         'MailOptin\\SendyConnect\\SendCampaign' => __DIR__ . '/..' . '/mailoptin/connections/SendyConnect/SendCampaign.php',
+        'MailOptin\\SendyConnect\\SendyPHP' => __DIR__ . '/..' . '/mailoptin/connections/SendyConnect/SendyPHP.php',
         'MailOptin\\SendyConnect\\Subscription' => __DIR__ . '/..' . '/mailoptin/connections/SendyConnect/Subscription.php',
         'Mailchimp\\Mailchimp' => __DIR__ . '/..' . '/thinkshout/mailchimp-api-php/src/Mailchimp.php',
         'Mailchimp\\MailchimpAPIException' => __DIR__ . '/..' . '/thinkshout/mailchimp-api-php/src/MailchimpAPIException.php',
@@ -768,6 +767,7 @@ class ComposerStaticInit8413ea1b71f7005935092378ff4816ab
         'MailerLiteApi\\Common\\RestClient' => __DIR__ . '/..' . '/mailerlite/mailerlite-api-v2-php-sdk/src/Common/RestClient.php',
         'MailerLiteApi\\Exceptions\\MailerLiteSdkException' => __DIR__ . '/..' . '/mailerlite/mailerlite-api-v2-php-sdk/src/Exceptions/MailerLiteSdkException.php',
         'MailerLiteApi\\MailerLite' => __DIR__ . '/..' . '/mailerlite/mailerlite-api-v2-php-sdk/src/MailerLite.php',
+        'PAnD' => __DIR__ . '/..' . '/collizo4sky/persist-admin-notices-dismissal/persist-admin-notices-dismissal.php',
         'Pelago\\Emogrifier' => __DIR__ . '/..' . '/pelago/emogrifier/Classes/Emogrifier.php',
         'Psr\\Http\\Message\\MessageInterface' => __DIR__ . '/..' . '/psr/http-message/src/MessageInterface.php',
         'Psr\\Http\\Message\\RequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/RequestInterface.php',
@@ -777,7 +777,6 @@ class ComposerStaticInit8413ea1b71f7005935092378ff4816ab
         'Psr\\Http\\Message\\UploadedFileInterface' => __DIR__ . '/..' . '/psr/http-message/src/UploadedFileInterface.php',
         'Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
         'RequestException' => __DIR__ . '/..' . '/activecampaign/api-php/includes/exceptions/RequestException.php',
-        'SendyPHP\\SendyPHP' => __DIR__ . '/..' . '/jacobbennett/sendyphp/src/SendyPHP.php',
         'Symfony\\Component\\Translation\\Catalogue\\AbstractOperation' => __DIR__ . '/..' . '/symfony/translation/Catalogue/AbstractOperation.php',
         'Symfony\\Component\\Translation\\Catalogue\\MergeOperation' => __DIR__ . '/..' . '/symfony/translation/Catalogue/MergeOperation.php',
         'Symfony\\Component\\Translation\\Catalogue\\OperationInterface' => __DIR__ . '/..' . '/symfony/translation/Catalogue/OperationInterface.php',
@@ -852,10 +851,10 @@ class ComposerStaticInit8413ea1b71f7005935092378ff4816ab
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8413ea1b71f7005935092378ff4816ab::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8413ea1b71f7005935092378ff4816ab::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit8413ea1b71f7005935092378ff4816ab::$fallbackDirsPsr4;
-            $loader->classMap = ComposerStaticInit8413ea1b71f7005935092378ff4816ab::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit42fa664523d8c69cb71766d69d98171c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit42fa664523d8c69cb71766d69d98171c::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit42fa664523d8c69cb71766d69d98171c::$fallbackDirsPsr4;
+            $loader->classMap = ComposerStaticInit42fa664523d8c69cb71766d69d98171c::$classMap;
 
         }, null, ClassLoader::class);
     }

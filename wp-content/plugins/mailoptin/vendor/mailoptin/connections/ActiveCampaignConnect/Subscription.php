@@ -39,23 +39,29 @@ class Subscription extends AbstractActiveCampaignConnect
 
             $list_id = $this->list_id;
 
+            $ip_address = \MailOptin\Core\get_ip_address();
+
             $contact = array(
                 "email"                         => $this->email,
                 "first_name"                    => $name_split[0],
                 "last_name"                     => $name_split[1],
                 "p[{$list_id}]"                 => $list_id,
-                "ip4"                           => \MailOptin\Core\get_ip_address(),
+                "ip4"                           => $ip_address,
                 "status[{$list_id}]"            => 1, // "Active" status
                 "instantresponders[{$list_id}]" => 1,
                 'form'                          => absint($subscription_form),
                 'tags'                          => $lead_tags
             );
 
+            if ( ! filter_var($ip_address, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
+                unset($contact['ip4']);
+            }
+
             $contact = array_filter($contact, [$this, 'data_filter']);
 
             $response = $this->activecampaign_instance()->api("contact/sync", $contact);
 
-            if (is_object($response) && $response->http_code === 200 && 1 === $response->result_code) {
+            if (1 == $response->result_code) {
                 return parent::ajax_success();
             }
 

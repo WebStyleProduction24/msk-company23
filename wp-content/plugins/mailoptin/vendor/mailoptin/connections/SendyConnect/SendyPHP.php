@@ -1,6 +1,6 @@
 <?php
 
-namespace SendyPHP;
+namespace MailOptin\SendyConnect;
 
 /**
  * Sendy Class
@@ -9,7 +9,7 @@ class SendyPHP
 {
     protected $installation_url;
     protected $api_key;
-    protected $list_id;
+    public $list_id;
 
     public function __construct(array $config)
     {

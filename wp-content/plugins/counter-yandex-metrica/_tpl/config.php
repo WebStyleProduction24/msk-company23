@@ -3,10 +3,15 @@
         <div class="ymc-header__inner">
             <span class="ymc-header__yalogo"><?php _e( 'Yandex.Metrika', 'counter-yandex-metrica' ); ?></span>
             <span class="ymc-header__yalogospan"> by <a href="http://semikashev.com" target="_blank">Alexander Semikashev</a></span>
+            <div class="ymc-header__donate">
+                <div class="ymc-header__donate_title"><?php _e( 'Author on coffee:', 'counter-yandex-metrica' ); ?></div>
+                <a href="https://money.yandex.ru/to/410013025062803" target="_blank" class="ymc-header__donate_link"><?php _e( 'Ya.Money', 'counter-yandex-metrica' ); ?></a> /
+                <a href="https://www.paypal.me/semikashevalex" target="_blank" class="ymc-header__donate_link"><?php _e( 'PayPal', 'counter-yandex-metrica' ); ?></a>
+            </div>
         </div>
     </div>
 
-    <?php if( $message ){ echo $message; } ?>
+    <?php if( isset($message) ){ echo $message; } ?>
 
     <div class="ymc-content">
         <form action="<?php echo esc_url( YMC_Admin::get_page_url() ); ?>" method="POST">

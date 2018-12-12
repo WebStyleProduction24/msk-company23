@@ -4,7 +4,6 @@ namespace MailOptin\Core\OptinForms;
 
 
 use MailOptin\Core\Admin\Customizer\CustomControls\ControlsHelpers;
-use MailOptin\Core\Admin\Customizer\CustomControls\WP_Customize_Font_Stack_Control;
 use MailOptin\Core\PluginSettings\Settings;
 use MailOptin\Core\Repositories\OptinCampaignsRepository;
 
@@ -32,6 +31,11 @@ abstract class AbstractOptinTheme extends AbstractOptinForm
         parent::__construct($optin_campaign_id);
     }
 
+    public function video_embed_html($html)
+    {
+        return '<div class="mailoptin-video-container">' . $html . '</div>';
+    }
+
     public function sanitize_font_stack_family($font)
     {
         $system_fonts = ControlsHelpers::get_system_font_stack();
@@ -43,6 +47,25 @@ abstract class AbstractOptinTheme extends AbstractOptinForm
         }
 
         return $font;
+    }
+
+    public function embed_shortcode_parser($body)
+    {
+        global $wp_embed;
+
+        add_filter('embed_oembed_html', [$this, 'video_embed_html'], 10, 3);
+        add_filter('video_embed_html', [$this, 'video_embed_html']);
+        add_filter('wp_video_shortcode', [$this, 'video_embed_html']);
+
+        // this has to come before do_shortcode.
+        $content = $wp_embed->run_shortcode($body);
+        $content = do_shortcode($content);
+
+        remove_filter('embed_oembed_html', [$this, 'video_embed_html'], 10, 3);
+        remove_filter('video_embed_html', [$this, 'video_embed_html']);
+        remove_filter('wp_video_shortcode', [$this, 'video_embed_html']);
+
+        return $content;
     }
 
     /**
@@ -468,7 +491,7 @@ abstract class AbstractOptinTheme extends AbstractOptinForm
         $class = "mo-optin-form-cta-wrapper{$class}";
 
         $style = '';
-        if ($this->get_customizer_value('display_only_button') !== true) {
+        if ( ! OptinCampaignsRepository::is_cta_button_active($this->optin_campaign_id)) {
             $style .= 'display:none;';
         }
 
@@ -547,7 +570,7 @@ abstract class AbstractOptinTheme extends AbstractOptinForm
         $headline .= $this->get_customizer_value('headline');
         $headline .= apply_filters('mo_optin_form_after_headline', '', $this->optin_campaign_id, $this->optin_campaign_type, $this->optin_campaign_uuid, $atts);
 
-        $headline = do_shortcode($headline);
+        $headline = $this->embed_shortcode_parser($headline);
 
         $headline_styles = $this->headline_styles();
 
@@ -710,7 +733,7 @@ abstract class AbstractOptinTheme extends AbstractOptinForm
         $description .= $this->get_customizer_value('description');
         $description .= apply_filters('mo_optin_form_after_description', '', $this->optin_campaign_id, $this->optin_campaign_type, $this->optin_campaign_uuid, $atts);
 
-        $description = do_shortcode($description);
+        $description = $this->embed_shortcode_parser($description);
 
         $description_styles = $this->description_styles();
 

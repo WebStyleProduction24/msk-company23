@@ -561,7 +561,8 @@ class Connect extends AbstractMailChimpConnect implements ConnectionInterface
 
             foreach ($integrations_data as $integration_data) {
                 $font = $this->get_integration_data('MailChimpConnect_user_input_segment_area_font', $integration_data, 'Open+Sans');
-                if ($font != 'inherit') {
+                $segment_type = $this->get_integration_data('MailChimpConnect_group_segment_type', $integration_data, 'automatic');
+                if ($segment_type == 'user_input' && $font != 'inherit') {
                     $segment_field_font = AbstractOptinForm::_remove_web_safe_font($font);
                     if ( ! empty($segment_field_font)) {
                         $fonts[] = "'$segment_field_font'";

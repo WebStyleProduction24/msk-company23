@@ -8,7 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
-    'SendyPHP\\' => array($vendorDir . '/jacobbennett/sendyphp/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Pelago\\' => array($vendorDir . '/pelago/emogrifier/Classes'),
     'MailerLiteApi\\' => array($vendorDir . '/mailerlite/mailerlite-api-v2-php-sdk/src'),

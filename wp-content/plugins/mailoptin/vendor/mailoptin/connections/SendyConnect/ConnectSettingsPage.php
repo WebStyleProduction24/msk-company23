@@ -12,12 +12,6 @@ class ConnectSettingsPage
         add_filter('mailoptin_newsletters_settings_page', array($this, 'newsletter_settings'));
         add_filter('mailoptin_email_campaign_customizer_page_settings', array($this, 'campaign_customizer_settings'));
         add_filter('mailoptin_email_campaign_customizer_settings_controls', array($this, 'campaign_customizer_controls'), 10, 4);
-
-        add_filter('mailoptin_email_campaign_tab_toggle_general_config', function($val) {
-            $val[] = 'SendyConnect_query_string';
-
-            return $val;
-        });
     }
 
     public function campaign_customizer_settings($settings)
