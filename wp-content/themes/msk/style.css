@@ -9681,6 +9681,21 @@ body.page-template.page-template-l2 section#first {
 
 Экран max-width:850px с 10039;
 ===========================================*/
+/*.inner-za:hover {
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, .75);
+}*/
+
+/*.inner-za {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .75);
+}*/
 
 #contacts .contact a:not[class="brown"] {
 	color: #53c2d6;
