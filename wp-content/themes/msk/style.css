@@ -5821,7 +5821,10 @@ section#projects {
 	margin-top: -110px;
 	z-index: 7 !important;
 	position: relative;
-	min-height: 100vh;
+	min-height: 860px;
+	margin-bottom: -155px;
+
+	background-size: cover;
 }
 section#types img {
 	border: solid 5px #53c2d6;
@@ -5856,7 +5859,7 @@ section#types {
 	background: url(/wp-content/uploads/2016/12/fon3.jpg);
 	background-repeat: no-repeat;
 	background-position: center -40px;
-	padding-bottom: 100px;
+	padding-bottom: 110px;
 }
 #types .col-md-4:after {
 	content: "";
@@ -5966,9 +5969,11 @@ section#form {
 	position: relative;
 	display: inline-block;
 	width: 100%;
-	background: url(/wp-content/uploads/2016/12/fon7.png);
+	background: url(/wp-content/uploads/2016/12/fon7.png) no-repeat top, url(/wp-content/uploads/2016/12/fon7.png) no-repeat bottom;
 	background-repeat: no-repeat;
 	z-index: 999;
+	min-height: 670px;
+	margin-bottom: -100px;
 }
 section#etapi {
 	width: 100%;
@@ -6131,7 +6136,7 @@ section#contacts {
 	background-position: center top;
 	background-repeat: no-repeat;
 	padding: 0;
-	margin-top: -130px;
+	margin-top: -150px;
 }
 .col-md-5.contact p {
 	font-size: 23px;
@@ -7874,6 +7879,32 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	right: 20px;
 	top: 0;
 }
+@media screen and (max-width: 1200px) and (min-width: 850px) { 
+	.owl-theme .owl-nav {
+		margin-top: -11%;
+	}
+	section#projects {
+		min-height: 895px;
+	}
+	section#types {
+		background-position: center -60px;
+	}
+	.col-md-5.contact {
+		margin-top: 170px; 
+	}
+	.in-v .col-sm-12, .in-v .col-sm-6:nth-child(1), .in-v .col-sm-6:nth-child(2) {
+		/*margin-top: 0 !important;*/
+	}
+	.in-v .col-md-6.col-sm-12 {
+		padding: 0 15px !important;
+	}
+	.in-v .col-sm-6:nth-child(even) {
+		padding-left: 5px !important;
+	}
+	.in-v .col-sm-6:nth-child(odd) {
+		padding-right: 5px !important;
+	}
+}
 @media screen and (max-width: 1000px) and (min-width: 850px) {
 	section#services1 .col-md-2 img {
 		position: relative;
@@ -8601,7 +8632,9 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	}
 	section#projects {
 		padding: 50px 0 10px;
-		background-repeat: no-repeat;
+		background-position-y: -160px;
+		min-height: 1510px;
+		margin-bottom: -305px;
 	}
 	.house.type-house:before {
 		display: none
@@ -9662,6 +9695,10 @@ body.page-template.page-template-l2 section#first {
 
 Экран max-width:850px с 10039;
 ===========================================*/
+
+#projects .col-md-5 {
+	margin-top: 7px;
+}
 
 .in-v .col-md-6 {
 	float: left;
