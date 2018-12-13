@@ -3614,7 +3614,6 @@ select {
 	margin-top: 0;
 	margin-bottom: 0;
 	max-width: 100%;
-	*zoom: 1;
 }
 .row:before,
 .row:after {
@@ -5818,7 +5817,7 @@ section#projects {
 	width: 100%;
 	display: inline-block;
 	background: url(/wp-content/uploads/2016/12/fon2.png)  center -75px no-repeat;
-	margin-top: -110px;
+	margin-top: -125px;
 	z-index: 7 !important;
 	position: relative;
 	min-height: 860px;
@@ -5951,7 +5950,7 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 section#form .container:before {
 	background: url(/wp-content/uploads/2016/12/domik.png);
 	position: absolute;
-	height: 320px;
+	height: 250px;
 	width: 100%;
 	max-width: 90%;
 	margin-left: 5%;
@@ -6136,7 +6135,8 @@ section#contacts {
 	background-position: center top;
 	background-repeat: no-repeat;
 	padding: 0;
-	margin-top: -150px;
+	margin-top: -155px;
+	margin-bottom: -10px;
 }
 .col-md-5.contact p {
 	font-size: 23px;
@@ -7880,6 +7880,9 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	top: 0;
 }
 @media screen and (max-width: 1200px) and (min-width: 850px) { 
+	section#form .container {
+		padding-top: 215px;
+	}
 	.owl-theme .owl-nav {
 		margin-top: -11%;
 	}
@@ -7887,7 +7890,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		min-height: 895px;
 	}
 	section#types {
-		background-position: center -60px;
+		background-position: center -100px;
 	}
 	.col-md-5.contact {
 		margin-top: 170px; 
@@ -8258,9 +8261,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		padding: 5px;
 		line-height: 18px;
 	}
-	section#form .container:before {
-		z-index: 0;
-	}
 	span.wpcf7-not-valid-tip {
 		font-size: 15px !important;
 		font-weight: bold;
@@ -8318,7 +8318,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		font-size: 19px;
 	}
 	section#types {
-		padding-bottom: 150px;
+		margin-bottom: 40px;
 	}
 	h3.fff {
 		font-size: 21px;
@@ -8454,6 +8454,9 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	}
 }
 @media screen and (max-width: 850px) {
+	.footer-area.footer-page {
+		padding-bottom: 70px;
+	}
 	.custom-logo {
 		width: 80%;
 		margin-top: 15%;
@@ -8701,11 +8704,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		display: flex;
 	}
 	section#form .container {
-		padding-top: 150px;
-	}
-	section#form {
-		margin-bottom: -50px;
-		padding-bottom: 50px;
+		padding-top: 160px;
 	}
 	.one-5 {
 		width: 33%;
@@ -10004,7 +10003,8 @@ a.fancybox.zvo.tablet {
 }
 @media screen and (max-width: 1050px) {
 	select.wpcf7-form-control.wpcf7-select {
-		width: 100%;
+		width: 100%;		
+		padding: 7px 5px;
 	}
 	.header-area.page .container {
 		width: 100%;
@@ -10081,6 +10081,9 @@ a.fancybox.zvo.tablet {
 		float: left;
 		margin: 0;
 	}
+	.footer-page .copyright {
+		width: 100%;
+	}
 	.copyright {
 		width: calc(100% / 3);
 		float: left;
@@ -10090,6 +10093,9 @@ a.fancybox.zvo.tablet {
 	}
 }
 @media screen and (max-width: 850px) {
+	section#types {
+		margin-bottom: -40px;
+	}
 	section#form input[type="text"],
 	section#form input[type="email"],
 	section#form input[type="url"],
@@ -10104,10 +10110,10 @@ a.fancybox.zvo.tablet {
 		padding: 0;
 	}
 	.in-v .col-md-6.col-sm-6:nth-child(odd) {
-		padding-right: 15px !important;
+		padding-right: 5px !important;
 	}
 	.in-v .col-md-6.col-sm-6:nth-child(even) {
-		padding-left: 15px !important;
+		padding-left: 5px !important;
 	}
 	.col-md-5.contact {
 		opacity: 1;

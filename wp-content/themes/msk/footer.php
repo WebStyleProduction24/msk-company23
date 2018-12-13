@@ -10,7 +10,6 @@
 
 
 	
-<div class="footer-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -81,6 +80,3 @@ $(".eksterery,.interery,.eksterery,.dizajn-landshafta,.3d-vizualizatsiya").remov
 });</script> 
 <?php } ?>
 <?php wp_footer(); ?>
-
-</body>
-</html>

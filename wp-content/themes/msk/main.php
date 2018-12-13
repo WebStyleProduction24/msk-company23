@@ -165,7 +165,7 @@ get_header();
 </div>
 
 <!-- End header-area -->
-
+<div class="footer-area">
 <?php wp_footer(); ?>
 
 </body>

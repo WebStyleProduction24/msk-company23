@@ -117,5 +117,5 @@ get_template_part('page-parts/stroy', 'projects'); ?>
       </div>
     </div>
   </section>
-
+<div class="footer-area footer-page">
   <?php get_footer(); ?>
