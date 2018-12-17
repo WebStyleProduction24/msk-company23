@@ -1,5 +1,13 @@
 <?php /*Блок главной страницы - Проекты.*/?>
 
+<?php
+/**
+ * Блок главной страницы - Сервисы
+ *
+ * @package MSK+
+ */
+?>
+
 <section id="projects" data-type="background" data-speed="10">
   <div class="container">
     <h4 class="fgfgf">Наши проекты</h4>

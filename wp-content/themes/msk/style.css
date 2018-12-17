@@ -5291,6 +5291,7 @@ div.page-content input.search-submit {
 }
 .copyright {
 	font-size: 14px;
+	text-transform: uppercase;
 }
 .copyright>a {
 	color: #000000;
@@ -5406,7 +5407,6 @@ a.fancybox.zvo {
 	bottom: 1%;
 	color: #202020;
 	font-size: 12px;
-	text-transform: uppercase;
 	text-align: center;
 	width: calc(100% - 30px);
 }
@@ -6884,7 +6884,7 @@ p.sub input {
 	position: relative;
 }
 .copyright p {
-	font-size: 9px;
+	font-size: 12px;
 	margin: 0;
 	text-align: center;
 	clear: both;
@@ -8992,6 +8992,7 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	}
 	section#projects {
 		margin-bottom: 40px;
+		padding-top: 80px;
 	}
 	h4.fgfgf {
 		background-size: contain;
@@ -9694,7 +9695,6 @@ body.page-template.page-template-l2 section#first {
 
 Экран max-width:850px с 10039;
 ===========================================*/
-
 #projects .col-md-5 {
 	margin-top: 7px;
 }
@@ -10252,6 +10252,7 @@ a.fancybox.zvo.tablet {
 	}
 	.ostavit {
 		width: 100%;
+		margin-bottom: 45px;
 	}
 	section#contacts {
 		padding-bottom: 135px;

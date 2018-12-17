@@ -1,4 +1,10 @@
-<?php /*Блок главной страницы - Сервисы.*/?>
+<?php
+/**
+ * Блок главной страницы - Сервисы
+ *
+ * @package MSK+
+ */
+?>
 
 <section id="services">
   <div class="container">
