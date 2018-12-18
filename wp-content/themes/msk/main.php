@@ -54,7 +54,7 @@ get_header();
         </main><!-- #main -->
     </div><!-- #primary -->	
     <div class="mainmenu">
-       <div class="navbar-header">
+       <div class="navbar-header visible-xs">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
              <span class="sr-only"><?php echo __('Toggle navigation', 'philips');?></span>
              <span class="icon-bar"></span>
@@ -79,7 +79,7 @@ get_header();
 </div>
 </div>	
 </div>	
-<div class="header-area col-md-2">
+<div class="header-area col-md-2"> 
     <?php 
     $bloginfo = '<div class="col-md-12"><a href="/" class="home">';
     $bloginfo .= '<h1 class="site-title">' . get_bloginfo( 'name' ) . '</h1>';
@@ -97,9 +97,9 @@ get_header();
         <p><span>Почта: </span><?php wsp24_email(); ?></p>
         <a class="fancybox zvo tablet" href="#contact_form_pop">Заказать звонок</a>
     </div>
-    <div id="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A19bee56aa55bb6e557a83ca6ab1e79a8e064a98928a3fc40236d312bd46bb9db&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
-    </div>
+
+    <?php get_template_part('map'); ?>
+
     <div style="clear:both"></div>
 
     <a class="fancybox zvo desktop" href="#contact_form_pop">Заказать звонок</a>

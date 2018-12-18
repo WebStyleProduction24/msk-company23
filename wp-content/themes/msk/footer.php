@@ -6,7 +6,7 @@
  */
 ?>
 
-<?php if ( is_home() ) {} else { ?>    
+<?php if ( is_front_page() ) {} else { ?>    
 
     <div class="footer-area">
         <div class="container">

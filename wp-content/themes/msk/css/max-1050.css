@@ -1,0 +1,27 @@
+/*=========================================
+CSS for mobile screen with max-width 1050px;
+===========================================*/
+
+@media screen and (max-width: 1050px) {
+	select.wpcf7-form-control.wpcf7-select {
+		width: 100%;		
+		padding: 7px 5px;
+	}
+	.header-area.page .container {
+		width: 100%;
+		margin: 0;
+	}
+	.custom-logo {
+		width: 100%;
+	}
+	.contact {
+		font-size: .82rem;
+	}
+	.header-area.col-md-2 {
+		min-height: 630px;
+	}
+	.handle {
+		height: 150px;
+		width: 145px;
+	}
+}

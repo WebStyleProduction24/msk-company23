@@ -432,6 +432,8 @@ add_action( 'widgets_init', 'philips_widgets_init' );
  * Enqueue scripts and styles.
  */
 function philips_scripts() {
+
+
     wp_enqueue_style( 'philips-bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
     wp_enqueue_style( 'philips-fontawesome', get_template_directory_uri() . '/css/font-awesome.css' );
     wp_enqueue_style( 'philips-style', get_stylesheet_uri() );
@@ -443,7 +445,17 @@ function philips_scripts() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+
+    wp_enqueue_style( 'full-screen', get_template_directory_uri() . '/css/full-screen.css' );
+    wp_enqueue_style( 'mobile-all-screen', get_template_directory_uri() . '/css/mobile-all-screen.css' );
+    wp_enqueue_style( 'min-851-max-1050', get_template_directory_uri() . '/css/min-851-max-1050.css' );
+    wp_enqueue_style( 'max-1050', get_template_directory_uri() . '/css/max-1050.css' );
+    wp_enqueue_style( 'min-651-max-850', get_template_directory_uri() . '/css/min-651-max-850.css' );
+    wp_enqueue_style( 'max-850', get_template_directory_uri() . '/css/max-850.css' );
+    wp_enqueue_style( 'max-767', get_template_directory_uri() . '/css/max-767.css' );
+    wp_enqueue_style( 'max-650', get_template_directory_uri() . '/css/max-650.css' );
 }
+
 add_action( 'wp_enqueue_scripts', 'philips_scripts' );
 
 /**
@@ -508,7 +520,7 @@ function wsp24_logo() {
     $bloginfo .= '</h1></div></a>';
 
     $html = has_custom_logo() ? get_custom_logo() : $bloginfo;
-    $html = sprintf('<div class="col-md-1- col-sm-1 logo">%1$s</div>', $html );
+    $html = sprintf('<div class="col-md-1 col-sm-1 col-xs-3 logo">%1$s</div>', $html );
 
     echo $html;
 }
@@ -577,37 +589,37 @@ function top_custom() {
 
 
 add_action( 'wp_footer', 'mycustom_wp_footer' );
- 
-function mycustom_wp_footer() {
-?>
-<script type="text/javascript">
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-    if ( '271' == event.detail.contactFormId ) {
-        yaCounter46469931.reachGoal('otdelka akciya');
-    }
-    if ( '115' == event.detail.contactFormId ) {
-        yaCounter50448268.reachGoal('voprosi');
-    }
-    if ( '47' == event.detail.contactFormId ) {
-        yaCounter50448268.reachGoal('zvonok');
-    }
-    if ( '158' == event.detail.contactFormId ) {
-        yaCounter50448268.reachGoal('Calkulator');
-    }
-    if ( '103' == event.detail.contactFormId ) {
-        yaCounter50448268.reachGoal('project');
-    }
-    if ( '108' == event.detail.contactFormId ) {
-        yaCounter50448268.reachGoal('stroitelstvo');
-    }
-    if ( '195' == event.detail.contactFormId ) {
-        yaCounter50448268.reachGoal('otdelka');
-    }
-    if ( '244' == event.detail.contactFormId ) {
-        yaCounter50448268.reachGoal('prodaja');
-    }
-}, false );
 
-</script>
-<?php
+function mycustom_wp_footer() {
+    ?>
+    <script type="text/javascript">
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            if ( '271' == event.detail.contactFormId ) {
+                yaCounter46469931.reachGoal('otdelka akciya');
+            }
+            if ( '115' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('voprosi');
+            }
+            if ( '47' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('zvonok');
+            }
+            if ( '158' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('Calkulator');
+            }
+            if ( '103' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('project');
+            }
+            if ( '108' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('stroitelstvo');
+            }
+            if ( '195' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('otdelka');
+            }
+            if ( '244' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('prodaja');
+            }
+        }, false );
+
+    </script>
+    <?php
 }
