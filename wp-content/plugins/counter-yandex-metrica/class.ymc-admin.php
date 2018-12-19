@@ -4,7 +4,7 @@
  * class.ymc-admin.php
  *
  * @author     Alexander Semikashev
- * @version    1.0
+ * @version    1.1
  */
 
 class YMC_Admin {
@@ -58,17 +58,22 @@ class YMC_Admin {
         }
 
         if ( isset( $_POST['ymc-save'] ) ) {
+			YMC::$options['ymc_oldtracker'] = empty( $_POST['ymc_oldtracker'] ) ? false : true;
+
             YMC::$options['ymc_number_counter'] = trim($_POST['ymc_number_counter']);
-            YMC::$options['ymc_option_webvisor'] = $_POST['ymc_option_webvisor'];
-            YMC::$options['ymc_option_clickmap'] = empty( $_POST['ymc_option_clickmap'] ) ? false : true;
+            YMC::$options['ymc_webvisor'] = empty( $_POST['ymc_webvisor'] ) ? false : true;
+			YMC::$options['ymc_option_clickmap'] = empty( $_POST['ymc_option_clickmap'] ) ? false : true;
             YMC::$options['ymc_option_trackLinks'] = empty( $_POST['ymc_option_trackLinks'] ) ? false : true;
             YMC::$options['ymc_option_async'] = empty( $_POST['ymc_option_async'] ) ? false : true;
             YMC::$options['ymc_option_hash'] = empty( $_POST['ymc_option_hash'] ) ? false : true;
-            YMC::$options['ymc_option_noindex'] = empty( $_POST['ymc_option_noindex'] ) ? false : true;
+			YMC::$options['ymc_option_noindex'] = empty( $_POST['ymc_option_noindex'] ) ? false : true;
+
             YMC::$options['ymc_option_cdn'] = $_POST['ymc_option_cdn'];
             YMC::$options['ymc_option_cdnuser'] = trim($_POST['ymc_option_cdnuser']);
+
             YMC::$options['ymc_position'] = $_POST['ymc_position'];
             YMC::$options['ymc_track_login'] = $_POST['ymc_track_login'] == 1 ? true : false;
+
             YMC::$options['ymc_role'] = ! empty( $_POST['ymc_role'] ) ? array_map( 'esc_attr', $_POST['ymc_role'] ) : '';
 
             if ( is_numeric( YMC::$options['ymc_number_counter'] ) ) {

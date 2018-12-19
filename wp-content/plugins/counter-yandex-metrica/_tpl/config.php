@@ -24,25 +24,28 @@
             </div>
 
             <div class="ymc-groupbox">
+			<div class="ymc-box">
+                <h3><?php _e('Obsolete code snippet', 'counter-yandex-metrica'); ?></h3>
+                <div class="ymc-checkbox">
+                    <label for="ymc_oldtracker">
+                        <input name="ymc_oldtracker" type="checkbox" id="ymc_oldtracker" value="1" <?php checked( YMC::$options['ymc_oldtracker'] ); ?>>
+                        <?php _e('Yes', 'counter-yandex-metrica'); ?>
+                    </label>
+					<div id="ymc_oldtracker_options" class="ymc_oldtracker_options" <?php if( YMC::$options['ymc_oldtracker'] == false ){echo 'style="display: none;"';} ?>>
+						<label for="ymc_option_async">
+							<input name="ymc_option_async" type="checkbox" id="ymc_option_async" value="1" <?php checked( YMC::$options['ymc_option_async'] ); ?>>
+							<?php _e('Asynchronous code', 'counter-yandex-metrica'); ?> <span class="info">(<?php _e('recommends', 'counter-yandex-metrica'); ?>)</span>
+							<span class="hint"><?php _e('Asynchronous code does not block or influence the loading speed of your site.', 'counter-yandex-metrica'); ?></span>
+						</label>
+					</div>
+				</div>
+            </div>
+
             <div class="ymc-box">
                 <h3><?php _e('Additional settings', 'counter-yandex-metrica'); ?></h3>
                 <br>
                 <div class="ymc-checkbox">
-
-					<label for="ymc_option_webvisor0">
-                        <input name="ymc_option_webvisor" type="radio" id="ymc_option_webvisor0" value="0" <?php if( YMC::$options['ymc_option_webvisor'] == '0' ) { echo 'checked=\'checked\''; } ?>>
-                        <?php _e('not use', 'counter-yandex-metrica'); ?>
-                    </label>
-                    <label for="ymc_option_webvisor1">
-                        <input name="ymc_option_webvisor" type="radio" id="ymc_option_webvisor1" value="1" <?php if( YMC::$options['ymc_option_webvisor'] == '1' ) { echo 'checked=\'checked\''; } ?>>
-                        <?php _e('Session Replay, scroll map, form analysis', 'counter-yandex-metrica'); ?>
-                    </label>
-                    <label for="ymc_option_webvisor2">
-                        <input name="ymc_option_webvisor" type="radio" id="ymc_option_webvisor2" value="2" <?php if( YMC::$options['ymc_option_webvisor'] == '2' ) { echo 'checked=\'checked\''; } ?>>
-                        <?php _e('Session Replay 2.0', 'counter-yandex-metrica'); ?>
-                    </label>
-                    <br>
-                    <label for="ymc_option_clickmap">
+					<label for="ymc_option_clickmap">
                         <input name="ymc_option_clickmap" type="checkbox" id="ymc_option_clickmap" value="1" <?php checked( YMC::$options['ymc_option_clickmap'] ); ?>>
                         <?php _e('Gathering statistics for the click map report', 'counter-yandex-metrica'); ?> <span class="info">(<?php _e('recommends', 'counter-yandex-metrica'); ?>)</span>
                     </label>
@@ -50,18 +53,16 @@
                         <input name="ymc_option_trackLinks" type="checkbox" id="ymc_option_trackLinks" value="1" <?php checked( YMC::$options['ymc_option_trackLinks'] ); ?>>
                         <?php _e('Tracking of external links', 'counter-yandex-metrica'); ?> <span class="info">(<?php _e('recommends', 'counter-yandex-metrica'); ?>)</span>
                     </label>
-                    <label for="ymc_option_async">
-                        <input name="ymc_option_async" type="checkbox" id="ymc_option_async" value="1" <?php checked( YMC::$options['ymc_option_async'] ); ?>>
-                        <?php _e('Asynchronous code', 'counter-yandex-metrica'); ?> <span class="info">(<?php _e('recommends', 'counter-yandex-metrica'); ?>)</span>
-                        <span class="hint"><?php _e('Asynchronous code does not block or influence the loading speed of your site.', 'counter-yandex-metrica'); ?></span>
-                    </label>
-
                     <label for="ymc_option_hash">
                         <input name="ymc_option_hash" type="checkbox" id="ymc_option_hash" value="1" <?php checked( YMC::$options['ymc_option_hash'] ); ?>>
                             <?php _e('Hash tracking in the browser address bar', 'counter-yandex-metrica'); ?>
                             <span class="hint"><?php _e('Option applied to AJAX sites.', 'counter-yandex-metrica'); ?></span>
                     </label>
-                    <label for="ymc_option_noindex">
+					<label for="ymc_webvisor">
+                        <input name="ymc_webvisor" type="checkbox" id="ymc_webvisor" value="1" <?php checked( YMC::$options['ymc_webvisor'] ); ?>>
+                        <?php _e('Session Replay', 'counter-yandex-metrica'); ?> <span class="info">(<?php _e('recommends', 'counter-yandex-metrica'); ?>)</span>
+                    </label>
+					<label for="ymc_option_noindex">
                         <input name="ymc_option_noindex" type="checkbox" id="ymc_option_noindex" value="1" <?php checked( YMC::$options['ymc_option_noindex'] ); ?>>
                             <?php _e('Stop automatic page indexing', 'counter-yandex-metrica'); ?>
                         <span class="hint"><?php _e('Stop automatic Yandex.Search page indexing for sites with Yandex.Metrica tags', 'counter-yandex-metrica'); ?></span>
@@ -145,5 +146,16 @@
 
         </form>
     </div>
-
 </div>
+
+<script>
+( function( $ ){
+	$('#ymc_oldtracker').click(function() {
+		if($(this).is(':checked')) {
+			$("#ymc_oldtracker_options").show();
+		} else {
+			$("#ymc_oldtracker_options").hide();
+		}
+	});
+}( jQuery ) );
+</script>

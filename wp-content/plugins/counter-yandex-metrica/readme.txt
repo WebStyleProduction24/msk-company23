@@ -4,7 +4,7 @@ Donate link: https://semikashev.com/wordpress/plugin-yametrika-counter#donate
 Tags: яндекс, yandex, метрика ,metrica, метрик, metrik, stats, statistics, tools, analytics, analytics tool
 Requires at least: 3.5
 Tested up to: 5.0
-Stable tag: 1.3.2
+Stable tag: 1.4.1
 License: GPLv2 (or later)
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,12 @@ Plugin for the easy install Yandex Metrica in your WordPress site.
 2. Widget settings
 
 == Changelog ==
+= 1.4.1 =
+Additional edits for the new version of the tracker and user convenience.
+
+= 1.4.0 =
+Yandex has updated the API for the Yandex metric counter. We took into account all the changes in this version. Fix bug for async.
+
 = 1.3.2 =
 bug fix
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Yandex.Metrika Counter by Semikashev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-01 11:32+0000\n"
-"PO-Revision-Date: 2018-12-01 14:37+0300\n"
+"POT-Creation-Date: 2018-12-16 08:57+0000\n"
+"PO-Revision-Date: 2018-12-16 11:59+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -22,15 +22,15 @@ msgstr "Яндекс.Метрика"
 msgid "You do not have sufficient permissions to access this page."
 msgstr "У вас недостаточно прав для доступа к этой странице."
 
-#: class.ymc-admin.php:75
+#: class.ymc-admin.php:80
 msgid "Options saved!"
 msgstr "Настройки сохранены!"
 
-#: class.ymc-admin.php:78
+#: class.ymc-admin.php:83
 msgid "Please enter a valid counter code!"
 msgstr "Введите корректный номер счётчика!"
 
-#: class.ymc-admin.php:89
+#: class.ymc-admin.php:94
 msgid "All options cleared!"
 msgstr "Настройки сброшены!"
 
@@ -133,68 +133,68 @@ msgid "Enter the number of the counter"
 msgstr "Введите номер счётчика"
 
 #: _tpl/config.php:28
-msgid "Additional settings"
-msgstr "Дополнительные настройки"
+msgid "Obsolete code snippet"
+msgstr "Устаревший код счётчика"
 
-#: _tpl/config.php:34 _tpl/config.php:78
-msgid "not use"
-msgstr "не использовать"
+#: _tpl/config.php:32 _tpl/config.php:113
+msgid "Yes"
+msgstr "Да"
 
-#: _tpl/config.php:38
-msgid "Session Replay, scroll map, form analysis"
-msgstr "Вебвизор, карта скроллинга, аналитика форм"
-
-#: _tpl/config.php:42
-msgid "Session Replay 2.0"
-msgstr "Вебвизор 2.0"
-
-#: _tpl/config.php:47
-msgid "Gathering statistics for the click map report"
-msgstr "Сбор статистики для работы отчета Карта кликов"
-
-#: _tpl/config.php:47 _tpl/config.php:51 _tpl/config.php:55
-msgid "recommends"
-msgstr "рекомендовано"
-
-#: _tpl/config.php:51
-msgid "Tracking of external links"
-msgstr "Отслеживания переходов по внешним ссылкам"
-
-#: _tpl/config.php:55
+#: _tpl/config.php:37
 msgid "Asynchronous code"
 msgstr "Асинхронный код"
 
-#: _tpl/config.php:56
+#: _tpl/config.php:37 _tpl/config.php:50 _tpl/config.php:54 _tpl/config.php:63
+msgid "recommends"
+msgstr "рекомендовано"
+
+#: _tpl/config.php:38
 msgid ""
 "Asynchronous code does not block or influence the loading speed of your site."
 msgstr ""
 "Асинхронный код не блокирует и не влияет на скорость загрузки страницы "
 "вашего сайта."
 
-#: _tpl/config.php:61
+#: _tpl/config.php:45
+msgid "Additional settings"
+msgstr "Дополнительные настройки"
+
+#: _tpl/config.php:50
+msgid "Gathering statistics for the click map report"
+msgstr "Сбор статистики для работы отчета Карта кликов"
+
+#: _tpl/config.php:54
+msgid "Tracking of external links"
+msgstr "Отслеживания переходов по внешним ссылкам"
+
+#: _tpl/config.php:58
 msgid "Hash tracking in the browser address bar"
 msgstr "Отслеживание хеша в адресной строке браузера"
 
-#: _tpl/config.php:62
+#: _tpl/config.php:59
 msgid "Option applied to AJAX sites."
 msgstr "Опция применима для AJAX-сайтов."
 
-#: _tpl/config.php:66
+#: _tpl/config.php:63
+msgid "Session Replay"
+msgstr "Вебвизор"
+
+#: _tpl/config.php:67
 msgid "Stop automatic page indexing"
 msgstr "Запрет отправки на индексацию страниц сайта"
 
-#: _tpl/config.php:67
+#: _tpl/config.php:68
 msgid ""
 "Stop automatic Yandex.Search page indexing for sites with Yandex.Metrica tags"
 msgstr ""
 "Включите эту опцию, чтобы страницы сайта не отправлялись на индексацию "
 "Яндексу"
 
-#: _tpl/config.php:73
+#: _tpl/config.php:74
 msgid "Alternative CDN"
 msgstr "Альтернативный CDN"
 
-#: _tpl/config.php:74
+#: _tpl/config.php:75
 msgid ""
 "Allows you to correctly register sessions from regions in which access to "
 "Yandex resources is restricted. Using this option may affect the loading "
@@ -204,43 +204,43 @@ msgstr ""
 "доступ к ресурсам Яндекса. Использование этой опции может снизить скорость "
 "загрузки кода счётчика."
 
-#: _tpl/config.php:82
+#: _tpl/config.php:79
+msgid "not use"
+msgstr "не использовать"
+
+#: _tpl/config.php:83
 msgid "use standard"
 msgstr "использовать стандартный"
 
-#: _tpl/config.php:86
+#: _tpl/config.php:87
 msgid "enter another"
 msgstr "ввести другой"
 
-#: _tpl/config.php:94
+#: _tpl/config.php:95
 msgid "Ways to install the code snippet"
 msgstr "Способы установки кода счетчика"
 
-#: _tpl/config.php:97
+#: _tpl/config.php:98
 msgid "Plugin output area:"
 msgstr "Область вывода счётчика:"
 
-#: _tpl/config.php:109
+#: _tpl/config.php:110
 msgid "Track logged in users:"
 msgstr "Отслеживание авторизованных пользователей:"
 
-#: _tpl/config.php:112
-msgid "Yes"
-msgstr "Да"
-
-#: _tpl/config.php:116
+#: _tpl/config.php:117
 msgid "No"
 msgstr "Нет"
 
-#: _tpl/config.php:125
+#: _tpl/config.php:126
 msgid "User roles to not track:"
 msgstr "Не отслеживаемые роли пользователей:"
 
-#: _tpl/config.php:142
+#: _tpl/config.php:143
 msgid "Save"
 msgstr "Сохранить"
 
-#: _tpl/config.php:143
+#: _tpl/config.php:144
 msgid "Reset"
 msgstr "Сбросить"
 
@@ -263,6 +263,9 @@ msgstr "Alexander Semikashev"
 #. Author URI of the plugin
 msgid "http://semikashev.com"
 msgstr "http://semikashev.com"
+
+#~ msgid "Session Replay, scroll map, form analysis"
+#~ msgstr "Вебвизор, карта скроллинга, аналитика форм"
 
 #~ msgid "easy installation of the counter by"
 #~ msgstr "простая установка счётчика от"
