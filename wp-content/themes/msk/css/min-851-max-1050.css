@@ -1,0 +1,19 @@
+/*=========================================
+CSS for mobile screen with min-wsidth 851px and max-width 1050px;
+===========================================*/
+
+@media (min-width: 851px) and (max-width: 1050px) {
+	.copyright p {
+		font-size: 7px;
+	}
+	.soc a {
+		width: 30px;
+		height: 30px;
+		margin: 0px calc(12.5% - 11px);
+		line-height: 33px;
+		font-size: 14px;
+	}
+	.nav.navbar-nav.navbar-right {
+		padding-left: 2.5%
+	}
+}

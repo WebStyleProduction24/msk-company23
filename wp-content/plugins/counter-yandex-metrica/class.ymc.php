@@ -4,7 +4,7 @@
  * class.ymc.php
  *
  * @author     Alexander Semikashev
- * @version    1.0
+ * @version    1.1
  */
 
 class YMC {
@@ -24,13 +24,15 @@ class YMC {
 
     public static function options() {
         $default = array(
+			'ymc_oldtracker'       => false,
+
             'ymc_number_counter'    => "",
-            'ymc_option_webvisor'   => true,
-            'ymc_option_clickmap'   => true,
+            'ymc_webvisor'          => true,
+			'ymc_option_clickmap'   => true,
             'ymc_option_trackLinks' => true,
             'ymc_option_async'      => true,
             'ymc_option_hash'       => false,
-            'ymc_option_noindex'    => false,
+			'ymc_option_noindex'    => false,
 
             'ymc_option_cdn'        => 'none',
             'ymc_option_cdnuser'    => '',
@@ -62,9 +64,17 @@ class YMC {
 
 		if($view === true){
 			if( self::$options['ymc_position'] == 'header' ){
-				add_action( 'wp_head', array('YMC', 'tracker_template'), 9999 );
+				if( self::$options['ymc_oldtracker'] == false ){
+					add_action( 'wp_head', array('YMC', 'tracker_template'), 9999 );
+				} else {
+					add_action( 'wp_head', array('YMC', 'old_tracker_template'), 9999 );
+				}
 			} elseif( self::$options['ymc_position'] == 'footer' ){
-				add_action( 'wp_footer', array('YMC', 'tracker_template'), 9999 );
+				if( self::$options['ymc_oldtracker'] == false ){
+					add_action( 'wp_footer', array('YMC', 'tracker_template'), 9999 );
+				} else {
+					add_action( 'wp_footer', array('YMC', 'old_tracker_template'), 9999 );
+				}
 			}
 		}
 	}
@@ -72,16 +82,48 @@ class YMC {
 	public static function tracker_template() {
 		$options = self::$options;
 
-		$js = 'watch.js';
-
-		if( $options['ymc_option_webvisor'] == '2' ) {
-			$js = 'tag.js';
-		}
-
-		$yandexcdn = 'https://mc.yandex.ru/metrika/' . $js;
+		$yandexcdn = 'https://mc.yandex.ru/metrika/tag.js';
 
 		if( $options['ymc_option_cdn'] == 'default' ) {
-			$yandexcdn = 'https://cdn.jsdelivr.net/npm/yandex-metrica-watch/' . $js;
+			$yandexcdn = 'https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js';
+		} elseif( $options['ymc_option_cdn'] == 'user' AND $options['ymc_option_cdnuser'] != '' ){
+			$yandexcdn = $options['ymc_option_cdnuser'];
+		}
+
+		$tracker = '';
+
+		$tracker .= '<!-- Yandex.Metrika counter --> ';
+		$tracker .= '<script type="text/javascript" >';
+		$tracker .= ' (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; ';
+		$tracker .= 'm[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) ';
+		$tracker .= '(window, document, "script", "' . $yandexcdn . '", "ym");';
+
+		$tracker .= ' ym(' . $options['ymc_number_counter'] . ', "init", { ';
+				$tracker .= ' id:' . $options['ymc_number_counter'] . ',';
+
+				if( $options['ymc_option_clickmap'] === true ) { $tracker .= ' clickmap:true,'; }
+				if( $options['ymc_option_trackLinks'] === true ) { $tracker .= ' trackLinks:true,'; }
+				if( $options['ymc_option_hash'] === true ) { $tracker .= ' trackHash:true,'; }
+				if( $options['ymc_option_noindex'] === true ) { $tracker .= ' ut:"noindex",'; }
+				if( $options['ymc_webvisor'] == true ) { $tracker .= ' webvisor:true,'; }
+
+				$tracker .= ' accurateTrackBounce:true';
+		$tracker .= ' });';
+		$tracker .= ' </script>';
+
+		$tracker .= ' <noscript><div><img src="https://mc.yandex.ru/watch/' . $options['ymc_number_counter'] . '" style="position:absolute; left:-9999px;" alt="" /></div></noscript>';
+		$tracker .= ' <!-- /Yandex.Metrika counter -->';
+
+		echo $tracker;
+	}
+
+	public static function old_tracker_template() {
+		$options = self::$options;
+
+		$yandexcdn = 'https://mc.yandex.ru/metrika/watch.js';
+
+		if( $options['ymc_option_cdn'] == 'default' ) {
+			$yandexcdn = 'https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js';
 		} elseif( $options['ymc_option_cdn'] == 'user' AND $options['ymc_option_cdnuser'] != '' ){
 			$yandexcdn = $options['ymc_option_cdnuser'];
 		}
@@ -94,10 +136,10 @@ class YMC {
 
 		$tracker .= ' try {';
 
-		if($options['ymc_option_webvisor'] == '2'){
-			$tracker .= ' w.yaCounter' . $options['ymc_number_counter'] . ' = new Ya.Metrika2({';
-		} else {
+		if( $options['ymc_option_async'] === true ) {
 			$tracker .= ' w.yaCounter' . $options['ymc_number_counter'] . ' = new Ya.Metrika({';
+		} else {
+			$tracker .= ' var yaCounter' . $options['ymc_number_counter'] . ' = new Ya.Metrika({';
 		}
 
 		$tracker .= 'id:' . $options['ymc_number_counter'] . ',';
@@ -106,7 +148,7 @@ class YMC {
 		if( $options['ymc_option_trackLinks'] === true ) { $tracker .= ' trackLinks:true,'; }
 		if( $options['ymc_option_hash'] === true ) { $tracker .= ' trackHash:true,'; }
 		if( $options['ymc_option_noindex'] === true ) { $tracker .= ' ut:"noindex",'; }
-		if( $options['ymc_option_webvisor'] == '1' OR $options['ymc_option_webvisor'] == '2' ) { $tracker .= ' webvisor:true,'; }
+		if( $options['ymc_webvisor'] == true ) { $tracker .= ' webvisor:true,'; }
 
 		$tracker .= ' accurateTrackBounce:true';
 
@@ -120,11 +162,7 @@ class YMC {
 			$tracker .= 's.src = "' . $yandexcdn . '"; ';
 			$tracker .= 'if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }';
 
-			if($options['ymc_option_webvisor'] == '2'){
-				$tracker .= ' })(document, window, "yandex_metrika_callbacks2");';
-			} else {
-				$tracker .= ' })(document, window, "yandex_metrika_callbacks");';
-			}
+			$tracker .= ' })(document, window, "yandex_metrika_callbacks");';
 		}
 		$tracker .= ' </script>';
 		$tracker .= ' <noscript><div><img src="https://mc.yandex.ru/watch/' . $options['ymc_number_counter'] . '" style="position:absolute; left:-9999px;" alt="" /></div></noscript>';

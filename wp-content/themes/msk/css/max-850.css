@@ -1,0 +1,119 @@
+/*=========================================
+CSS for mobile screen with max-width 850px;
+===========================================*/
+
+@media screen and (max-width: 850px) {	
+	section#projects {
+		padding: 50px 0 10px;
+		background-position-y: -200px;
+	}
+	.mainmenu {
+		bottom: auto;
+		top: 5px;
+		left: 5px;
+		width: calc(100% - 5px);
+	}
+	.copyright p {
+		font-size: 9px;
+	}
+	.footer-area {
+		padding-bottom: 75px;
+		margin-top: 60px;
+	}
+	section#types {
+		margin-bottom: -40px;
+	}
+	section#form input[type="text"],
+	section#form input[type="email"],
+	section#form input[type="url"],
+	section#form input[type="password"],
+	section#form input[type="search"] {
+		width:100%;
+	}
+	.in-v .col-md-6.col-sm-12 {
+		padding: 0 15px !important;
+	}
+	.in-v .col-md-6.col-sm-6 {
+		padding: 0;
+	}
+	.in-v .col-md-6.col-sm-6:nth-child(odd) {
+		padding-right: 5px !important;
+	}
+	.in-v .col-md-6.col-sm-6:nth-child(even) {
+		padding-left: 5px !important;
+	}
+	.col-md-5.contact {
+		opacity: 1;
+	}
+	.col-md-5.contact p {
+		font-size: 15px;
+	}
+	.fullwidthbanner-container {
+		overflow: hidden !important;
+	}
+	#projects h4.fgfgf {
+		margin-top: 0;
+	}
+	.ostavit .wpcf7 input:not([type="submit"]) {
+		width: 100%;
+	}
+	.call.col-md-1 img{
+		display: none;
+	}
+	.ostavit {
+		margin: 35px auto 0;
+		opacity: 1;
+		position: relative;
+		width: 75%;
+		z-index: 10;
+	}
+	.w19 br {
+		display: none;
+	}
+	header.entry-header.main {
+		opacity: 1;
+	}
+	.header-area.page {
+		bottom: 0;
+		top: auto;
+	}
+	.phone.col-md-3{
+		right: 4%;
+	}
+	.mainmenu.col-md-7 {
+		left: 3%;
+	}
+	body.page-template.page-template-main .navbar-nav>li>.sub-menu {
+		display: none;
+	}
+	a.fancybox.zvo.desktop {
+		display: none;
+	}
+	a.fancybox.zvo.tablet {
+		display: block;
+		text-align: center;
+	}
+	.header-area {
+		box-shadow: 0px 0 15px 5px rgba(0, 0, 0, .75)
+	}
+	.panel {
+		box-shadow: none;
+	}
+	.panel.open {		
+		box-shadow: -10px 0 15px rgba(0, 0, 0, .75);
+	}
+	.handle {
+		height: 100px;
+		width: 100px;
+	}
+	header.entry-header.main {
+		border-radius: 0;
+		padding: 10px 15%;
+	}
+	body.page-template.page-template-main ul.nav.navbar-nav>li {
+		box-shadow: 0px 0 15px 1px rgba(0, 0, 0, .75);
+	}
+	.contact {
+		font-size: .87rem;
+	}
+}

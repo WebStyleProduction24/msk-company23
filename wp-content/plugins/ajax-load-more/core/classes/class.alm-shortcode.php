@@ -52,6 +52,7 @@ if( !class_exists('ALM_SHORTCODE') ):
          }
 
    		extract(shortcode_atts(array(
+	   		'nested' => false,
 	   		'filters' => false,
 	   		'target' => '',
 	   		'filters_analytics' => 'true',
@@ -110,8 +111,10 @@ if( !class_exists('ALM_SHORTCODE') ):
    			'sticky_posts' => false,
    			'post_format' => '',
    			'category' => '',
+   			'category__and' => '',
    			'category__not_in' => '',
    			'tag' => '',
+   			'tag__and' => '',
    			'tag__not_in' => '',
    			'taxonomy' => '',
    			'taxonomy_terms' => '',
@@ -389,9 +392,12 @@ if( !class_exists('ALM_SHORTCODE') ):
 			// Search atts - Used with SEO
          $is_search = (is_search()) ? 'data-search="true"' : '';
 
+			// Search atts - Used with SEO
+         $is_nested = ($nested === 'true') ? ' data-nested="true"' : '';
+
 
 			// Start .alm-listing
-   		$ajaxloadmore .= '<div id="'. $div_id .'" class="ajax-load-more-wrap'. $btn_color .''. $paging_color .''. $alm_layouts .'" '. $unique_id .' data-alm-id="" data-canonical-url="'. $canonicalURL .'" data-slug="'. $slug .'" data-post-id="'. $post_id .'" '. $is_search .'>';
+   		$ajaxloadmore .= '<div id="'. $div_id .'" class="ajax-load-more-wrap'. $btn_color .''. $paging_color .''. $alm_layouts .'" '. $unique_id .' data-alm-id="" data-canonical-url="'. $canonicalURL .'" data-slug="'. $slug .'" data-post-id="'. $post_id .'" '. $is_search . $is_nested .'>';
 
 
 				//	Masonry Hook (Before)
@@ -474,8 +480,10 @@ if( !class_exists('ALM_SHORTCODE') ):
             	'sticky_posts'			=> $sticky_posts,
             	'post_format'        => $post_format,
             	'category'           => $category,
+            	'category__and'      => $category__and,
             	'category__not_in'   => $category__not_in,
             	'tag'                => $tag,
+            	'tag__and'        	=> $tag__and,
             	'tag__not_in'        => $tag__not_in,
             	'taxonomy'           => $taxonomy,
             	'taxonomy_terms'     => $taxonomy_terms,
@@ -704,10 +712,12 @@ if( !class_exists('ALM_SHORTCODE') ):
                
                // Category
                $ajaxloadmore .= (!empty($category)) ? ' data-category="'.$category.'"' : '';
+               $ajaxloadmore .= (!empty($category__and)) ? ' data-category-and="'.$category__and.'"' : '';
                $ajaxloadmore .= (!empty($category__not_in)) ? ' data-category-not-in="'.$category__not_in.'"' : '';
                
                // Tag
                $ajaxloadmore .= (!empty($tag)) ? ' data-tag="'.$tag.'"' : '';
+               $ajaxloadmore .= (!empty($tag__and)) ? ' data-tag-and="'.$tag__and.'"' : '';
                $ajaxloadmore .= (!empty($tag__not_in)) ? ' data-tag-not-in="'.$tag__not_in.'"' : '';
                
                // Taxonomy
@@ -743,7 +753,7 @@ if( !class_exists('ALM_SHORTCODE') ):
    	   		$ajaxloadmore .= (!empty($custom_args)) ? ' data-custom-args="'.$custom_args.'"' : '';
    	   		
    	   		// Status
-   	   		$ajaxloadmore .= ' data-post-status="'.$post_status.'"';
+   	   		$ajaxloadmore .= (!empty($post_status)) ? ' data-post-status="'.$post_status.'"' : '';
    	   		
    	   		// Order
    	   		$ajaxloadmore .= ' data-order="'.$order.'"';
@@ -846,7 +856,7 @@ if( !class_exists('ALM_SHORTCODE') ):
 
 	            $nextpage_is_paged = ($nextpage_start > 1) ? true : false;
 
-	            $alm_nextpage_output = apply_filters('alm_init_nextpage', $nextpage_post_id, $nextpage_start,$nextpage_is_paged, $paging);
+	            $alm_nextpage_output = apply_filters('alm_init_nextpage', $nextpage_post_id, $nextpage_start,$nextpage_is_paged, $paging, $div_id);
 	            $ajaxloadmore .= $alm_nextpage_output;
 
 	         }
@@ -920,6 +930,10 @@ if( !class_exists('ALM_SHORTCODE') ):
    			}
    		}
    		// End REST API Add-on
+   		
+   		
+   		// Add some localized vars
+   		ALM_LOCALIZE::add_localized_var('IP', $_SERVER['REMOTE_ADDR'], $div_id);
          
          
          

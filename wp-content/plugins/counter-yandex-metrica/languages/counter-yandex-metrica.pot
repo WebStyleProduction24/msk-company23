@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Yandex.Metrika Counter by Semikashev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-04 18:33+0000\n"
+"POT-Creation-Date: 2018-12-16 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -22,15 +22,15 @@ msgstr ""
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: class.ymc-admin.php:75
+#: class.ymc-admin.php:80
 msgid "Options saved!"
 msgstr ""
 
-#: class.ymc-admin.php:78
+#: class.ymc-admin.php:83
 msgid "Please enter a valid counter code!"
 msgstr ""
 
-#: class.ymc-admin.php:89
+#: class.ymc-admin.php:94
 msgid "All options cleared!"
 msgstr ""
 
@@ -113,116 +113,124 @@ msgstr ""
 msgid "Yandex.Metrika"
 msgstr ""
 
-#: _tpl/config.php:5
-msgid "easy installation of the counter by"
+#: _tpl/config.php:7
+msgid "Author on coffee:"
 msgstr ""
 
-#: _tpl/config.php:15
+#: _tpl/config.php:8
+msgid "Ya.Money"
+msgstr ""
+
+#: _tpl/config.php:9
+msgid "PayPal"
+msgstr ""
+
+#: _tpl/config.php:20
 msgid "Enter the number of the counter"
 msgstr ""
 
-#: _tpl/config.php:23
-msgid "Additional settings"
+#: _tpl/config.php:28
+msgid "Obsolete code snippet"
 msgstr ""
 
-#: _tpl/config.php:29 _tpl/config.php:73
-msgid "not use"
-msgstr ""
-
-#: _tpl/config.php:33
-msgid "Session Replay, scroll map, form analysis"
+#: _tpl/config.php:32 _tpl/config.php:113
+msgid "Yes"
 msgstr ""
 
 #: _tpl/config.php:37
-msgid "Session Replay 2.0"
-msgstr ""
-
-#: _tpl/config.php:42
-msgid "Gathering statistics for the click map report"
-msgstr ""
-
-#: _tpl/config.php:42 _tpl/config.php:46 _tpl/config.php:50
-msgid "recommends"
-msgstr ""
-
-#: _tpl/config.php:46
-msgid "Tracking of external links"
-msgstr ""
-
-#: _tpl/config.php:50
 msgid "Asynchronous code"
 msgstr ""
 
-#: _tpl/config.php:51
+#: _tpl/config.php:37 _tpl/config.php:50 _tpl/config.php:54 _tpl/config.php:63
+msgid "recommends"
+msgstr ""
+
+#: _tpl/config.php:38
 msgid ""
 "Asynchronous code does not block or influence the loading speed of your site."
 msgstr ""
 
-#: _tpl/config.php:56
+#: _tpl/config.php:45
+msgid "Additional settings"
+msgstr ""
+
+#: _tpl/config.php:50
+msgid "Gathering statistics for the click map report"
+msgstr ""
+
+#: _tpl/config.php:54
+msgid "Tracking of external links"
+msgstr ""
+
+#: _tpl/config.php:58
 msgid "Hash tracking in the browser address bar"
 msgstr ""
 
-#: _tpl/config.php:57
+#: _tpl/config.php:59
 msgid "Option applied to AJAX sites."
 msgstr ""
 
-#: _tpl/config.php:61
+#: _tpl/config.php:63
+msgid "Session Replay"
+msgstr ""
+
+#: _tpl/config.php:67
 msgid "Stop automatic page indexing"
 msgstr ""
 
-#: _tpl/config.php:62
+#: _tpl/config.php:68
 msgid ""
 "Stop automatic Yandex.Search page indexing for sites with Yandex.Metrica tags"
 msgstr ""
 
-#: _tpl/config.php:68
+#: _tpl/config.php:74
 msgid "Alternative CDN"
 msgstr ""
 
-#: _tpl/config.php:69
+#: _tpl/config.php:75
 msgid ""
 "Allows you to correctly register sessions from regions in which access to "
 "Yandex resources is restricted. Using this option may affect the loading "
 "speed of the code snippet."
 msgstr ""
 
-#: _tpl/config.php:77
+#: _tpl/config.php:79
+msgid "not use"
+msgstr ""
+
+#: _tpl/config.php:83
 msgid "use standard"
 msgstr ""
 
-#: _tpl/config.php:81
+#: _tpl/config.php:87
 msgid "enter another"
 msgstr ""
 
-#: _tpl/config.php:89
+#: _tpl/config.php:95
 msgid "Ways to install the code snippet"
 msgstr ""
 
-#: _tpl/config.php:92
+#: _tpl/config.php:98
 msgid "Plugin output area:"
 msgstr ""
 
-#: _tpl/config.php:104
+#: _tpl/config.php:110
 msgid "Track logged in users:"
 msgstr ""
 
-#: _tpl/config.php:107
-msgid "Yes"
-msgstr ""
-
-#: _tpl/config.php:111
+#: _tpl/config.php:117
 msgid "No"
 msgstr ""
 
-#: _tpl/config.php:120
+#: _tpl/config.php:126
 msgid "User roles to not track:"
 msgstr ""
 
-#: _tpl/config.php:137
+#: _tpl/config.php:143
 msgid "Save"
 msgstr ""
 
-#: _tpl/config.php:138
+#: _tpl/config.php:144
 msgid "Reset"
 msgstr ""
 

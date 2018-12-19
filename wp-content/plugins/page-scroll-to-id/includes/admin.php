@@ -11,8 +11,19 @@ $toggle_instance_title=__('Click to toggle', $this->plugin_slug);
 
 <div class="wrap">
 
-	<?php screen_icon(); ?>
-	<h1><?php echo esc_html(get_admin_page_title()); ?></h1>
+	<?php if( version_compare(get_bloginfo('version'), '3.8', '<') && function_exists('screen_icon') ) screen_icon(); ?>
+	<?php
+	$plugin_admin_page_title=esc_html(get_admin_page_title());
+	if( version_compare(get_bloginfo('version'), '4.3', '<') ){
+	?>
+		<h2><?php echo $plugin_admin_page_title; ?></h2>
+	<?php
+	}else{
+	?>
+		<h1><?php echo $plugin_admin_page_title; ?></h1>
+	<?php
+	}
+	?>
 	
 	<div class="plugin-header">
 		<p class="plugin-info"><?php echo $plugin_info; ?></p>

@@ -1,0 +1,72 @@
+/*=========================================
+CSS for mobile screen with min-wsidth 651px and max-width 850px;
+===========================================*/
+
+@media (min-width: 651px) and (max-width: 850px) {
+	section#projects {
+		min-height: 1510px;
+		margin-bottom: 0;
+	}
+	.hentry {
+		margin: 0;
+	}
+	.page .custom-logo-link {
+		width: 100%;
+	}
+	.custom-logo-link {
+		float: left;
+		width: 25%;
+		padding-left: 15px;
+	}
+	.header-area,	#map {
+		margin-top: 0;
+		z-index: 5;
+	}
+	.contact {
+		width: 45%;
+		float: left;
+		padding: 0 15px;
+	}
+	.header-area.col-md-2 {		
+		display: table;
+		padding: 0;
+		min-height: auto;
+	}
+	.header-area.col-md-2 > * {
+		display: table-cell;
+		float: left;
+		padding-top: 15px;
+		vertical-align: middle;
+		width: 50% !important;
+	}	
+	.header-area.col-md-2 > *:last-child {
+		display: table-row;
+		margin-top: 10px;
+		height: initial;
+		padding-top: 0;
+		width: 100% !important;
+	}
+	.header-area.col-md-2 #map {
+		padding: 0;
+		margin: 0;
+		float: right;
+	}
+	#map iframe {
+		height: 100%;
+	}
+	.soc {
+		width: calc(100% / 3);
+		float: left;
+		margin: 0;
+	}
+	.footer-page .copyright {
+		width: 100%;
+	}
+	.copyright {
+		width: calc(100% / 3);
+		float: left;
+	}
+	.wsp24 {
+		display: block;
+	}
+}

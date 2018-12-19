@@ -3,8 +3,8 @@ Contributors: dcooney, connekthq
 Donate link: https://connekthq.com/donate/
 Tags: infinite scroll, infinite scrolling, scroll, infinite, lazy load, lazy loading, endless scroll, pagination, ajax pagination, ajax, ajax posts, woocommerce, ajax load more, masonry
 Requires at least: 3.6
-Tested up to: 4.9.8
-Stable tag: 3.7.1
+Tested up to: 5.0
+Stable tag: 4.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,7 +37,8 @@ Check out the **[demo site](https://connekthq.com/plugins/ajax-load-more/)** for
 
 
 
-#### What's New 3.0
+#### What's New 4.0
+* **[Pro](https://connekthq.com/plugins/ajax-load-more/pro/)** - Access to all premium add-ons in a single installation.
 * **[Filters](https://connekthq.com/plugins/ajax-load-more/add-ons/filters/)** - The Filters add-on provides front-end and admin functionality for building and managing Ajax filters.
 * **[User Query](https://connekthq.com/plugins/ajax-load-more/add-ons/users/)** - Query and display a list of WordPress users by role using a `WP_User_Query` and Ajax Load More.
 * **[Advanced Custom Fields](https://connekthq.com/plugins/ajax-load-more/examples/advanced-custom-fields/)** - Compatibility and integration added for infinite scrolling Flexible Content, Gallery, Relationship and Repeater fields for Advanced Custom Fields.
@@ -75,8 +76,10 @@ Ajax Load More accepts a number of parameters that are passed to the WordPress q
 *   **sticky_posts** - Preserve sticky post ordering in Ajax listing. Default = false
 *   **post_format** - Query by post format. Default = null
 *   **category** - A comma separated list of categories to include by slug. Default = null
+*   **category__and** - A comma separated list of categories to include by ID. Default = null
 *   **category__not_in** - A comma separated list of categories to exclude by ID. Default = null
 *   **tag** - A comma separated list of tags to include by slug. Default = null
+*   **tag__and** - A comma separated list of tags to include by ID. Default = null
 *   **tag__not_in** - A comma separated list of tags to exclude by ID. Default = null
 *   **taxonomy** - Query by custom taxonomy name. Default = null
 *   **taxonomy_terms** - Comma separated list of custom taxonomy terms(slug). Default = null
@@ -116,13 +119,13 @@ Ajax Load More accepts a number of parameters that are passed to the WordPress q
 *   **images_loaded** - Wait for all images to load before displaying ajax loaded content (true/false). Default = 'false'
 *   **destroy_after** - Remove ajax load more functionality after 'n' number of pages have been loaded. Default = null
 *   **progress_bar** - Display progress bar indicator at the top of the window while loading Ajax content. Default = 'false'
-*   **progress_bar_color** - Enter the hex color of the progress bar.
-. Default = 'ed7070'
+*   **progress_bar_color** - Enter the hex color of the progress bar. Default = 'ed7070'
 *   **button_label** - The label text for Load More button. Default = 'Older Posts'
 *   **button_loading_label** - Update the text of the Load More button while content is loading. Default = null
 *   **container_type** - Override the global Container Type that was set on ALM Settings page. Default = null
 *   **css_classes** - Add custom CSS classes to the Ajax Load More container. Default = null
 *   **id** - A unique ID for the Ajax Load More instance.
+*   **nested** - Is this a nested Ajax Load More instance. Default = false
 
 [&rarr; See All Parameters](https://connekthq.com/plugins/ajax-load-more/docs/shortcode-parameters/)
 
@@ -369,11 +372,26 @@ How to install Ajax Load More.
 
 == Changelog ==
 
+= 4.1.0 - December 6, 2018 =
+* NEW - Added initial support for nesting Ajax Load More instances. Users can now run Ajax Load More inside of another instance of Ajax Load More. For example, using Next Page add-on functionality inside of Previous Post content(Single posts). `[ajax_load_more nested="true"]`. Note: This is new functionality as should be used with caution as it has not fully been tested through every possible situation. Nested ALM Filters are not currently supported.
+* NEW - Added new plugin uninstall script and settings for removing all Ajax Load More data on plugin removal/deletion.
+* FIX - Fixed issue where filtering would stall when zero results were returned in an Ajax query.
+* FIX - Added bug fix for Shortcode Builder throwing a JS error when tags and/or categories are empty.
+
+
+= 4.0 - November 5, 2018 =
+* NEW - Introducing [Ajax Load More Pro](https://connekthq.com/plugins/ajax-load-more/pro/)! Access to every Ajax Load More add-on in a single installation.
+* NEW - Adding `category__and` and `tag__and` support for querying categories and tags.
+* UPDATE - Adding fix for permission error on repeater template directory by replacing `mkdir()` with WordPress core function `wp_mkdir_p`.
+* FIX - Fixed issue with Filters onComplete functions triggering before Ajax results were rendered on the screen.
+* FIX - Adding fix for `alm_get_canonical_url` function when getting URLs of child category and tag archives.
+
+
 = 3.7.1 - October 3, 2018 =
 Minor point release that affects Preloaded and Search Engine Optimization add-on users only. This release fixes 2 critical bugs in Ajax Load More 3.7.
 
-* FIX - Fix for Preloaded add-on not parsing multiple Post Types (I'm sorry about that!).
-* FIX - Adding `.alm-reveal` div and `css_classes` to NO_SCRIPT render to keep styling and layouts consistent.
+* FIX - Fix for Preloaded not parsing multiple Post Types (Sorry about that)
+* FIX - Adding `.alm-reveal` div and `css_classes` to NO_SCRIPT render.
 
 
 = 3.7 - September 19, 2018 =

@@ -1,0 +1,67 @@
+/*=========================================
+CSS for mobile screen with max-width 650px;
+===========================================*/
+
+@media screen and (max-width: 650px) {
+	.in-v .col-md-6.col-sm-6:nth-child(odd), .in-v .col-md-6.col-sm-6:nth-child(even) {
+		padding: 0 !important;
+	}
+	h3.fff {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+	section#form .container:before {
+		margin-left: 0;
+		background-size: 650px;
+		z-index: 9999;
+	}
+	h4.fgfgf {
+		background-position-y: -20px;
+		margin-bottom: 0;
+	}
+	section#projects {
+		margin-bottom: 0px;
+	}
+	.mainmenu {
+		position: absolute;
+	}
+	header.entry-header.main {
+		border-radius: 0;
+		padding: 10px 5%;
+	}
+	.soc {
+		width: calc(100% - 30px);
+	}
+	.foot {
+		margin-top: 10px;
+	}
+	.header-area {
+		padding-bottom: 5px;
+	}
+	.custom-logo {
+		width: 50%;
+	}
+	.contact {
+		font-size: .875rem;
+	}
+	.handle {
+		height: 67px;
+		width: 65px;
+	}
+	.panel {
+		width: 305px;
+	}
+	header.entry-header.main {
+		padding: 0 15px 15px;
+	}	
+	#map iframe {
+		height: 200px;
+	}
+	.ostavit {
+		width: 100%;
+		margin-bottom: 45px;
+	}
+	section#contacts {
+		padding-bottom: 135px;
+	}
+}

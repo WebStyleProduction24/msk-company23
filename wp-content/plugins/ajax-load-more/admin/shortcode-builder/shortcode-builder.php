@@ -71,7 +71,7 @@
 	         <!-- Container Type -->
 	         <div class="section-title">
 	            <h4><?php _e('Container Type', 'ajax-load-more'); ?> <a href="javascript:void(0)" class="fa fa-question-circle tooltip" title="<?php _e('You can define a global container type on the Ajax Load More settings screen','ajax-load-more'); ?>."></a></h4>
-	   		 	<p><?php _e('Override the global Container Type  set on the <a href="admin.php?page=ajax-load-more">ALM Settings page</a>.', 'ajax-load-more'); ?></p>
+	   		 	<p><?php _e('Override the global Container Type set in <a href="admin.php?page=ajax-load-more">ALM Settings</a>.', 'ajax-load-more'); ?></p>
 	   		</div>
 	         <div class="wrap">
 	            <div class="inner">
@@ -102,13 +102,41 @@
 	         <!-- Container Classes -->
 	         <div class="section-title">
 	            <h4><?php _e('Container Classes', 'ajax-load-more'); ?> <a href="javascript:void(0)" class="fa fa-question-circle tooltip" title="<?php _e('You can define global container classes on the Ajax Load More settings screen','ajax-load-more'); ?>."></a></h4>
-	   		 	<p><?php _e('Add custom CSS classes to the <span>.alm-listing</span> container. <br/><br/> e.g. portfolio-listing large-12 etc', 'ajax-load-more'); ?></p>
+	   		 	<p>
+		   		 	<?php _e('Add custom CSS classes to the <span>.alm-listing</span> container.', 'ajax-load-more'); ?>
+		   		 	 <small>e.g. blog-listing large-12 etc...</small>
+	   		 	</p>
 	   		 </div>
 	         <div class="wrap">
 	            <div class="inner">
 	               <input class="alm_element" name="container-classes" type="text" id="container-classes" placeholder="listing large-12 columns">
 	            </div>
 	         </div>
+	
+	         <div class="clear"></div>
+	         <hr/>
+	
+	         <!-- Nested ALM -->
+	         
+	         <div class="section-title">
+	            <h4><?php _e('Nested Instance', 'ajax-load-more'); ?> <a href="javascript:void(0)" class="fa fa-question-circle tooltip" title="<?php _e('When nesting ALM instances it\'s important to set this to true as it removes certain problematic functionality.','ajax-load-more'); ?>"></a></h4>
+	   		 	<p><?php _e('Is this a nested Ajax Load More instance?', 'ajax-load-more'); ?></p>
+	   		 </div>
+	         <div class="wrap">
+	            <div class="inner">
+	               <ul>
+	                  <li>
+	                     <input class="alm_element" type="radio" name="nested" value="t" id="nested_t">
+	                     <label for="nested_t"><?php _e('True', 'ajax-load-more'); ?></label>
+	                  </li>
+	                  <li>
+	                     <input class="alm_element" type="radio" name="nested" value="f" id="nested_f" checked="checked">
+	                     <label for="nested_f"><?php _e('False', 'ajax-load-more'); ?></label>
+	                  </li>
+	               </ul>
+	            </div>
+	         </div>
+	         
 	      </div>
 	   </div>
 	   <!-- End Options -->
@@ -201,7 +229,7 @@
 	            <div class="inner">
 	               <ul>
 	                  <li>
-	                     <input class="alm_element" type="radio" name="scroll" value="t" id="scroll_t" checked>
+	                     <input class="alm_element" type="radio" name="scroll" value="t" id="scroll_t" checked="checked">
 	                     <label for="scroll_t"><?php _e('True', 'ajax-load-more'); ?></label>
 	                  </li>
 	                  <li>
@@ -343,7 +371,7 @@
 		            <div class="inner">
 	                  <ul>
 	                     <li style="width:100%;">
-	                        <input class="alm_element" type="radio" name="masonry-animation" value="default" id="masonry-animation-default" checked>
+	                        <input class="alm_element" type="radio" name="masonry-animation" value="default" id="masonry-animation-default" checked="checked">
 	                        <label for="masonry-animation-default">
 	                           <?php _e('Default (Zoom)', 'ajax-load-more'); ?> 
 	                           <span class="description"><?php _e('Items scale up from 50% to 100% size on load','ajax-load-more'); ?>.</span>
@@ -407,6 +435,21 @@
 	
 	         <!-- Hide transition_container if Masonry is selected -->
 	         <div class="masonry-options-hide">
+		         
+		         <div class="transition-container-classes-wrap">
+			         <div class="clear"></div>
+			         <hr>
+		
+			         <div class="section-title">
+			            <h4><?php _e('Transition Container Classes', 'ajax-load-more'); ?> <a href="javascript:void(0)" class="fa fa-question-circle tooltip" title="<?php _e('This setting is not available with the Previous Post or Next Page add-ons','ajax-load-more'); ?>."></a></h4>
+			   		 	<p><?php _e('Add custom classes to the <span>.alm-reveal</span> loading container', 'ajax-load-more'); ?>.</p>
+			   		 </div>
+			         <div class="wrap">
+			            <div class="inner">
+			               <input type="text" class="alm_element" name="transition-container-classes" id="transition-container-classes" placeholder="row large-12 etc">
+			            </div>
+			         </div>
+		         </div>
 	
 		         <div class="clear"></div>
 		         <hr>
@@ -424,21 +467,6 @@
 		                   </li>
 		               </ul>
 		            </div>
-		         </div>
-		         
-		         <div class="transition-container-classes-wrap">
-			         <div class="clear"></div>
-			         <hr>
-		
-			         <div class="section-title">
-			            <h4><?php _e('Transition Container Classes', 'ajax-load-more'); ?> <a href="javascript:void(0)" class="fa fa-question-circle tooltip" title="<?php _e('This setting is not available with the Previous Post or Next Page add-ons','ajax-load-more'); ?>."></a></h4>
-			   		 	<p><?php _e('Add custom classes to the <span>.alm-reveal</span> loading container', 'ajax-load-more'); ?>.</p>
-			   		 </div>
-			         <div class="wrap">
-			            <div class="inner">
-			               <input type="text" class="alm_element" name="transition-container-classes" id="transition-container-classes" placeholder="row large-12 etc">
-			            </div>
-			         </div>
 		         </div>
 		         
 	         </div>
@@ -559,7 +587,7 @@
 	   		</div>
 	         <div class="wrap">
 	            <div class="inner">
-	               <input type="number" class="alm_element numbers-only" name="destroy-after" id="disable-after" step="1" min="0" value="">
+	               <input type="number" class="alm_element numbers-only" placeholder="0" name="destroy-after" id="disable-after" step="1" min="0" value="">
 	            </div>
 	         </div>
 	      </div>
@@ -689,28 +717,55 @@
 	   }else{
 		   $cats = get_categories();
 	   }
-		if($cats){ ?>
+		if($cats){ 
+			$cat_link = 'https://codex.wordpress.org/Class_Reference/WP_Query#Category_Parameters';
+		?>
 		<div class="row checkboxes categories" id="alm-categories">
 	      <h3 class="heading" tabindex="0"><?php _e('Category', 'ajax-load-more'); ?></h3>
 	      <div class="expand-wrap">
 	         <div class="section-title">
-	            <h4>Include</h4>
-	            <p><?php _e('A comma separated list of categories to include by slug. (design, research etc...)', 'ajax-load-more'); ?><br/>
+	            <h4><?php _e('Include', 'ajax-load-more'); ?> <a href="javascript:void(0)" class="fa fa-question-circle tooltip" title="<?php _e('Get posts by category using a category_name or category__and query','ajax-load-more'); ?>."></a></h4>
+	            <p><?php _e('Comma separated list of categories to include by', 'ajax-load-more'); ?> <strong class="alm-populate"><?php _e('slug', 'ajax-load-more'); ?></strong>.
+	            <small class="alm-populate-eg">e.g. design, research etc...</small>
+	            <br/>
 	            &raquo; <a href="admin.php?page=ajax-load-more-help&section=examples#example-category" target="_blank"><?php _e('View Example', 'ajax-load-more'); ?></a></p>
 	         </div>
 	         <div class="wrap">
 	            <div class="inner">
-	               <?php
-	               if(!$disable_dynamic_content){
-	                  echo '<select class="alm_element multiple" name="category-select" id="category-select" multiple="multiple">';
-	                  foreach( $cats as $cat ){
-	                     echo '<option name="chk-'.$cat->slug.'" id="chk-'.$cat->slug.'" value="'.$cat->slug.'">'.$cat->name.'</option>';
-	                  }
-	                  echo '</select>';
-	               }else{
-	                  echo '<input type="text" class="alm_element" name="category-select" id="category-select" placeholder="design, development, science etc...">';
-	               }
-	               ?>
+		            <div class="category-toggle category_name">
+		               <?php
+		               if(!$disable_dynamic_content){
+		                  echo '<select class="alm_element multiple" name="category-select" id="category-select" multiple="multiple">';
+		                  foreach( $cats as $cat ){
+		                     echo '<option name="chk-'.$cat->slug.'" id="chk-'.$cat->slug.'" value="'.$cat->slug.'">'.$cat->name.'</option>';
+		                  }
+		                  echo '</select>';
+		               }else{
+		                  echo '<input type="text" class="alm_element" name="category-select" id="category-select" placeholder="design, development, science etc...">';
+		               }
+		               ?>
+		            </div>
+		            <div class="category-toggle category__and" style="display: none;">
+			            <?php
+		               if(!$disable_dynamic_content){
+		                  echo '<select class="alm_element multiple" name="category--and-select" id="category--and-select" multiple="multiple">';
+		                  foreach( $cats as $cat ){
+		                     echo '<option name="chk-'.$cat->term_id.'" id="chk-'.$cat->term_id.'" value="'.$cat->term_id.'">'.$cat->name.'</option>';
+		                  }
+		                  echo '</select>';
+		               }else{
+		                  echo '<input type="text" class="alm_element" name="category--and-select" id="category--and-select" placeholder="10,29,31 etc...">';
+		               }
+		               ?>
+		            </div>
+	               <ul style="padding: 20px 0 0;">
+							<li style="width: 100%;">
+								<input class="alm_element" type="checkbox" name="category-select-type" value="category__and" id="category__and">
+								<label for="category__and">
+									category__and <span>(<a href="<?php echo $cat_link; ?>" target="_blank"><?php _e('What\'s this', 'ajax-load-more'); ?>?</a>)</span>
+								</label>
+							</li>
+		            </ul>
 	            </div>
 	         </div>
 	
@@ -719,7 +774,10 @@
 	
 	         <div class="section-title">
 	            <h4><?php _e('Exclude', 'ajax-load-more'); ?></h4>
-	            <p><?php _e('A comma separated list of categories to exclude by ID. (3, 12, 35 etc..)', 'ajax-load-more'); ?></p>
+	            <p>
+		            <?php _e('Comma separated list of categories to exclude by ID.', 'ajax-load-more'); ?>
+		            <small>e.g. 3, 12, 35 etc..</small>
+	            </p>
 	         </div>
 	         <div class="wrap">
 	            <div class="inner">
@@ -749,35 +807,68 @@
 	   }else{
 		   $tags = get_tags();
 	   }
-		if($tags){ ?>
+		if($tags){ 			
+			$tag_link = 'https://codex.wordpress.org/Class_Reference/WP_Query#Tag_Parameters';
+		?>
 		<div class="row checkboxes tags" id="alm-tags">
 			<h3 class="heading" tabindex="0"><?php _e('Tag', 'ajax-load-more'); ?></h3>
 			<div class="expand-wrap">
 	   		<div class="section-title">
-	   		<h4><?php _e('Include', 'ajax-load-more'); ?></h4>
-	   		<p><?php _e('A comma separated list of tags to include by slug. (toronto, canada etc...)', 'ajax-load-more'); ?><br/>&raquo; <a href="admin.php?page=ajax-load-more-help&section=examples#example-tag" target="_blank"><?php _e('View Example', 'ajax-load-more'); ?></a></p>
+	   			<h4><?php _e('Include', 'ajax-load-more'); ?> <a href="javascript:void(0)" class="fa fa-question-circle tooltip" title="<?php _e('Get posts by tags using a tag or tag__and query','ajax-load-more'); ?>."></a></h4>
+					<p><?php _e('Comma separated list of tags to include by', 'ajax-load-more'); ?> <strong class="alm-populate"><?php _e('slug', 'ajax-load-more'); ?></strong>.
+					<small class="alm-populate-eg">e.g. toronto, canada etc...</small>
+					<br/>&raquo; <a href="admin.php?page=ajax-load-more-help&section=examples#example-tag" target="_blank">
+						<?php _e('View Example', 'ajax-load-more'); ?>
+						</a></p>
 	   		</div>
 	   		<div class="wrap">
 	   		   <div class="inner">
-	              <?php
-	         	  if(!$disable_dynamic_content){
-	         	     echo '<select class="alm_element multiple" name="tag-select" id="tag-select" multiple="multiple">';
-	             	  foreach( $tags as $tag ){
-	                     echo '<option name="chk-'.$tag->slug.'" id="chk-'.$tag->slug.'" value="'.$tag->slug.'">'.$tag->name.'</option>';
-	            	  }
-	            	  echo '</select>';
-	         	  }else{
-	            	  echo '<input type="text" class="alm_element" name="tag-select" id="tag-select" placeholder="hockey, puck, crosby etc...">';
-	         	  }
-	         	   ?>
+		   		   <div class="tag-toggle tag_normal">
+							<?php
+							if(!$disable_dynamic_content){
+								echo '<select class="alm_element multiple" name="tag-select" id="tag-select" multiple="multiple">';
+								foreach( $tags as $tag ){
+									echo '<option name="chk-'.$tag->slug.'" id="chk-'.$tag->slug.'" value="'.$tag->slug.'">'.$tag->name.'</option>';
+								}
+								echo '</select>';
+							}else{
+								echo '<input type="text" class="alm_element" name="tag-select" id="tag-select" placeholder="hockey, puck, crosby etc...">';
+							}
+							?>
+		   		   </div>
+		   		   <div class="tag-toggle tag__and" style="display: none;">
+							<?php
+							if(!$disable_dynamic_content){
+								echo '<select class="alm_element multiple" name="tag--and-select" id="tag--and-select" multiple="multiple">';
+								foreach( $tags as $tag ){
+									echo '<option name="chk-'.$tag->term_id.'" id="chk-'.$tag->term_id.'" value="'.$tag->term_id.'">'.$tag->name.'</option>';
+								}
+								echo '</select>';
+							}else{
+								echo '<input type="text" class="alm_element" name="tag--and-select" id="tag--and-select" placeholder="12, 23, 29 etc...">';
+							}
+							?>
+		   		   </div>
+	               <ul style="padding: 20px 0 0;">
+							<li style="width: 100%;">
+								<input class="alm_element" type="checkbox" name="tag-select-type" value="tag__and" id="tag__and">
+								<label for="tag__and">
+									tag__and <span>(<a href="<?php echo $tag_link; ?>" target="_blank"><?php _e('What\'s this', 'ajax-load-more'); ?>?</a>)</span>
+								</label>
+							</li>
+		            </ul>
 	            </div>
-	   	  </div>
-	   	  <div class="clear"></div>
+	   	   </div>
+	   	   <div class="clear"></div>
 	         <hr/>
+
 	
 	         <div class="section-title">
 	            <h4><?php _e('Exclude', 'ajax-load-more'); ?></h4>
-	            <p><?php _e('A comma separated list of tags to exclude by ID. (30, 12, 99 etc..)', 'ajax-load-more'); ?></p>
+	            <p>
+		            <?php _e('Comma separated list of tags to exclude by ID', 'ajax-load-more'); ?>. 	            
+						<small>e.g. 30, 12, 99 etc..</small>
+	            </p>
 	         </div>
 	         <div class="wrap">
 	            <div class="inner">
@@ -826,34 +917,6 @@
 		<?php }?>
 		<!-- End Taxonomies -->
 	
-	   <!-- Date -->
-	   <div class="row input date" id="alm-date">
-	      <h3 class="heading" tabindex="0"><?php _e('Date', 'ajax-load-more'); ?></h3>
-	      <div class="expand-wrap">
-	         <div class="section-title">
-	   		 	<p><?php _e('Enter a year, month(number) and day to query by date archive.<br/>&raquo; <a href="admin.php?page=ajax-load-more-help&section=examples#example-date" target="_blank">View Example</a>', 'ajax-load-more'); ?></p>
-	   		 </div>
-	         <div class="wrap">
-	            <div class="inner">
-	               <div class="wrap-30">
-	                  <?php $today = getdate(); ?>
-	                  <label for="input-year" class="full"><?php _e('Year:', 'ajax-load-more'); ?></label>
-	                  <input name="input-year" class="alm_element sm numbers-only" type="text" id="input-year" maxlength="4" placeholder="<?php echo $today['year']; ?>">
-	               </div>
-	               <div class="wrap-30">
-	                  <label for="input-month" class="full"><?php _e('Month:', 'ajax-load-more'); ?></label>
-	                  <input name="input-month" class="alm_element sm numbers-only" type="text" id="input-month" maxlength="2" placeholder="<?php echo $today['mon']; ?>">
-	               </div>
-	               <div class="wrap-30">
-	                  <label for="input-day" class="full"><?php _e('Day:', 'ajax-load-more'); ?></label>
-	                  <input name="input-day" class="alm_element sm numbers-only" type="text" id="input-day" maxlength="2" placeholder="<?php echo $today['mday']; ?>">
-	               </div>
-	            </div>
-	         </div>
-	      </div>
-	   </div>
-	   <!-- End Date -->
-	
 	   <!-- Meta_Query -->
 	   <div class="row input meta-key" id="alm-meta-key">
 	      <h3 class="heading" tabindex="0"><?php _e('Custom Fields (Meta_Query)', 'ajax-load-more'); ?></h3>
@@ -891,6 +954,34 @@
 	      </div>
 	   </div>
 	   <!-- End Meta Query -->
+	
+	   <!-- Date -->
+	   <div class="row input date" id="alm-date">
+	      <h3 class="heading" tabindex="0"><?php _e('Date', 'ajax-load-more'); ?></h3>
+	      <div class="expand-wrap">
+	         <div class="section-title">
+	   		 	<p><?php _e('Enter a year, month(number) and day to query by date archive.<br/>&raquo; <a href="admin.php?page=ajax-load-more-help&section=examples#example-date" target="_blank">View Example</a>', 'ajax-load-more'); ?></p>
+	   		 </div>
+	         <div class="wrap">
+	            <div class="inner">
+	               <div class="wrap-30">
+	                  <?php $today = getdate(); ?>
+	                  <label for="input-year" class="full"><?php _e('Year:', 'ajax-load-more'); ?></label>
+	                  <input name="input-year" class="alm_element sm numbers-only" type="text" id="input-year" maxlength="4" placeholder="<?php echo $today['year']; ?>">
+	               </div>
+	               <div class="wrap-30">
+	                  <label for="input-month" class="full"><?php _e('Month:', 'ajax-load-more'); ?></label>
+	                  <input name="input-month" class="alm_element sm numbers-only" type="text" id="input-month" maxlength="2" placeholder="<?php echo $today['mon']; ?>">
+	               </div>
+	               <div class="wrap-30">
+	                  <label for="input-day" class="full"><?php _e('Day:', 'ajax-load-more'); ?></label>
+	                  <input name="input-day" class="alm_element sm numbers-only" type="text" id="input-day" maxlength="2" placeholder="<?php echo $today['mday']; ?>">
+	               </div>
+	            </div>
+	         </div>
+	      </div>
+	   </div>
+	   <!-- End Date -->
 	
 	   <?php // List Authors
 		if($disable_dynamic_content){
@@ -1042,7 +1133,7 @@
 	      <h3 class="heading" tabindex="0"><?php _e('Custom Arguments', 'ajax-load-more'); ?></h3>
 	      <div class="expand-wrap">
 	         <div class="section-title">
-	   		 	<p><?php _e('A semicolon separated list of custom value:pair arguments.', 'ajax-load-more'); ?>  <a href="javascript:void(0)" class="fa fa-question-circle tooltip" title="<?php _e('Custom Arguments can be used to query by parameters not available in the Shortcode Builder','ajax-load-more'); ?>."></a><br/><br/>e.g. tag_slug__and:design,development; event_display:upcoming</p>
+	   		 	<p><?php _e('A semicolon separated list of custom value:pair arguments.', 'ajax-load-more'); ?>  <a href="javascript:void(0)" class="fa fa-question-circle tooltip" title="<?php _e('Custom Arguments can be used to query by parameters not available in the Shortcode Builder','ajax-load-more'); ?>."></a><br/><small>e.g. event_display:upcoming</small></p>
 	   		 </div>
 	         <div class="wrap">
 	            <div class="inner">

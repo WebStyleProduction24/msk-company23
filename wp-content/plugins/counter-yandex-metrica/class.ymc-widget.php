@@ -4,7 +4,7 @@
  * class.ymc-widget.php
  *
  * @author     Alexander Semikashev
- * @version    1.1
+ * @version    1.2
  */
 
 class YMC_Widget extends WP_Widget {
@@ -234,3 +234,9 @@ class YMC_Widget extends WP_Widget {
     }
 
 }
+
+function ymc_register_widgets() {
+    register_widget( 'YMC_Widget' );
+}
+
+add_action( 'widgets_init', 'ymc_register_widgets' );

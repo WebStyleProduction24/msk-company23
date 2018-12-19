@@ -1,0 +1,42 @@
+/*=========================================
+CSS for mobile screen with max-width 450px;
+===========================================*/
+
+@media screen and (max-width: 450px) {
+	section#services div.col-md-4 {
+		float: none;
+	}
+	.footer-area {
+    padding-bottom: 30%;
+    margin-top: 20px;
+  }
+	.karta .ymaps-2-1-71-map {
+		height: 550px !important;
+	} 
+	section#contacts {
+		padding-bottom: 0;
+	}
+	section#services .ostavit.col-md-8 {
+		width: 95% !important;
+	}
+	.col-md-5.contact {
+		margin-top: 300px;
+	}
+	section#services .ostavit.col-md-8 .inner-za div.wpcf7, section#services .ostavit.col-md-8 .inner-za div.co-in {
+		margin: 10px;
+	}
+	section#services .ostavit.col-md-8 .inner-za:before {
+		width: calc(100% - 8px);
+		height: calc(100% - 8px);
+		top: 4px;
+		left: 4px;
+	}	
+	section#etapi h4.fgfgf {
+		font-size: 20px;
+		padding: 8px 0;
+		background-size: 300px;
+	}
+	section#services {
+		padding: 20px 0;
+	}
+}

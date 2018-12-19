@@ -1,0 +1,68 @@
+/*=========================================
+CSS for mobile screen with max-width 767px;
+===========================================*/
+
+@media screen and (max-width: 767px) {
+	.item .col-md-7 {
+		padding-right: 0;
+	}
+	section#projects {
+    background-position-y: -120px;
+    margin-top: -80px;
+    padding-top: 10px;
+	}
+	p.opis {
+		font-size: 16px;
+	}
+	h3.podz {
+		font-size: 12px;
+	}
+	#rev_slider_4_1_wrapper {
+		height: auto !important;
+	}
+	h2.titl {
+		padding-top: 15px;
+		font-size: 20px;
+	}
+	h3.zsa1.col-md-12 {
+		font-size: 18px;
+	}
+	.politika {	
+		font-size: 9px;
+	}	
+	.header-area.page .col-xs-1.visible-xs {
+		display: table-cell !important;
+	}
+	body.page-template.page-template-main .nav.navbar-nav.navbar-right, .mainmenu.visible-xs .nav.navbar-nav.navbar-right {
+		margin: 0;
+	}
+	div#bs-example-navbar-collapse-1 {
+		background: #ee3b56;
+		max-width: 210px;
+		margin-left: 50px;
+	}
+	body.page-template.page-template-main ul.nav.navbar-nav li a, .mainmenu.visible-xs ul.nav.navbar-nav li a {
+		font-size: 15px;
+		border: none !important;
+		min-height: 0;
+	}
+
+	.mainmenu.visible-xs .navbar-collapse.in {
+		overflow-y: visible;
+	}
+	body.page-template.page-template-main .nav.navbar-nav.navbar-right, .mainmenu.visible-xs .nav.navbar-nav.navbar-right {
+		position: relative;
+		max-width: 210px;
+	}
+	body.page-template.page-template-main ul.nav.navbar-nav li, .mainmenu.visible-xs ul.nav.navbar-nav li {
+		margin: 0;
+		width: 99%;
+		border-bottom: solid 1px;
+	}
+	body.page-template.page-template-main ul.nav.navbar-nav>li, .mainmenu.visible-xs ul.nav.navbar-nav>li {
+		box-shadow: none;
+	}
+	body.page-template.page-template-main ul.nav.navbar-nav li a, .mainmenu.visible-xs ul.nav.navbar-nav li a {
+		background: rgb(255,255,255);
+	}
+}

@@ -65,7 +65,7 @@
 
 @media only screen and (max-width:767px) {
     .navbar-toggle {
-        border-color: #000;
+        border-color: #fff;
         float: none;
         margin: 0px auto;
     }

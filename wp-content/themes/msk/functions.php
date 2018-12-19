@@ -6,119 +6,6 @@
 
 ===========================================*/
 
-function remove_plugins() {
-
-        //  Сначала удаляем различные ненужные вставки:
-    remove_action('wp_head', 'feed_links_extra', 3);
-    remove_action('wp_head', 'feed_links', 2);
-    remove_action('wp_head', 'rsd_link');
-    remove_action('wp_head', 'wlwmanifest_link');
-    remove_action('wp_head', 'wp_generator');
-    remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
-    remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
-
-        // Затем опишем какие плагины и на каких страницах мы (не) хотим использовать.
-
-        // Что убрать с главной страницы?
-    if (is_home()) {
-        remove_plugin_fancybox();
-        remove_plugin_syntaxhighlightercompress();
-
-    }
-
-        // Что убрать из категорий?
-    if (is_category()) {
-        remove_plugin_syntaxhighlightercompress();
-        remove_plugin_contactform7();
-        remove_plugin_twittertools();
-
-            // Некоторые специфические категории и настройки
-        if (!is_category(array('web','polygrafiya'))) {
-            remove_plugin_fancybox();
-            remove_plugin_wpportfolio();
-            remove_plugin_filegallery();
-        } else {
-            wp_deregister_script('stw-pagepix');
-        }
-    }
-
-        // Что убрать с постов?
-    if (is_single()) {
-        remove_plugin_fancybox();
-        remove_plugin_wpportfolio();
-        remove_plugin_contactform7();
-        remove_plugin_twittertools();
-
-            // Некоторые специфические настройки для постов
-        if (!is_single(array(266, 356))) {
-            remove_plugin_syntaxhighlightercompress();
-        }
-    }
-
-        // Что убрать со страниц?
-    if (is_page()) {
-        remove_plugin_fancybox();
-        remove_plugin_syntaxhighlightercompress();
-        remove_plugin_wpportfolio();
-        remove_plugin_filegallery();
-        remove_plugin_twittertools();
-        if (!is_page('about')) {
-            remove_plugin_contactform7();
-        }
-    }
-
-}
-
-    // Remove Fancybox Plugin
-function remove_plugin_fancybox() {
-    remove_action('wp_head', 'mfbfw_init');
-    remove_action('wp_enqueue_scripts', 'mfbfw_styles');
-    wp_deregister_script('fancybox');
-    wp_deregister_script('jqueryeasing');
-    wp_deregister_script('jquerymousewheel');
-}
-
-    // Remove SyntaxHighlighter Compress
-function remove_plugin_syntaxhighlightercompress() {
-    remove_action('wp_head', 'wp_shc_head');
-    remove_action('wp_footer', 'wp_shc_footer');
-}
-
-    // Remove WP Portfolio
-function remove_plugin_wpportfolio() {
-    remove_action('wp_head', 'WPPortfolio_styles_frontend_renderCSS');
-    wp_deregister_script('stw-pagepix');
-}
-
-    // Remove File Gallery
-function remove_plugin_filegallery() {
-    wp_dequeue_style('file_gallery_nikitak');
-    wp_dequeue_style('file_gallery_default');
-    wp_dequeue_style('file_gallery_columns');
-}
-
-    // Remove Twitter Tools
-function remove_plugin_twittertools() {
-    remove_action('wp_head', 'aktt_head');
-}
-
-    // Remove Contact Form 7
-function remove_plugin_contactform7() {
-    remove_action( 'wp_enqueue_scripts', 'wpcf7_enqueue_scripts' );
-    wp_dequeue_style('contact-form-7');
-    wp_dequeue_style('contact-form-7-rtl');
-}
-
-    // Следующая строчка означает, что наша функция будет вызвана
-    // непосредственно перед тем как начнет генерироваться страница.
-add_action('template_redirect', 'remove_plugins');
-
-
-
-
-
-
-
 
 
 /* Регистрируем Аксессуары и таксономию для них
@@ -545,6 +432,8 @@ add_action( 'widgets_init', 'philips_widgets_init' );
  * Enqueue scripts and styles.
  */
 function philips_scripts() {
+
+
     wp_enqueue_style( 'philips-bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
     wp_enqueue_style( 'philips-fontawesome', get_template_directory_uri() . '/css/font-awesome.css' );
     wp_enqueue_style( 'philips-style', get_stylesheet_uri() );
@@ -556,7 +445,18 @@ function philips_scripts() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+
+    wp_enqueue_style( 'full-screen', get_template_directory_uri() . '/css/full-screen.css' );
+    wp_enqueue_style( 'mobile-all-screen', get_template_directory_uri() . '/css/mobile-all-screen.css' );
+    wp_enqueue_style( 'min-851-max-1050', get_template_directory_uri() . '/css/min-851-max-1050.css' );
+    wp_enqueue_style( 'max-1050', get_template_directory_uri() . '/css/max-1050.css' );
+    wp_enqueue_style( 'min-651-max-850', get_template_directory_uri() . '/css/min-651-max-850.css' );
+    wp_enqueue_style( 'max-850', get_template_directory_uri() . '/css/max-850.css' );
+    wp_enqueue_style( 'max-767', get_template_directory_uri() . '/css/max-767.css' );
+    wp_enqueue_style( 'max-650', get_template_directory_uri() . '/css/max-650.css' );
+    wp_enqueue_style( 'max-450', get_template_directory_uri() . '/css/max-450.css' );
 }
+
 add_action( 'wp_enqueue_scripts', 'philips_scripts' );
 
 /**
@@ -616,12 +516,12 @@ function wsp24_logo() {
     $gtml = '';
 
     $bloginfo = '<a href="/" rel="home">';
-    $bloginfo .= '<div class="logo col-md-1"><h1 class="site-title">';
+    $bloginfo .= '<div class="logo col-md-1 col-sm-1"><h1 class="site-title">';
     $bloginfo .= get_bloginfo( 'name' );
     $bloginfo .= '</h1></div></a>';
 
     $html = has_custom_logo() ? get_custom_logo() : $bloginfo;
-    $html = sprintf('<div class="col-md-1 logo">%1$s</div>', $html );
+    $html = sprintf('<div class="col-md-1 col-sm-1 col-xs-3 logo">%1$s</div>', $html );
 
     echo $html;
 }
@@ -673,8 +573,75 @@ function top_custom() {
     echo '
     <style type="text/css" media="screen">
     .call.col-md-1 img, .header-area.page, .panel {top: 32px !important; }
+    @media screen and ( max-width: 850px ) {
+        .header-area.page {top: auto !important; }
+    }
     @media screen and ( max-width: 782px ) {
-        .call.col-md-1 img, .header-area.page, .panel {top: 32px !important; }
+        .call.col-md-1 img, .panel {top: 46px !important; }
+    }
+    @media screen and ( max-width: 650px ) {
+        header.entry-header.main {padding-top: 46px !important;}
+    }
+    @media screen and ( max-width: 600px ) {
+        html {margin-top: 0px !important; }
     }
     </style>';
+}
+
+
+add_action( 'wp_footer', 'mycustom_wp_footer' );
+
+function mycustom_wp_footer() {
+    ?>
+    <script type="text/javascript">
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            if ( '271' == event.detail.contactFormId ) {
+                yaCounter46469931.reachGoal('otdelka akciya');
+            }
+            if ( '115' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('voprosi');
+            }
+            if ( '47' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('zvonok');
+            }
+            if ( '158' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('Calkulator');
+            }
+            if ( '103' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('project');
+            }
+            if ( '108' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('stroitelstvo');
+            }
+            if ( '195' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('otdelka');
+            }
+            if ( '244' == event.detail.contactFormId ) {
+                yaCounter50448268.reachGoal('prodaja');
+            }
+        }, false );
+
+    </script>
+    <?php
+}
+
+
+function wp_nav_menu_custom() {
+
+    if( is_page( '20' ) ) { $menu = 'l2';}
+    elseif( is_page( '18' ) ) { $menu = 'l1'; }
+    elseif( is_page( '22' ) ) { $menu = 'l3'; }
+    else { $menu = 'primary'; }
+
+    wp_nav_menu( array(
+        'menu'              => $menu,
+        'theme_location'    => 'primary',
+        'depth'             => 2,
+        'container'         => 'div',
+        'container_class'   => 'collapse navbar-collapse',
+        'container_id'      => 'bs-example-navbar-collapse-1',
+        'menu_class'        => 'nav navbar-nav navbar-right',
+        'fallback_cb'       => 'philips_custom_navwalker::fallback',
+        'walker'            => new philips_custom_navwalker())
+);
 }
