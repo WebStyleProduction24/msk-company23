@@ -454,6 +454,7 @@ function philips_scripts() {
     wp_enqueue_style( 'max-850', get_template_directory_uri() . '/css/max-850.css' );
     wp_enqueue_style( 'max-767', get_template_directory_uri() . '/css/max-767.css' );
     wp_enqueue_style( 'max-650', get_template_directory_uri() . '/css/max-650.css' );
+    wp_enqueue_style( 'max-450', get_template_directory_uri() . '/css/max-450.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'philips_scripts' );
@@ -622,4 +623,25 @@ function mycustom_wp_footer() {
 
     </script>
     <?php
+}
+
+
+function wp_nav_menu_custom() {
+
+    if( is_page( '20' ) ) { $menu = 'l2';}
+    elseif( is_page( '18' ) ) { $menu = 'l1'; }
+    elseif( is_page( '22' ) ) { $menu = 'l3'; }
+    else { $menu = 'primary'; }
+
+    wp_nav_menu( array(
+        'menu'              => $menu,
+        'theme_location'    => 'primary',
+        'depth'             => 2,
+        'container'         => 'div',
+        'container_class'   => 'collapse navbar-collapse',
+        'container_id'      => 'bs-example-navbar-collapse-1',
+        'menu_class'        => 'nav navbar-nav navbar-right',
+        'fallback_cb'       => 'philips_custom_navwalker::fallback',
+        'walker'            => new philips_custom_navwalker())
+);
 }

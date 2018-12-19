@@ -28,8 +28,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.header-area.page .col-xs-1 {
+	padding: 0 !important;
+	padding-right: 10px !important;
+}
 .icon-bullhorn:before {
   content: "\e91a";
+  font-size: 35px;
+  color: #1773a0;
 }
 
 

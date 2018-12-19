@@ -7,19 +7,15 @@
 **/
 ?>
 
-<?php if( is_page( '20' ) ){ $menu = 'l2'; ?>
+<?php if( is_page( '20' ) ){ ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="/wp-content/themes/msk/owl.carousel.js"></script>
-<?php } elseif( is_page( '18' ) ) {
-	$menu = 'l1'; ?>
+<?php } elseif( is_page( '18' ) ) { ?>
 	<script src="/wp-content/themes/msk/jquery.min.js"></script>
 	<script src="/wp-content/themes/msk/owl.carousel.js"></script>
-<?php } elseif( is_page( '22' ) ){
-	$menu = 'l3'; ?>
+<?php } elseif( is_page( '22' ) ){ ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<?php } else {		
-	$menu = 'primary'; 
-}?>
+<?php } ?>
 
 </head>
 
@@ -39,19 +35,7 @@
 			</button>
 		</div>	
 
-		<?php
-				wp_nav_menu( array(
-					'menu'              => $menu,
-					'theme_location'    => 'primary',
-					'depth'             => 2,
-					'container'         => 'div',
-					'container_class'   => 'collapse navbar-collapse',
-					'container_id'      => 'bs-example-navbar-collapse-1',
-					'menu_class'        => 'nav navbar-nav navbar-right',
-					'fallback_cb'       => 'philips_custom_navwalker::fallback',
-					'walker'            => new philips_custom_navwalker())
-			);
-			?>
+		<?php wp_nav_menu_custom()?>
 
 
 	</div>
@@ -61,31 +45,21 @@
 			<?php wsp24_logo(); ?>
 			<div class="mainmenu col-md-7 col-sm-7 hidden-xs">
 				
-				<?php
-				wp_nav_menu( array(
-					'menu'              => $menu,
-					'theme_location'    => 'primary',
-					'depth'             => 2,
-					'container'         => 'div',
-					'container_class'   => 'collapse navbar-collapse',
-					'container_id'      => 'bs-example-navbar-collapse-1',
-					'menu_class'        => 'nav navbar-nav navbar-right',
-					'fallback_cb'       => 'philips_custom_navwalker::fallback',
-					'walker'            => new philips_custom_navwalker())
-			);
-			?>			
+				<?php wp_nav_menu_custom()?>	
 
 		</div>
 		<div class="phone col-md-3 col-sm-3">
 			<p><?php wsp24_phone_1(); ?></p>
 			<p><?php wsp24_phone_2(); ?></p>
 		</div>        
-		<div class="call col-md-1 col-sm-1">
+		<div class="call col-md-1 col-sm-1 hidden-xs">
 			<a href="#contact_form_pop" class="fancybox">
 				<img class="fgf" src="<?php echo get_template_directory_uri(); ?>/images/callback.png"/>
 			</a>
 		</div>
-		<div class="icon-bullhorn col-xs-1"></div>      
+		<div class="col-xs-1 visible-xs">
+			<a href="#contact_form_pop" class="fancybox icon-bullhorn"></a>
+		</div>      
 
 	</div>
 </div>

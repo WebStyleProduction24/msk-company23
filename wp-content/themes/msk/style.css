@@ -8614,12 +8614,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin: 0 30px;
 		max-width: calc(100% - 60px);
 	}
-	section#projects {
-		padding: 50px 0 10px;
-		background-position-y: -160px;
-		min-height: 1510px;
-		margin-bottom: -305px;
-	}
 	.house.type-house:before {
 		display: none
 	}
@@ -8971,15 +8965,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 		margin: 0;
 		left: 30%;
 	}
-	section#projects {
-		margin-bottom: 40px;
-		padding-top: 80px;
-	}
-	h4.fgfgf {
-		background-size: contain;
-		font-size: 25px;
-		padding: 25px 0;
-	}
 	section#types .col-md-4 {
 		width: 100%;
 		float: left;
@@ -9003,9 +8988,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	.one-5 {
 		width: 100%;
 		padding: 0;
-	}
-	section#form .container:before {
-		background-size: 650px;
 	}
 	.in-v .col-md-6 {
 		max-width: 100%;
@@ -9184,20 +9166,11 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	.in-v .col-md-5 {
 		width: 100%;
 	}
-	.in-v .col-md-12 {
-		padding: 0;
-	}
 	h4.fgfgf {
 		background-size: 340px;
 		font-size: 23px;
-		padding: 35px 0;
+		padding: 15px 0;
 		line-height: 25px;
-		margin: 30px 0;
-	}
-	section#etapi h4.fgfgf {
-		font-size: 20px;
-		padding: 26px 0;
-		background-size: 300px;
 	}
 	section#services div {
 		padding: 0;

@@ -3,6 +3,10 @@ CSS for mobile screen with min-wsidth 651px and max-width 850px;
 ===========================================*/
 
 @media (min-width: 651px) and (max-width: 850px) {
+	section#projects {
+		min-height: 1510px;
+		margin-bottom: 0;
+	}
 	.hentry {
 		margin: 0;
 	}
@@ -43,9 +47,9 @@ CSS for mobile screen with min-wsidth 651px and max-width 850px;
 		width: 100% !important;
 	}
 	.header-area.col-md-2 #map {
-    padding: 0;
-    margin: 0;
-    float: right;
+		padding: 0;
+		margin: 0;
+		float: right;
 	}
 	#map iframe {
 		height: 100%;
