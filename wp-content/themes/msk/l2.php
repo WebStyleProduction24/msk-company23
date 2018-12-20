@@ -5,44 +5,7 @@ Template Name: Отделка
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128591847-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-128591847-1');
-</script>
-<script>document.addEventListener( 'wpcf7mailsent', function( event ) {
-	if ( '271' == event.detail.contactFormId ) {
-		ga('send', 'event', 'Contact Form 271', 'submit');
-	}
-	if ( '115' == event.detail.contactFormId ) {
-		ga('send', 'event', 'Contact Form 115', 'submit');
-	}
-	if ( '47' == event.detail.contactFormId ) {
-		ga('send', 'event', 'Contact Form 47', 'submit');
-	}
-	if ( '158' == event.detail.contactFormId ) {
-		ga('send', 'event', 'Contact Form 158', 'submit');
-	}
-	if ( '103' == event.detail.contactFormId ) {
-		ga('send', 'event', 'Contact Form 103', 'submit');
-	}
-	if ( '108' == event.detail.contactFormId ) {
-		ga('send', 'event', 'Contact Form 108', 'submit');
-	}
-	if ( '195' == event.detail.contactFormId ) {
-		ga('send', 'event', 'Contact Form 195', 'submit');
-	}
-	if ( '244' == event.detail.contactFormId ) {
-		ga('send', 'event', 'Contact Form 244', 'submit');
-	}
-}, false );
-</script>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -52,7 +15,6 @@ Template Name: Отделка
 <script src="/wp-content/themes/msk/owl.carousel.js"></script><script src="/wp-content/themes/msk/jquery.twentytwenty.js"></script>
 <script src="http://shansu.ru/wp-content/themes/llorix-one-lite/wow.js"></script>
 <script src="/wp-content/themes/msk/jquery.event.move.js"></script>   
-	<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?159",t.onload=function(){VK.Retargeting.Init("VK-RTRG-291063-8ASDh"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-291063-8ASDh" style="position:fixed; left:-999px;" alt=""/></noscript>
   
  <?php wp_head(); ?>
 </head>
@@ -73,7 +35,9 @@ Template Name: Отделка
 	<div class="header-area page">
 		<div class="container">
 			
-				<?php wsp24_logo(); ?>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="logo col-md-1">
+					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+					</div></a>
         <div class="mainmenu col-md-7">
 		<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

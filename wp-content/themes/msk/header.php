@@ -13,8 +13,8 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script type="text/javascript" src="js/ga.js"></script>
-	<script type="text/javascript" src="js/target-ga.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/ga.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/target-ga.js"></script>
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
@@ -24,7 +24,7 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/owl.carousel.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/animation-panel.js"></script> 
-	<script type="text/javascript" src="js/picsel.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/picsel.js"></script>
 	<noscript><img src="https://vk.com/rtrg?p=VK-RTRG-291063-8ASDh" style="position:fixed; left:-999px;" alt=""/></noscript>
 
 	<?php wp_head(); ?>

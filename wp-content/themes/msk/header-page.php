@@ -8,13 +8,10 @@
 ?>
 
 <?php if( is_page( '20' ) ){ ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="/wp-content/themes/msk/owl.carousel.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/owl.carousel.js"></script>
 <?php } elseif( is_page( '18' ) ) { ?>
-	<script src="/wp-content/themes/msk/jquery.min.js"></script>
-	<script src="/wp-content/themes/msk/owl.carousel.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/owl.carousel.js"></script>
 <?php } elseif( is_page( '22' ) ){ ?>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <?php } ?>
 
 </head>
@@ -66,4 +63,4 @@
 
 <!-- End header-area -->
 
-<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scroll.js"></script>
