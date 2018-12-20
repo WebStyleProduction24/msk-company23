@@ -8,6 +8,10 @@
 
 
 
+
+wp_deregister_script('jquery'); 
+
+
 /* Регистрируем Аксессуары и таксономию для них
 -----------------------------------------------*/
 add_action('init', 'testi');
@@ -432,7 +436,6 @@ add_action( 'widgets_init', 'philips_widgets_init' );
  * Enqueue scripts and styles.
  */
 function philips_scripts() {
-
 
     wp_enqueue_style( 'philips-bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
     wp_enqueue_style( 'philips-fontawesome', get_template_directory_uri() . '/css/font-awesome.css' );

@@ -9,12 +9,13 @@ Template Name: Отделка
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script src="/wp-content/themes/msk/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/jquery.min.js"></script>
 <link rel="icon" href="/wp-content/uploads/2017/01/logo-1-2-e1484215432492.png" type="image/x-icon" />
 <link rel="shortcut icon" href="/wp-content/uploads/2017/01/logo-1-2-e1484215432492.png" type="image/x-icon" />
-<script src="/wp-content/themes/msk/owl.carousel.js"></script><script src="/wp-content/themes/msk/jquery.twentytwenty.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/owl.carousel.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/jquery.twentytwenty.js"></script>
 <script src="http://shansu.ru/wp-content/themes/llorix-one-lite/wow.js"></script>
-<script src="/wp-content/themes/msk/jquery.event.move.js"></script>   
+<script src="<?php echo get_template_directory_uri(); ?>/jquery.event.move.js"></script>   
   
  <?php wp_head(); ?>
 </head>
