@@ -1,4 +1,4 @@
-jQuery(function($) {
+$(function(){
     var cssWidth = $('.handle').css('width');       //Получаем ширину кнопки из свойств css
     var cssHeight = $('.handle').css('height');     //Получаем высоту кнопки из свойств css
     $('.panel').tabSlideOut({                       //Класс панели
