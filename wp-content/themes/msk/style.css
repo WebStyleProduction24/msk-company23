@@ -4536,7 +4536,6 @@ button,input[type="button"],input[type="reset"],input[type="submit"], a.fancybox
 	font-size: 20px;
 	border: none;
 	border-radius: 0;
-	width: 100%;
 	box-shadow: none;
 	border-bottom: solid 3px #ee3b56;
 	text-transform: uppercase;
@@ -4546,14 +4545,6 @@ button,input[type="button"],input[type="reset"],input[type="submit"], a.fancybox
 	-moz-transition: all .25s ease-in-out;
 	-webkit-transition: all .25s ease-in-out;
 	transition: all .25s ease-in-out;
-}
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover, #contacts a.fancybox.brown.two:hover {
-	color: #202020 !important;
-	border-color: #ccc #bbb #4e4c4c;
-	box-shadow: inset 0 1px 0 rgba(83, 194, 214, 0.8), inset 0 15px 17px rgba(83, 194, 214, 0.8), inset 0 -5px 12px rgba(0, 172, 200, .02);
 }
 button:focus,
 input[type="button"]:focus,
@@ -5288,20 +5279,6 @@ div.page-content input.search-submit {
 	font-size: 14px;
 	margin-right: 15px;
 }
-header.entry-header.main {
-	padding-top: 5px;
-	float: none;
-	margin: 0 auto;
-	text-align: center;
-	background: #1773a0;
-	opacity: 0.9;
-	color: #fff;
-	position: relative;
-	top: calc(50% - 110px);
-	box-shadow: 0 0 15px 5px rgba(0, 0, 0, .75);
-	border-radius: 30px 5px;
-	z-index: 100;
-}
 section h3.w19 {
 	font-size: 1.1em;
 }
@@ -5604,17 +5581,6 @@ section#first {
 section header.entry-header.main {
 	right: 10%;
 	top: 20%;
-	position: absolute;
-}
-.ostavit {
-	margin: 0 5%;
-	text-align: center;
-	margin-top: 35px;
-	-moz-transition: all .5s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
-	bottom: 5%;
-	opacity: .8;
 	position: absolute;
 }
 .inner-za {
@@ -6207,13 +6173,6 @@ body.page-template.page-template-l2 section header.entry-header.main h3.w19:befo
 	margin-left: 22.5%;
 	margin-top: -15px;
 	width: 55%;
-}
-.posab {
-	position: absolute;
-	background: rgba(0, 0, 0, 0.78);
-	width: 100%;
-	margin-left: -15px;
-	margin-top: -10px;
 }
 .posab a:hover {
 	color: #fff;
@@ -7844,9 +7803,6 @@ li#menu-item-39:hover:before {
 li#menu-item-40:hover:before {
 	background: url(/wp-content/uploads/2016/12/Контакты.jpg);
 }
-a.fancybox.brown.two:hover {
-	opacity: 0.7;
-}
 #contacts a.fancybox.brown.two:hover {
 	opacity: 0.7;
 }
@@ -8735,10 +8691,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	.posab a {
 		color: #debb8d;
 		font-size: 22px;
-	}
-	.posab {
-		margin-top: 5px;
-		margin-left: 0;
 	}
 	section#vidi .col-md-4 {
 		width: 33%;

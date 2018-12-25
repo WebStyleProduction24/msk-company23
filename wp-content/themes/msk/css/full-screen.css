@@ -2,6 +2,63 @@
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 ===========================================*/
 
+header.entry-header.main {
+	padding-top: 5px;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+	background: #1773a0;
+	opacity: 0.9;
+	color: #fff;
+	position: relative;
+	top: calc(50% - 110px);
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, .75);
+	border-radius: 30px 5px;
+	z-index: 100;
+}
+.page-template-page-otdelka header.entry-header.main {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover, /*#contacts */ a.fancybox.brown.two:hover {
+	color: #202020 !important;
+	border-color: #ccc #bbb #4e4c4c;
+	box-shadow: inset 0 1px 0 rgba(83, 194, 214, 0.8), inset 0 15px 17px rgba(83, 194, 214, 0.8), inset 0 -5px 12px rgba(0, 172, 200, .02);
+}
+.page-template-page-otdelka .ostavit {
+	opacity: 1;	
+	bottom: 40%;
+}
+.posab a {
+	color: #4e4c4c;
+}
+.posab {
+	position: absolute;
+	width: 100%;
+	margin-left: -15px;
+}
+
+.posab .fancybox.brown.two {
+	max-width: inherit;
+	margin: 0 auto;
+}
+
+.ostavit {
+	margin: 0 5%;
+	text-align: center;
+	margin-top: 35px;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	bottom: 5%;
+	opacity: .8;
+	position: absolute;
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?wpu9v4');

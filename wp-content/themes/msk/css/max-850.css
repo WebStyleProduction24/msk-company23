@@ -3,6 +3,12 @@ CSS for mobile screen with max-width 850px;
 ===========================================*/
 
 @media screen and (max-width: 850px) {	
+
+	.posab {
+		margin-top: 5px;
+		margin-left: 0;
+		left: 0;
+	}
 	section#projects {
 		padding: 50px 0 10px;
 		background-position-y: -200px;
