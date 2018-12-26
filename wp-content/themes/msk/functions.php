@@ -452,6 +452,8 @@ function philips_scripts() {
     wp_enqueue_style( 'full-screen', get_template_directory_uri() . '/css/full-screen.css' );
     wp_enqueue_style( 'mobile-all-screen', get_template_directory_uri() . '/css/mobile-all-screen.css' );
     wp_enqueue_style( 'min-851-max-1050', get_template_directory_uri() . '/css/min-851-max-1050.css' );
+    wp_enqueue_style( 'min-851', get_template_directory_uri() . '/css/min-851.css' );
+    wp_enqueue_style( 'min-850-max-1200', get_template_directory_uri() . '/css/min-850-max-1200.css' );
     wp_enqueue_style( 'max-1050', get_template_directory_uri() . '/css/max-1050.css' );
     wp_enqueue_style( 'min-651-max-850', get_template_directory_uri() . '/css/min-651-max-850.css' );
     wp_enqueue_style( 'max-850', get_template_directory_uri() . '/css/max-850.css' );

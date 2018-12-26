@@ -3,13 +3,22 @@ CSS for mobile screen with max-width 450px;
 ===========================================*/
 
 @media screen and (max-width: 450px) {
+	.form-in span.wpcf7-list-item-label {
+		font-size: 16px;
+	}
+	#calc {
+		margin-top: -30%;
+	}
+	#vidi {
+		margin-top: -20%;
+	}
 	section#services div.col-md-4 {
 		float: none;
 	}
 	.footer-area {
-    padding-bottom: 30%;
-    margin-top: 20px;
-  }
+		padding-bottom: 30%;
+		margin-top: 20px;
+	}
 	.karta .ymaps-2-1-71-map {
 		height: 550px !important;
 	} 
