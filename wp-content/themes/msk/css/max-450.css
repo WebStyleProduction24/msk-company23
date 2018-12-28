@@ -3,6 +3,12 @@ CSS for mobile screen with max-width 450px;
 ===========================================*/
 
 @media screen and (max-width: 450px) {
+
+	.fancybox-vidi img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
 	.form-in span.wpcf7-list-item-label {
 		font-size: 16px;
 	}

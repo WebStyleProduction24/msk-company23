@@ -1,6 +1,15 @@
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 ===========================================*/
+.fancybox-vidi {
+	text-align: justify;
+}
+.fancybox-vidi img {
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, .75);
+	float: left;
+	margin-right: 20px;
+	height: 140px;
+}
 #fancybox-content>div {
 	max-height: inherit !important;
 }
