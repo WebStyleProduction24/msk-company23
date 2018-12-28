@@ -3,13 +3,19 @@ CSS for mobile screen with max-width 450px;
 ===========================================*/
 
 @media screen and (max-width: 450px) {
-
+	h5.cac {
+		margin: 30px 0;
+	}
+	.form-in input.wpcf7-form-control.wpcf7-text {
+		width: 100%;
+	}
 	.fancybox-vidi img {
 		width: 100%;
 		height: auto;
 		margin-bottom: 20px;
 	}
 	.form-in span.wpcf7-list-item-label {
+		margin-top: 10px;
 		font-size: 16px;
 	}
 	#calc {

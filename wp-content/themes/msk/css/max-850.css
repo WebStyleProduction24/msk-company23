@@ -4,6 +4,14 @@ CSS for mobile screen with max-width 850px;
 
 
 @media screen and (max-width: 850px) {
+	p.centr {
+		padding-bottom: 20px;
+	}
+
+	#calc p.col-md-6 {
+		width: 50%;
+		float: left;
+	}
 	.fancybox-content p {
 		margin-bottom: .75em;
 	}

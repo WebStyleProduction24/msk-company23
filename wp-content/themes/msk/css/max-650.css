@@ -3,13 +3,31 @@ CSS for mobile screen with max-width 650px;
 ===========================================*/
 
 @media screen and (max-width: 650px) {
+	.form-in span.wpcf7-list-item-label::before {
+    margin-top: 26px;
+		right: calc(50% - 16px);
+	}
+	input[type="radio"]:checked+span.wpcf7-list-item-label:before {
+		margin-top: 10px;
+	}
+	#calc p.col-md-6 {
+		width: 100%;
+	}
+	.form-in label.rrr {
+		line-height: inherit;
+		text-align: left;
+	}
+	.form-in label {
+		width: 100%;
+		padding: 0;
+	}
 	.in-v .col-md-6.col-sm-6:nth-child(odd), .in-v .col-md-6.col-sm-6:nth-child(even) {
 		padding: 0 !important;
 	}
 	h3.fff {
-    font-size: 18px;
-    line-height: 1.25;
-  }
+		font-size: 18px;
+		line-height: 1.25;
+	}
 	section#form .container:before {
 		margin-left: 0;
 		background-size: 650px;
