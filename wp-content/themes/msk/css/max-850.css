@@ -4,10 +4,20 @@ CSS for mobile screen with max-width 850px;
 
 
 @media screen and (max-width: 850px) {
+	h3.ac1 {
+		margin-top: 30px;
+	}
+	section#action {
+		margin-bottom: 50px;
+	}
+	section#principles {
+		padding-bottom: 15%;
+		background-size: cover;
+		padding-top: 30px;
+	}
 	p.centr {
 		padding-bottom: 20px;
 	}
-
 	#calc p.col-md-6 {
 		width: 50%;
 		float: left;
@@ -46,7 +56,6 @@ CSS for mobile screen with max-width 850px;
 	}
 	.footer-area {
 		padding-bottom: 75px;
-		margin-top: 60px;
 	}
 	section#types {
 		margin-bottom: -40px;
