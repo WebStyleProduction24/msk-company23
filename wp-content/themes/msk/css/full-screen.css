@@ -1,6 +1,44 @@
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 ===========================================*/
+#timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-face,
+.timer-element > span > span {
+	font-family: 'akrobatregular' !important;
+}
+section#action a.fancybox:hover {
+	opacity: .7;
+}
+h3.ac2 {
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 20px 0;
+	text-align: center;
+}
+h3.ac1 {
+	font-size: 29px;
+	text-align: center;
+	margin-top: 100px;
+	color: #ee3b56;
+}
+#timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-top,
+#timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-front {
+	background: -moz-linear-gradient(top, #1773a0 0%, #0aacc8 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1773a0), color-stop(100%,#0aacc8 )) !important;
+	background: -webkit-linear-gradient(top, #1773a0 0%,#0aacc8 100%) !important;
+	background: -o-linear-gradient(top, #1773a0 0%,#0aacc8 100%) !important;
+	background: -ms-linear-gradient(top, #1773a0 0%,#0aacc8 100%) !important;
+	background: linear-gradient(to bottom, #1773a0 0%,#0aacc8 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1773a0', endColorstr='#0aacc8',GradientType=0);
+}
+#timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-bottom, #timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-back {
+	background: -moz-linear-gradient(top, #0aacc8 0%, #1773a0 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0aacc8), color-stop(100%,#1773a0)) !important;
+	background: -webkit-linear-gradient(top, #0aacc8 0%,#1773a0 100%) !important;
+	background: -o-linear-gradient(top, #0aacc8 0%,#1773a0 100%) !important;
+	background: -ms-linear-gradient(top, #0aacc8 0%,#1773a0 100%) !important;
+	background: linear-gradient(to bottom, #0aacc8 0%,#1773a0 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0aacc8', endColorstr='#1773a0',GradientType=0);
+}
 .col-md-4.f1:before, .col-md-4.f2:before, .col-md-4.f3:before {
 	content: "";
 	position: absolute;

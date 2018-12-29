@@ -6608,39 +6608,6 @@ h3.gold1 span {
 	margin-bottom: 0;
 	text-align: center;
 }
-.col-md-4.f1:before {
-	content: "";
-	position: absolute;
-	background: url(/wp-content/uploads/2016/12/n1.png);
-	width: 140px;
-	height: 160px;
-	top: -110px;
-	left: -50px;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-.col-md-4.f2:before {
-	content: "";
-	position: absolute;
-	background: url(/wp-content/uploads/2016/12/n2.png);
-	width: 140px;
-	height: 160px;
-	top: -110px;
-	left: -50px;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-.col-md-4.f3:before {
-	content: "";
-	position: absolute;
-	background: url(/wp-content/uploads/2016/12/n3.png);
-	width: 155px;
-	height: 160px;
-	top: -110px;
-	left: -85px;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
 section#action {
 	margin-top: -160px;
 	position: relative;
@@ -6649,18 +6616,6 @@ section#action {
 	background-repeat: no-repeat;
 	z-index: 999;
 	padding-bottom: 100px;
-}
-h3.ac2 {
-	font-size: 22px;
-	text-transform: uppercase;
-	margin: 20px 0;
-	text-align: center;
-	color: #4d8ead;
-}
-h3.ac1 {
-	font-size: 29px;
-	text-align: center;
-	margin-top: 100px;
 }
 section#action .container {
 	padding: 150px 0;
@@ -8259,13 +8214,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	section#testimonials h3.l2-zag {
 		margin-bottom: -100px;
 	}
-	body.page-template.page-template-l2 section#contacts {
-		text-align: center;
-		margin-top: 0;
-		padding-bottom: 0px;
-		margin-top: -90px;
-		position: relative;
-	}
 	body.page-template.page-template-l3 .phone.col-md-3 a {
 		FONT-SIZE: 26PX;
 	}
@@ -8619,9 +8567,6 @@ body.page-template.page-template-l3 .col-md-4.contact {
 	}
 	h3.ac1 {
 		margin-top: 30px;
-	}
-	section#action {
-		margin-bottom: -100px;
 	}
 	body.page-template.page-template-l2 .page ul.nav.navbar-nav li a:hover:before {
 		display: none

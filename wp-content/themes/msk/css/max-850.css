@@ -4,6 +4,12 @@ CSS for mobile screen with max-width 850px;
 
 
 @media screen and (max-width: 850px) {
+	h3.ac1 {
+		margin-top: 30px;
+	}
+	section#action {
+		margin-bottom: 50px;
+	}
 	section#principles {
 		padding-bottom: 15%;
 		background-size: cover;
