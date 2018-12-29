@@ -3,6 +3,15 @@ CSS for mobile screen with max-width 450px;
 ===========================================*/
 
 @media screen and (max-width: 450px) {
+	.col-md-12.per .col-md-4 {
+		margin-top: 0;
+	}
+	h3.gold1 {
+		font-size: 15px;
+	}
+	.col-md-12.per .col-md-4 {
+		max-width: inherit; 
+	}
 	h5.cac {
 		margin: 30px 0;
 	}

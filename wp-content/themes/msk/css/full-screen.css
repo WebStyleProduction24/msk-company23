@@ -1,6 +1,61 @@
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 ===========================================*/
+.col-md-4.f1:before, .col-md-4.f2:before, .col-md-4.f3:before {
+	content: "";
+	position: absolute;
+	top: -110px;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	height: 160px;
+}
+.col-md-4.f1:before {
+	background: url(/wp-content/uploads/2016/12/n12.png);
+	width: 140px;
+	left: -50px;
+}
+.col-md-4.f2:before {
+	background: url(/wp-content/uploads/2016/12/n22.png);
+	width: 140px;
+	left: -50px;
+}
+.col-md-4.f3:before {
+	background: url(/wp-content/uploads/2016/12/n32.png);
+	width: 155px;
+	left: -85px;
+}
+.col-md-12.per .col-md-4 h4 {
+	font-size: 20px;
+	text-align: center;
+}
+h3.gold1, h3.gold, .col-md-12.per .col-md-4 h4 {
+	color: #0aacc8;
+}
+h3.gold1 {
+	margin: 0;
+	font-size: 21px;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+h3.gold {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.col-md-12.per .col-md-4, .col-md-4.right {
+	border: solid 4px rgba(238, 59, 86, 0.85);
+	background: rgba(0, 0, 0, 0.75);
+}
+.col-md-12.per .col-md-4 {
+	max-width: 30%;
+	margin: 20px 1.6%;
+	padding: 20px 15px;
+	margin-top: 100px;
+	padding-bottom: 0;
+}
+.col-md-4.right {
+	padding: 20px;
+	margin-bottom: 20px;
+}
 .fancybox-vidi {
 	text-align: justify;
 }
