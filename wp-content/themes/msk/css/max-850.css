@@ -2,7 +2,45 @@
 CSS for mobile screen with max-width 850px;
 ===========================================*/
 
-@media screen and (max-width: 850px) {	
+
+@media screen and (max-width: 850px) {
+	h3.ac1 {
+		margin-top: 30px;
+	}
+	section#action {
+		margin-bottom: 50px;
+	}
+	section#principles {
+		padding-bottom: 15%;
+		background-size: cover;
+		padding-top: 30px;
+	}
+	p.centr {
+		padding-bottom: 20px;
+	}
+	#calc p.col-md-6 {
+		width: 50%;
+		float: left;
+	}
+	.fancybox-content p {
+		margin-bottom: .75em;
+	}
+	#fancybox-content>div {
+		font-size: 1rem;
+	}
+	#fancybox-content {
+		border: none !important;
+		width: 100% !important;
+		height: 95vh !important;
+	}
+	#fancybox-outer {
+		max-width: 100%;
+	}	
+	.posab {
+		margin-top: 5px;
+		margin-left: 0;
+		left: 0;
+	}
 	section#projects {
 		padding: 50px 0 10px;
 		background-position-y: -200px;
@@ -18,7 +56,6 @@ CSS for mobile screen with max-width 850px;
 	}
 	.footer-area {
 		padding-bottom: 75px;
-		margin-top: 60px;
 	}
 	section#types {
 		margin-bottom: -40px;

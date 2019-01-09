@@ -8,6 +8,10 @@
 
 
 
+
+wp_deregister_script('jquery'); 
+
+
 /* Регистрируем Аксессуары и таксономию для них
 -----------------------------------------------*/
 add_action('init', 'testi');
@@ -433,7 +437,6 @@ add_action( 'widgets_init', 'philips_widgets_init' );
  */
 function philips_scripts() {
 
-
     wp_enqueue_style( 'philips-bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
     wp_enqueue_style( 'philips-fontawesome', get_template_directory_uri() . '/css/font-awesome.css' );
     wp_enqueue_style( 'philips-style', get_stylesheet_uri() );
@@ -449,6 +452,8 @@ function philips_scripts() {
     wp_enqueue_style( 'full-screen', get_template_directory_uri() . '/css/full-screen.css' );
     wp_enqueue_style( 'mobile-all-screen', get_template_directory_uri() . '/css/mobile-all-screen.css' );
     wp_enqueue_style( 'min-851-max-1050', get_template_directory_uri() . '/css/min-851-max-1050.css' );
+    wp_enqueue_style( 'min-851', get_template_directory_uri() . '/css/min-851.css' );
+    wp_enqueue_style( 'min-850-max-1200', get_template_directory_uri() . '/css/min-850-max-1200.css' );
     wp_enqueue_style( 'max-1050', get_template_directory_uri() . '/css/max-1050.css' );
     wp_enqueue_style( 'min-651-max-850', get_template_directory_uri() . '/css/min-651-max-850.css' );
     wp_enqueue_style( 'max-850', get_template_directory_uri() . '/css/max-850.css' );

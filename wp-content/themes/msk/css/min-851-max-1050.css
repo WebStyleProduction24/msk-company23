@@ -3,6 +3,12 @@ CSS for mobile screen with min-wsidth 851px and max-width 1050px;
 ===========================================*/
 
 @media (min-width: 851px) and (max-width: 1050px) {
+	.col-md-12.per p {
+		font-size: 15px;
+	}
+	.page-template-page-otdelka header.entry-header.main {
+		width: 45%;
+	}
 	.copyright p {
 		font-size: 7px;
 	}

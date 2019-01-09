@@ -38,10 +38,6 @@
 
 
 <?php if( is_page( '20' ) ){ ?>
-<!--<script src="http://shansu.ru/wp-content/themes/llorix-one-lite/wow.js"></script>
-<script src="/wp-content/themes/msk/jquery.event.move.js"></script> 
-<script src="/wp-content/themes/msk/jquery.min.js"></script><script src="/wp-content/themes/msk/jquery.twentytwenty.js"></script>-->
-
 
 <script>
     $(document).ready(function(){

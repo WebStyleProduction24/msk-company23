@@ -6,7 +6,7 @@ Template Name: Строительство под ключ
 */
 
 get_header();
-get_header('stroy'); 
+get_header('page'); 
 
 get_template_part('page-parts/stroy', 'first');
 get_template_part('page-parts/stroy', 'projects');

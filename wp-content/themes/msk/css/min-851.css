@@ -1,0 +1,9 @@
+/*=========================================
+CSS for mobile screen with min-width 851px;
+===========================================*/
+
+@media screen and (min-width: 851px) {
+	#fancybox-close {
+		right: -35px !important;
+	}
+}

@@ -1,31 +1,388 @@
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 ===========================================*/
+p.sub input:hover {
+	opacity: .7;
+}
+
+section#contacts {
+	background: url(/wp-content/uploads/2016/12/map.jpg);
+	width: 100%;
+	display: inline-block;
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin-top: -155px;
+	margin-bottom: -10px;
+	position: relative;
+}
+.karta {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+	width: 100%;
+	height: 115px;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 10px;
+	box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, .75);
+	margin-bottom: 5px;
+}
+.fo-co textarea, .fo-co input {
+	border: solid 3px #0aacc8;
+	font-weight: bold;
+}
+.fo-co textarea {
+	margin: 0;
+	text-transform: none !important;
+	font-size: 17px !important;
+	max-width: 580px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+.fo-co input[type="text"],
+.fo-co input[type="email"],
+.fo-co input[type="url"],
+i.fo-co nput[type="password"],
+.fo-co input[type="search"] {
+	color: #666 !important;
+}
+
+.form-in input.wpcf7-form-control.wpcf7-text {
+	border: solid 1px #ee3b56;
+}
+.fo-co input {
+	padding-left: 10px;
+	margin: 0;
+	text-transform: none;
+	font-size: 17px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	min-width: 47%;
+	max-width: 580px;
+	width: 100%;
+}
+h3.l2-zag.white:before {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 5px;
+	background: #1773a0;
+	left: calc(50% - 50px);
+	margin-top: 50px;
+}
+h3.l2-zag.white {
+	font-weight: bold;
+	color: #ee3b56;
+	position: relative;
+	padding: 20px 0;
+	margin-bottom: 10px;
+}
+h3.l2-zag {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+	display: inline-block;
+	width: 100%;
+}
+.page-template-page-otdelka section#contacts img {
+	margin-top: 30px;
+	max-width: 100px;
+	position: relative;
+	top: 20px;
+}
+.page-template-page-otdelka section#contacts {
+	text-align: center;
+	margin-top: 0;
+	padding-bottom: 30px;
+	margin-top: -110px;
+	position: relative;
+}
+#timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-face,
+.timer-element > span > span {
+	font-family: 'akrobatregular' !important;
+}
+section#action a.fancybox:hover {
+	opacity: .7;
+}
+h3.ac2 {
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 20px 0;
+	text-align: center;
+}
+h3.ac1 {
+	font-size: 29px;
+	text-align: center;
+	margin-top: 100px;
+	color: #ee3b56;
+}
+#timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-top,
+#timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-front {
+	background: -moz-linear-gradient(top, #1773a0 0%, #0aacc8 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1773a0), color-stop(100%,#0aacc8 )) !important;
+	background: -webkit-linear-gradient(top, #1773a0 0%,#0aacc8 100%) !important;
+	background: -o-linear-gradient(top, #1773a0 0%,#0aacc8 100%) !important;
+	background: -ms-linear-gradient(top, #1773a0 0%,#0aacc8 100%) !important;
+	background: linear-gradient(to bottom, #1773a0 0%,#0aacc8 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1773a0', endColorstr='#0aacc8',GradientType=0);
+}
+#timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-bottom, #timer98a6ea6a305711cb5b8320fba33e532d .timer-flipchart-back {
+	background: -moz-linear-gradient(top, #0aacc8 0%, #1773a0 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0aacc8), color-stop(100%,#1773a0)) !important;
+	background: -webkit-linear-gradient(top, #0aacc8 0%,#1773a0 100%) !important;
+	background: -o-linear-gradient(top, #0aacc8 0%,#1773a0 100%) !important;
+	background: -ms-linear-gradient(top, #0aacc8 0%,#1773a0 100%) !important;
+	background: linear-gradient(to bottom, #0aacc8 0%,#1773a0 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0aacc8', endColorstr='#1773a0',GradientType=0);
+}
+.col-md-4.f1:before, .col-md-4.f2:before, .col-md-4.f3:before {
+	content: "";
+	position: absolute;
+	top: -110px;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	height: 160px;
+}
+.col-md-4.f1:before {
+	background: url(/wp-content/uploads/2016/12/n12.png);
+	width: 140px;
+	left: -50px;
+}
+.col-md-4.f2:before {
+	background: url(/wp-content/uploads/2016/12/n22.png);
+	width: 140px;
+	left: -50px;
+}
+.col-md-4.f3:before {
+	background: url(/wp-content/uploads/2016/12/n32.png);
+	width: 155px;
+	left: -85px;
+}
+.col-md-12.per .col-md-4 h4 {
+	font-size: 20px;
+	text-align: center;
+}
+h3.gold1, h3.gold, .col-md-12.per .col-md-4 h4 {
+	color: #0aacc8;
+}
+h3.gold1 {
+	margin: 0;
+	font-size: 21px;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+h3.gold {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.col-md-12.per .col-md-4, .col-md-4.right {
+	border: solid 4px rgba(238, 59, 86, 0.85);
+	background: rgba(0, 0, 0, 0.75);
+}
+.col-md-12.per .col-md-4 {
+	max-width: 30%;
+	margin: 20px 1.6%;
+	padding: 20px 15px;
+	margin-top: 100px;
+	padding-bottom: 0;
+}
+.col-md-4.right {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.fancybox-vidi {
+	text-align: justify;
+}
+.fancybox-vidi img {
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, .75);
+	float: left;
+	margin-right: 20px;
+	height: 140px;
+}
+#fancybox-content>div {
+	max-height: inherit !important;
+}
+#fancybox-overlay {
+	z-index: 11110000000 !important;
+}
+#fancybox-wrap {
+	z-index: 11110000001 !important;
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+}
+#fancybox-content>div {
+	padding: 20px;
+}
+#fancybox-content {
+	max-width: 100%;
+	height: 90vh !important;
+}
+#fancybox-outer {
+	max-width: 75%;
+	margin: 0 auto;
+}
+span.wpcf7-form-control-wrap.text-211 input.wpcf7-form-control,
+.form-in input.wpcf7-form-control.wpcf7-text {
+	background: #fff;
+}
+.podro a:hover {
+	border-bottom-width: 3px;
+	padding-bottom: 0px; 
+}
+#calc span.wpcf7-list-item-label {
+	color: #000;
+}
+h3.l2-zag1 {
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.podro a {
+	font-size: 17px;
+	text-transform: uppercase;
+	display: block;
+	border: solid 1px #ee3b56;
+	padding: 2px 10px;
+	width: 130px;
+	text-align: center;
+	float: left;
+	margin: 0 calc(16.6% - 65px);
+}
+
+.form-in label.rrr, p.vvv, #vidi a, .podro a{
+	color: #202020;
+}
+.form-in label.rrr {
+	max-width: 120px;
+	float: left;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 40px;
+}
+p.vvv {
+	margin: 0;
+	text-align: center;
+	margin-top: -12px;
+	line-height: 22px;
+}
+#vidi {
+	text-align: center;
+}
+#vidi a {
+	color: #202020;
+	padding: 5px;
+	font-size: 16px;
+	border: solid 1px #ee3b56;
+	border-bottom: solid 3px #ee3b56;
+}
+#vidi a:hover {
+	color: #1773a0 !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	border-bottom: solid 3px #4e4c4c;
+}
+header.entry-header.main {
+	padding-top: 5px;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+	background: #1773a0;
+	opacity: 0.9;
+	color: #fff;
+	position: relative;
+	top: calc(50% - 110px);
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, .75);
+	border-radius: 30px 5px;
+	z-index: 100;
+}
+.page-template-page-otdelka header.entry-header.main {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+button,input[type="button"],input[type="reset"],input[type="submit"], a.fancybox.brown.two, a.fancybox.pod {
+	font-size: 20px;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	border-bottom: solid 3px #ee3b56;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 36px;
+	width: 100%;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover, /*#contacts */ a.fancybox.brown.two:hover, a.fancybox.pod:hover {
+	color: #202020 !important;
+	border-color: #ccc #bbb #4e4c4c;
+	box-shadow: inset 0 1px 0 rgba(83, 194, 214, 0.8), inset 0 15px 17px rgba(83, 194, 214, 0.8), inset 0 -5px 12px rgba(0, 172, 200, .02);
+}
+.page-template-page-otdelka .ostavit {
+	opacity: 1;	
+	bottom: 40%;
+}
+.posab a {
+	color: #4e4c4c;
+}
+.posab {
+	position: absolute;
+	width: 100%;
+	margin-left: -15px;
+}
+
+.posab .fancybox.brown.two {
+	max-width: inherit;
+	margin: 0 auto;
+}
+
+.ostavit {
+	margin: 0 5%;
+	text-align: center;
+	margin-top: 35px;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	bottom: 5%;
+	opacity: .8;
+	position: absolute;
+}
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?wpu9v4');
-  src:  url('../fonts/icomoon.eot?wpu9v4#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?wpu9v4') format('truetype'),
-    url('../fonts/icomoon.woff?wpu9v4') format('woff'),
-    url('../fonts/icomoon.svg?wpu9v4#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?wpu9v4');
+	src:  url('../fonts/icomoon.eot?wpu9v4#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon.ttf?wpu9v4') format('truetype'),
+	url('../fonts/icomoon.woff?wpu9v4') format('woff'),
+	url('../fonts/icomoon.svg?wpu9v4#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .header-area.page .col-xs-1 {
@@ -33,9 +390,9 @@
 	padding-right: 10px !important;
 }
 .icon-bullhorn:before {
-  content: "\e91a";
-  font-size: 35px;
-  color: #1773a0;
+	content: "\e91a";
+	font-size: 35px;
+	color: #1773a0;
 }
 
 

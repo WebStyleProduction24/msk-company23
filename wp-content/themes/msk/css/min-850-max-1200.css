@@ -1,0 +1,42 @@
+/*=========================================
+CSS for mobile screen with min-wsidth 850px and max-width 1200px;
+===========================================*/
+
+@media screen and (max-width: 1200px) and (min-width: 850px) { 
+	section#principles {
+		padding-top: 40px;
+	}
+	p.centr input {
+		margin: 0 auto 15px;
+	}
+	#vidi {		
+		margin-top: -65px;
+	}
+	section#form .container {
+		padding-top: 215px;
+	}
+	.owl-theme .owl-nav {
+		margin-top: -11%;
+	}
+	section#projects {
+		min-height: 895px;
+	}
+	section#types {
+		background-position: center -100px;
+	}
+	.col-md-5.contact {
+		margin-top: 170px; 
+	}
+	.in-v .col-sm-12, .in-v .col-sm-6:nth-child(1), .in-v .col-sm-6:nth-child(2) {
+		/*margin-top: 0 !important;*/
+	}
+	.in-v .col-md-6.col-sm-12 {
+		padding: 0 15px !important;
+	}
+	.in-v .col-sm-6:nth-child(even) {
+		padding-left: 5px !important;
+	}
+	.in-v .col-sm-6:nth-child(odd) {
+		padding-right: 5px !important;
+	}
+}

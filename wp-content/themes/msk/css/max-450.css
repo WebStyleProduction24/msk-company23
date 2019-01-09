@@ -3,13 +3,48 @@ CSS for mobile screen with max-width 450px;
 ===========================================*/
 
 @media screen and (max-width: 450px) {
+	section#action a.fancybox {
+		margin: 10px auto;
+	}
+	.timer-element {
+		margin: 0 5px !important;
+	}
+	.col-md-12.per .col-md-4, h3.ac1 {
+		margin-top: 0;
+	}
+	h3.gold1 {
+		font-size: 15px;
+	}
+	.col-md-12.per .col-md-4 {
+		max-width: inherit; 
+	}
+	h5.cac {
+		margin: 30px 0;
+	}
+	.form-in input.wpcf7-form-control.wpcf7-text {
+		width: 100%;
+	}
+	.fancybox-vidi img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.form-in span.wpcf7-list-item-label {
+		margin-top: 10px;
+		font-size: 16px;
+	}
+	#calc {
+		margin-top: -30%;
+	}
+	#vidi {
+		margin-top: -20%;
+	}
 	section#services div.col-md-4 {
 		float: none;
 	}
 	.footer-area {
-    padding-bottom: 30%;
-    margin-top: 20px;
-  }
+		padding-bottom: 30%;
+	}
 	.karta .ymaps-2-1-71-map {
 		height: 550px !important;
 	} 

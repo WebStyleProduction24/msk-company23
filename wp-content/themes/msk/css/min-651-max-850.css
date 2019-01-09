@@ -3,6 +3,18 @@ CSS for mobile screen with min-wsidth 651px and max-width 850px;
 ===========================================*/
 
 @media (min-width: 651px) and (max-width: 850px) {
+	.col-md-12.per p {
+		font-size: 15px;
+	}
+	.col-md-12.per .col-md-4 h4 {
+		margin-top: 30px;
+	}
+	.col-md-12.per .col-md-4 {
+		min-height: 240px;
+	}
+	#calc {
+		margin-top: -10%;
+	}
 	section#projects {
 		min-height: 1510px;
 		margin-bottom: 0;
