@@ -3,9 +3,6 @@ CSS for mobile screen with min-wsidth 850px and max-width 1200px;
 ===========================================*/
 
 @media screen and (max-width: 1200px) and (min-width: 850px) { 
-	section#principles {
-		padding-top: 40px;
-	}
 	p.centr input {
 		margin: 0 auto 15px;
 	}

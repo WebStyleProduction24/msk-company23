@@ -3,21 +3,6 @@ CSS for mobile screen with max-width 450px;
 ===========================================*/
 
 @media screen and (max-width: 450px) {
-	section#action a.fancybox {
-		margin: 10px auto;
-	}
-	.timer-element {
-		margin: 0 5px !important;
-	}
-	.col-md-12.per .col-md-4, h3.ac1 {
-		margin-top: 0;
-	}
-	h3.gold1 {
-		font-size: 15px;
-	}
-	.col-md-12.per .col-md-4 {
-		max-width: inherit; 
-	}
 	h5.cac {
 		margin: 30px 0;
 	}
@@ -44,6 +29,7 @@ CSS for mobile screen with max-width 450px;
 	}
 	.footer-area {
 		padding-bottom: 30%;
+		margin-top: 20px;
 	}
 	.karta .ymaps-2-1-71-map {
 		height: 550px !important;

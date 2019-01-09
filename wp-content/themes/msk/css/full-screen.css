@@ -1,7 +1,6 @@
 /*=========================================
 Кастомные стили от команды Web Style Production 24 (https://wsp24.ru/);
 ===========================================*/
-/*test*/
 p.sub input:hover {
 	opacity: .7;
 }
@@ -194,6 +193,9 @@ h3.gold {
 .col-md-4.right {
 	padding: 20px;
 	margin-bottom: 20px;
+}
+div.wpcf7-mail-sent-ok {
+	background-color: #fff;
 }
 .fancybox-vidi {
 	text-align: justify;

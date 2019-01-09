@@ -3,13 +3,6 @@ CSS for mobile screen with max-width 1050px;
 ===========================================*/
 
 @media screen and (max-width: 1050px) {
-	body.page-template.page-template-l2 section#contacts {
-		text-align: center;
-		margin-top: 35px;
-		padding-bottom: 0px;
-		margin-top: -90px;
-		position: relative;
-	}
 	select.wpcf7-form-control.wpcf7-select {
 		width: 100%;		
 		padding: 7px 5px;
